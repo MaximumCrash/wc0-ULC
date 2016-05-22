@@ -19,6 +19,13 @@ gulp.task('sass', function() {
   }))
 });
 
+gulp.task('css', function() {
+  return gulp.src('app/css/**/*.css')
+  .pipe(cssnano())
+  .pipe(gulp.dest('app/css'))
+
+})
+
 gulp.task('images', function() {
   return gulp.src('app/images/**/*.+(png|jpg|gif|svg)')
   .pipe(cache(imagemin({
@@ -56,8 +63,8 @@ gulp.task('cache:clear', function(callback) {
   return cache.clearAll(callback)
 })
 
-gulp.task('watch', ['sass', 'browserSync'],function() {
-  gulp.watch('app/scss/**/*.scss',['sass']);
+gulp.task('watch', ['css', 'browserSync'],function() {
+  gulp.watch('app/css/**/*.css',browserSync.reload);
   gulp.watch('app/*.html',browserSync.reload);
   gulp.watch('app/js/**/*.js',browserSync.reload);
 
@@ -65,10 +72,10 @@ gulp.task('watch', ['sass', 'browserSync'],function() {
 
 gulp.task('chew', function(callback) {
   console.log("Deleting Distro")
-  runSequence('clean:dist',['sass','useref','images','fonts'], callback)
+  runSequence('clean:dist',['css','useref','images','fonts'], callback)
 });
 
 gulp.task('default', function(callback) {
-  runSequence('chew',['sass','browserSync','watch'],
+  runSequence('chew',['css','browserSync','watch'],
   callback
 )});
