@@ -1,1 +1,34 @@
-.testing{width:71.42857%}html{background:blue}
+body {
+  margin: 0;
+  display:block;
+}
+
+.primary-color {
+
+}
+
+.secondary-color {
+
+}
+
+
+header {
+width: 100%;
+}
+
+header .upper {
+
+}
+
+header .extra {
+
+}
+
+.inline {
+  display: inline-block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
