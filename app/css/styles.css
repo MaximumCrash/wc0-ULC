@@ -1,87 +1,88 @@
 body {
-  margin: 0;
-  display: block;
-  overflow-x: hidden
+    margin: 0;
+    display: block;
+    overflow-x: hidden
 }
 .col-prime {
-  background-color: #7b1fa2;
-  color: hsla(0, 0%, 100%, .95)
+    background-color: #7b1fa2;
+    color: hsla(0, 0%, 100%, .95)
 }
 .col-second {
-  background-color: #477eff;
-  color: #fff
+    background-color: #477eff;
+    color: #fff
 }
 .col-accent {
-  background-color: #13dc90
+    background-color: #13dc90
 }
 .col-primesub {
-  background-color: #3a0f4d
+    background-color: #3a0f4d
 }
 .col-black {
-  background-color: #110519
+    background-color: #110519
 }
 .col-blank {
-  background-color: #fff;
-  color: rgba(0, 0, 0, .8)
+    background-color: #fff;
+    color: rgba(0, 0, 0, .8)
 }
 .txt-white {
   color: white;
 }
 .col-break {
-  background-color: #eceff1
+    background-color: #e0e7eb;
 }
 .f0a {
-  font-weight: 400
+    font-weight: 400
 }
 .f0a, .f0b {
-  font-family: Montserrat, sans-serif
+    font-family: Montserrat, sans-serif
 }
 .f0b {
-  font-weight: 700
+    font-weight: 700
 }
 .f1a, .f1b, .f1c {
-  font-family: Poppins, sans-serif
+    font-family: Poppins, sans-serif
 }
 .f1a {
-  font-weight: 400
+    font-weight: 400
 }
 .f1b {
-  font-weight: 500
+    font-weight: 500
 }
 .f1c {
-  font-weight: 700
+    font-weight: 700
 }
 .f-micro {
-  font-size: 1rem
+    font-size: 1rem
 }
 .f-tiny {
-  font-size: 1.1rem
+    font-size: 1.1rem
 }
 .f-small {
-  font-size: 1.25rem
+    font-size: 1.25rem
 }
 .f-medium {
-  font-size: 1.5rem
+    font-size: 1.5rem
 }
 .f-large {
-  font-size: 2rem
+    font-size: 2rem
 }
 .f-xl {
-  font-size: 2.64rem
+    font-size: 2.64rem
 }
 .f-Xxl {
-  font-size: 3.5rem
+    font-size: 3.5rem
 }
 .txtcenter {
-  text-align: center
+    text-align: center
 }
 .txtleft {
-  text-align: left
+    text-align: left
 }
 .txtright {
-  text-align: right
+    text-align: right
 }
 .icon-sm {
+<<<<<<< HEAD
   height: 34px;
   width: 34px;
   margin-right: 8px
@@ -90,156 +91,176 @@ body {
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: contain
+=======
+    height: 34px;
+    width: 34px;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain
+>>>>>>> f559432ceaa0a378d5fb5a1271f0b5b87e8f05c0
 }
 .icon-md {
-  height: 59px;
-  width: 59px
+    height: 59px;
+    width: 59px
 }
 .icon-lg {
+<<<<<<< HEAD
   width: 100px;
   height: 100px;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: contain
+=======
+    width: 100px;
+    height: 100px
+>>>>>>> f559432ceaa0a378d5fb5a1271f0b5b87e8f05c0
 }
 .inline {
-  display: inline-block
+    display: inline-block
 }
 ul {
-  margin: 0;
-  padding: 0
+    margin: 0;
+    padding: 0
 }
 header {
-  width: 100%;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
 }
 a {
-  text-decoration: none;
-  position: relative;
-  top: 0;
-  color: inherit
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    color: inherit
 }
 header>.wrapper {
-  margin-right: auto;
-  margin-left: auto;
-  width: 1064px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative
+    margin-right: auto;
+    margin-left: auto;
+    width: 1064px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative
 }
 header>.wrapper>.upper:after {
-  position: absolute;
-  right: -26px;
-  top: -33px;
-  width: 35px;
-  height: 74px;
-  content: "";
-  background: #7b1fa2;
-  transform: rotate(60deg)
+    position: absolute;
+    right: -26px;
+    top: -33px;
+    width: 35px;
+    height: 74px;
+    content: "";
+    background: #7b1fa2;
+    transform: rotate(60deg)
 }
 header>.wrapper>.upper>.extra {
-  background: hsla(0, 0%, 100%, .15)
+    background: hsla(0, 0%, 100%, .15)
 }
 header>.wrapper>.upper>ul>li>.icon-sm {
-  opacity: .9
+    opacity: .9
 }
 header>.wrapper>.upper>.extra>p {
-  margin: 8px 30px
+    margin: 8px 30px
 }
 header>.wrapper>.upper>.extra:before {
-  left: -26px;
-  transform: rotate(-60deg)
+    left: -26px;
+    transform: rotate(-60deg)
 }
 header>.wrapper>.upper>.extra:after, header>.wrapper>.upper>.extra:before {
-  position: absolute;
-  top: -33px;
-  width: 35px;
-  height: 74px;
-  content: "";
-  background: #8f40b0
+    position: absolute;
+    top: -33px;
+    width: 35px;
+    height: 74px;
+    content: "";
+    background: #8f40b0
 }
 header>.wrapper>.upper>.extra:after {
-  left: 265px;
-  transform: rotate(60deg)
+    left: 265px;
+    transform: rotate(60deg)
 }
 header>.wrapper>.upper>ul {
-  margin-left: 69px;
-  position: absolute;
-  top: 0;
-  height: 35px
+    margin-left: 69px;
+    position: absolute;
+    top: 0;
+    height: 35px
 }
 header>.wrapper>.upper>ul>li:nth-child(1) {
-  margin-right: 34px
+    margin-right: 34px
 }
 header>.wrapper>.upper>ul>li:nth-child(2) {
-  margin-right: 64px
+    margin-right: 64px
 }
 header>.wrapper>.upper>ul>li>span {
-  position: relative;
-  top: -9px
+    position: relative;
+    top: -9px
 }
 header>.wrapper>.lower {
-  position: relative
+    position: relative
 }
 header>.wrapper>.lower>.companylogo>.icon-md {
-  margin-top: 5px;
-  background-position: 50%;
-  background-size: contain;
-  height: 68px;
-  width: 39px
+    margin-top: 5px;
+    background-position: 50%;
+    background-size: contain;
+    height: 68px;
+    width: 39px
 }
 header>.wrapper>.lower>.companylogo>.logo-title {
-  position: relative;
-  text-align: center;
-  margin-top: 8px;
-  margin-bottom: 0;
-  top: -8px
+    position: relative;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 0;
+    top: -8px
 }
 header>.wrapper>.lower>ul {
-  position: absolute;
-  margin-left: 22%;
-  height: 100%
+    position: absolute;
+    margin-left: 15%;
+    height: 100%
 }
 header>.wrapper>.lower>ul>li {
-  top: 50%;
-  margin-right: 15px;
-  position: relative;
-  height: 50%
+    top: 50%;
+    margin-right: 15px;
+    position: relative;
+    height: 50%
 }
 header>.wrapper>.lower>ul>.active {
-  border-bottom: 5px solid #13dc90
+    border-bottom: 5px solid #13dc90
 }
 .fancy {
-  overflow: overlay;
-  display: table;
-  float: left;
-  margin-top: 1%;
-  margin-right: 3%;
-  background: #3a0f4d;
-  background: -webkit-linear-gradient(left, #3a0f4d, #7b1fa2 12%, #5564e5 26%, #5564e5 60%, #13dc90);
-  background: linear-gradient(90deg, #3a0f4d, #7b1fa2 12%, #5564e5 26%, #5564e5 60%, #13dc90);
-  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#3a0f4d', endColorstr='#13dc90', GradientType=1)
+    overflow: overlay;
+    display: table;
+    float: left;
+    margin-top: 1%;
+    margin-right: 3%;
+    background: #3a0f4d;
+    background: -webkit-linear-gradient(left, #3a0f4d, #7b1fa2 12%, #5564e5 26%, #5564e5 60%, #13dc90);
+    background: linear-gradient(90deg, #3a0f4d, #7b1fa2 12%, #5564e5 26%, #5564e5 60%, #13dc90);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#3a0f4d', endColorstr='#13dc90', GradientType=1)
 }
 .fancy div {
-  mix-blend-mode: lighten;
-  background: #fff;
-  width: 100%
+    mix-blend-mode: lighten;
+    background: #fff;
+    width: 100%
 }
 section .wrapper {
+<<<<<<< HEAD
   padding: 10px 25px;
   position: relative;
   width: 97%;
   height: 100%;
   margin: auto
+=======
+    padding: 10px 25px;
+    position: relative;
+    width: 97%;
+    margin: auto
+>>>>>>> f559432ceaa0a378d5fb5a1271f0b5b87e8f05c0
 }
 section .wrapper.para {
   width: 100%
 }
 section.xl {
-  height: 664px
+    height: 664px
 }
 section.lg {
-  height: 564px
+    height: 564px
 }
 section.med {
   height: 420px
@@ -251,7 +272,7 @@ section.tiny {
   height: 300px
 }
 section.micro {
-  height: 120px
+    height: 120px
 }
 .cover.para {
   width: 100%;
@@ -264,9 +285,9 @@ section.micro {
     z-index:-1;
 }
 .statement-side {
-  width: 50%;
-  margin-top: 3%;
-  float: right
+    width: 48%;
+    margin-top: 3%;
+    float: right
 }
 .innerleft {
   padding-left: 6%
@@ -282,9 +303,15 @@ section.micro {
   position: absolute !important;
 }
 .heading {
+<<<<<<< HEAD
   text-align: center;
   margin-top: 15px;
   margin-bottom: 30px
+=======
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px
+>>>>>>> f559432ceaa0a378d5fb5a1271f0b5b87e8f05c0
 }
 .flexcards {
   display: flex;
@@ -313,15 +340,16 @@ section.micro {
   margin: auto
 }
 .cardbank {
-  text-align: center;
-  width: 100%;
-  position: relative;
-  white-space: normal
+    text-align: center;
+    width: 100%;
+    position: relative;
+    white-space: normal
 }
 .cardbank>li {
-  margin-right: 32px
+    margin-right: 32px
 }
 .cardbank>li, .cardbank>li:last-child {
+<<<<<<< HEAD
   padding: 6px;
   */: #fff;
   border-radius: 2px;
@@ -331,29 +359,41 @@ section.micro {
   width: 300px;
   height: 358px;
   white-space: normal
+=======
+    padding: 6px;
+    */: #fff;
+    border-radius: 2px;
+    padding-top: 15px;
+    border-top: 9px solid #639;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 300px;
+    height: 358px;
+    white-space: normal
+>>>>>>> f559432ceaa0a378d5fb5a1271f0b5b87e8f05c0
 }
 .cardbank>li:last-child {
-  white-space: normal
+    white-space: normal
 }
 .cardbank>li>.icon-lg {
-  margin: auto
+    margin: auto
 }
 .card-header {
-  height: 56px;
-  margin-bottom: 0
+    height: 56px;
+    margin-bottom: 0
 }
 .card-subtext>li {
-  margin-bottom: 10px
+    margin-bottom: 10px
 }
 .cardbank>li:last-child>card-header {
-  margin: 0;
-  margin-top: 17px;
-  margin-bottom: 12px
+    margin: 0;
+    margin-top: 17px;
+    margin-bottom: 12px
 }
 .cardbank>li:last-child>ul>li:last-child {
-  margin-bottom: 0
+    margin-bottom: 0
 }
 .button {
+<<<<<<< HEAD
   position: relative;
   padding: 12px;
   text-align: center;
@@ -374,59 +414,68 @@ section.micro {
   background: -webkit-linear-gradient(left, #3a0f4d, #7b1fa2 12%, #5564e5 26%, #5564e5 60%, #13dc90);
   background: linear-gradient(90deg, #3a0f4d, #7b1fa2 12%, #5564e5 26%, #5564e5 60%, #13dc90);
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#3a0f4d', endColorstr='#13dc90', GradientType=1)
+=======
+    position: absolute;
+    padding: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+    left: 50%;
+    margin-top: 2%;
+    transform: translateX(-50%)
+>>>>>>> f559432ceaa0a378d5fb5a1271f0b5b87e8f05c0
 }
 @media only screen and (max-width:600px) {
-  .hide-phone, .hideDown-phone {
-    display: none!important
-  }
+    .hide-phone, .hideDown-phone {
+        display: none!important
+    }
 }
 @media only screen and (max-width:992px) {
-  .hideDown-tablet {
-    display: none!important
-  }
+    .hideDown-tablet {
+        display: none!important
+    }
 }
 @media only screen and (min-width:601px) {
-  .hideUp-tablet {
-    display: none!important
-  }
+    .hideUp-tablet {
+        display: none!important
+    }
 }
 @media only screen and (min-width:600px) and (max-width:992px) {
-  .hide-tablet {
-    display: none!important
-  }
+    .hide-tablet {
+        display: none!important
+    }
 }
 @media only screen and (min-width:993px) {
-  .hide-maximum {
-    display: none!important
-  }
+    .hide-maximum {
+        display: none!important
+    }
 }
 @media only screen and (min-width:993px) {
-  .show-maximum {
-    display: block!important
-  }
+    .show-maximum {
+        display: block!important
+    }
 }
 @media only screen and (min-width:600px) and (max-width:992px) {
-  .show-tablet {
-    display: block!important
-  }
+    .show-tablet {
+        display: block!important
+    }
 }
 @media only screen and (max-width:600px) {
-  .show-phone {
-    display: block!important
-  }
+    .show-phone {
+        display: block!important
+    }
 }
 @media only screen and (min-width:601px) {
-  .showUp-tablet {
-    display: block!important
-  }
+    .showUp-tablet {
+        display: block!important
+    }
 }
 @media only screen and (max-width:992px) {
-  .showDown-tablet {
-    display: block!important
-  }
+    .showDown-tablet {
+        display: block!important
+    }
 }
 @media only screen and (max-width:600px) {
-  .center-phone {
-    text-align: center
-  }
+    .center-phone {
+        text-align: center
+    }
 }
