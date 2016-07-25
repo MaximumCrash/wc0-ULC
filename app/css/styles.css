@@ -134,9 +134,8 @@ header>.wrapper>.upper:after {
   height: 74px;
   content: "";
   background: #7b1fa2;
-  -ms-transform: rotate(60deg); /* IE 9 */
-    -webkit-transform: rotate(60deg); /* Safari */
-    transform: rotate(60deg); /* Standard syntax */
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg)
 }
 header>.wrapper>.upper>.extra {
   background: hsla(0, 0%, 100%, .15)
@@ -149,9 +148,8 @@ header>.wrapper>.upper>.extra>p {
 }
 header>.wrapper>.upper>.extra:before {
   left: -26px;
-  -ms-transform: rotate(-60deg); /* IE 9 */
-    -webkit-transform: rotate(-60deg); /* Safari */
-    transform: rotate(-60deg); /* Standard syntax */
+  -webkit-transform: rotate(-60deg);
+  transform: rotate(-60deg)
 }
 header>.wrapper>.upper>.extra:after, header>.wrapper>.upper>.extra:before {
   position: absolute;
@@ -163,9 +161,8 @@ header>.wrapper>.upper>.extra:after, header>.wrapper>.upper>.extra:before {
 }
 header>.wrapper>.upper>.extra:after {
   left: 265px;
-  -ms-transform: rotate(60deg); /* IE 9 */
-    -webkit-transform: rotate(60deg); /* Safari */
-    transform: rotate(60deg); /* Standard syntax */
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg)
 }
 header>.wrapper>.upper>ul {
   margin-left: 69px;
@@ -192,7 +189,7 @@ header>.wrapper>.lower>.companylogo>.icon-md {
   background-size: contain;
   height: 68px;
   width: 39px;
-  cursor: pointer;
+  cursor: pointer
 }
 header>.wrapper>.lower>.companylogo>.logo-title {
   position: relative;
@@ -200,7 +197,7 @@ header>.wrapper>.lower>.companylogo>.logo-title {
   margin-top: 8px;
   margin-bottom: 0;
   top: -8px;
-  cursor: pointer;
+  cursor: pointer
 }
 header>.wrapper>.lower>ul {
   position: absolute;
@@ -213,39 +210,16 @@ header>.wrapper>.lower>ul>li {
   position: relative;
   height: 50%;
   transition: all .2s;
-  border-bottom: 0px solid #13dc90;
-
+  border-bottom: 0 solid #13dc90
 }
 header>.wrapper>.lower>ul>li:hover {
-  cursor: pointer;
-  transition: all .2s;
-  border-bottom: 5px solid #13dc90;
+  cursor: pointer
 }
-header>.wrapper>.lower>ul>.active {
+header>.wrapper>.lower>ul>.active, header>.wrapper>.lower>ul>li:hover {
   transition: all .2s;
-  border-bottom: 5px solid #13dc90;
+  border-bottom: 5px solid #13dc90
 }
 
-  @-webkit-keyframes GradAnim {
-      0%{background-position:0% 51%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 51%}
-  }
-  @-moz-keyframes GradAnim {
-      0%{background-position:0% 51%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 51%}
-  }
-  @-o-keyframes GradAnim {
-      0%{background-position:0% 51%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 51%}
-  }
-  @keyframes GradAnim {
-      0%{background-position:0% 51%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 51%}
-  }
 .fancy {
   overflow: overlay;
   display: table;
@@ -254,11 +228,8 @@ header>.wrapper>.lower>ul>.active {
   margin-right: 3%;
   background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
   background-size: 300% 300%;
-  -webkit-animation: GradAnim 6s ease infinite;
-  -moz-animation: GradAnim 6s ease infinite;
-  -o-animation: GradAnim 6s ease infinite;
-  animation: GradAnim 6s ease infinite;
-
+  -webkit-animation: a 6s ease infinite;
+  animation: a 6s ease infinite
 }
 .fancy div {
   mix-blend-mode: lighten;
@@ -320,10 +291,10 @@ section.micro {
   bottom: 32px!important;
   right: 40px!important;
   position: absolute!important;
-  top:auto!important;
+  top: auto!important
 }
 .bottomright.button:hover {
-bottom:37px!important;
+  bottom: 37px!important
 }
 .heading {
   text-align: center;
@@ -331,24 +302,22 @@ bottom:37px!important;
   margin-bottom: 20px
 }
 .link {
-  position:relative;
-  top:0;
-  border-bottom: 0px solid #477eff;
+  position: relative;
+  top: 0;
+  border-bottom: 0 solid #477eff;
+  color: currentColor
+}
+.link, .link:hover {
   cursor: pointer;
-  color:currentColor;
-  transition: all ease .2s;
+  transition: all ease .2s
 }
 .link:hover {
-  top:-5px;
-  cursor: pointer;
-  transition:all ease .2s;
+  top: -5px
 }
 .flexcards {
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -356,7 +325,7 @@ bottom:37px!important;
   -webkit-flex-wrap: wrap;
   -webkit-justify-content: center;
   text-align: center;
-  margin-bottom:7px
+  margin-bottom: 7px
 }
 .flexcards>div {
   margin-right: 16px;
@@ -423,30 +392,28 @@ bottom:37px!important;
   text-align: center;
   cursor: pointer;
   width: 209px;
-  top:8;
+  top: 8;
   margin: auto;
-  box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0), 0 1px 0px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
   transition: all .2s
 }
 .button:hover {
-  top:3px;
+  top: 3px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
   transition: all .2s
 }
 footer {
   background: #302e2f;
-  color:rgba(255,255,255,0.95);
+  color: hsla(0, 0%, 100%, .95)
 }
 .footer-header {
   width: 100%;
   height: 12px;
   background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
   background-size: 300% 300%;
-  -webkit-animation: GradAnim 6s ease infinite;
-  -moz-animation: GradAnim 6s ease infinite;
-  -o-animation: GradAnim 6s ease infinite;
-  animation: GradAnim 6s ease infinite;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  -webkit-animation: a 6s ease infinite;
+  animation: a 6s ease infinite;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
 }
 .footer-bottom {
   padding: 10px;
@@ -484,14 +451,12 @@ footer {
   float: right
 }
 .footer-content .content .footer-logo .companylogo {
-cursor: pointer;
+  cursor: pointer;
   width: 39px;
   height: 68px;
   background-position: 50%;
-  background-repeat: no-repeat;
-
+  background-repeat: no-repeat
 }
-
 .footer-content .content .footer-logo span {
   position: relative;
   top: -25px
@@ -503,22 +468,2239 @@ cursor: pointer;
   margin-top: 0
 }
 
-@media only screen and (min-width:1200px) {
-/*XL*/
+@media only screen and (min-width:2560px) {
+  /* 4K */
+  .inline {
+    display: inline-block
+  }
+  ul {
+    margin: 0;
+    padding: 0
+  }
+  header {
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+  }
+  a {
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    color: inherit
+  }
+  header>.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1064px;
+    padding-left: 15px;
+    position: relative
+  }
+  header>.wrapper>.upper:after {
+    position: absolute;
+    right: -41px;
+    top: -33px;
+    width: 35px;
+    height: 74px;
+    content: "";
+    background: #7b1fa2;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg)
+  }
+  header>.wrapper>.upper>.extra {
+    background: hsla(0, 0%, 100%, .15)
+  }
+  header>.wrapper>.upper>ul>li>.icon-sm {
+    opacity: .9
+  }
+  header>.wrapper>.upper>.extra>p {
+    margin: 8px 30px
+  }
+  header>.wrapper>.upper>.extra:before {
+    left: -26px;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg)
+  }
+  header>.wrapper>.upper>.extra:after, header>.wrapper>.upper>.extra:before {
+    position: absolute;
+    top: -33px;
+    width: 35px;
+    height: 74px;
+    content: "";
+    background: #8f40b0
+  }
+  header>.wrapper>.upper>.extra:after {
+    left: 265px;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg)
+  }
+  header>.wrapper>.upper>ul {
+    margin-left: 69px;
+    position: absolute;
+    top: 0;
+    height: 35px
+  }
+  header>.wrapper>.upper>ul>li:nth-child(1) {
+    margin-right: 34px
+  }
+  header>.wrapper>.upper>ul>li:nth-child(2) {
+    margin-right: 64px
+  }
+  header>.wrapper>.upper>ul>li>span {
+    position: relative;
+    top: -9px
+  }
+  header>.wrapper>.lower {
+    position: relative
+  }
+  header>.wrapper>.lower>.companylogo>.icon-md {
+    margin-top: 5px;
+    background-position: 50%;
+    background-size: contain;
+    height: 68px;
+    width: 39px;
+    cursor: pointer
+  }
+  header>.wrapper>.lower>.companylogo>.logo-title {
+    position: relative;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 0;
+    top: -8px;
+    cursor: pointer
+  }
+  header>.wrapper>.lower>ul {
+    position: absolute;
+    margin-left: 15%;
+    height: 100%
+  }
+  header>.wrapper>.lower>ul>li {
+    top: 50%;
+    margin-right: 15px;
+    position: relative;
+    height: 50%;
+    transition: all .2s;
+    border-bottom: 0 solid #13dc90
+  }
+  header>.wrapper>.lower>ul>li:hover {
+    cursor: pointer
+  }
+  header>.wrapper>.lower>ul>.active, header>.wrapper>.lower>ul>li:hover {
+    transition: all .2s;
+    border-bottom: 5px solid #13dc90
+  }
+
+  .fancy {
+    overflow: overlay;
+    display: table;
+    float: left;
+    margin-top: 1%;
+    margin-right: 3%;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: a 6s ease infinite;
+    animation: a 6s ease infinite
+  }
+  .fancy div {
+    mix-blend-mode: lighten;
+    background: #fff;
+    width: 100%
+  }
+  section .wrapper {
+    padding: 10px 25px;
+    position: relative;
+    width: 97%;
+    height: 100%;
+    margin: auto
+  }
+  section .wrapper.para {
+    width: 100%
+  }
+  section.xl {
+    height: 664px
+  }
+  section.lg {
+    height: 564px
+  }
+  section.med {
+    height: 420px
+  }
+  section.sm {
+    height: 364px
+  }
+  section.tiny {
+    height: 300px
+  }
+  section.micro {
+    height: 120px
+  }
+  .cover.para {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1
+  }
+  .statement-side {
+    width: 48%;
+    margin-top: 3%;
+    float: right
+  }
+  .innerleft {
+    padding-left: 6%
+  }
+  .upperleft {
+    margin-top: 1%;
+    margin-left: 1%
+  }
+  .bottomright {
+    margin: 0!important;
+    bottom: 32px!important;
+    right: 40px!important;
+    position: absolute!important;
+    top: auto!important
+  }
+  .bottomright.button:hover {
+    bottom: 37px!important
+  }
+  .heading {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px
+  }
+  .link {
+    position: relative;
+    top: 0;
+    border-bottom: 0 solid #477eff;
+    color: currentColor
+  }
+  .link, .link:hover {
+    cursor: pointer;
+    transition: all ease .2s
+  }
+  .link:hover {
+    top: -5px
+  }
+  .flexcards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    text-align: center;
+    margin-bottom: 7px
+  }
+  .flexcards>div {
+    margin-right: 16px;
+    margin-left: 16px;
+    padding: 6px;
+    border-radius: 2px;
+    padding-top: 15px;
+    border-top: 9px solid #639;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 300px;
+    height: 358px;
+    white-space: normal;
+    background: #fff
+  }
+  .flexcards>div, .flexcards>div:last-child>.card-header {
+    margin-bottom: 15px
+  }
+  .flexcards>div>.icon-lg {
+    margin: auto
+  }
+  .cardbank {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    white-space: normal
+  }
+  .cardbank>li {
+    margin-right: 32px
+  }
+  .cardbank>li, .cardbank>li:last-child {
+    padding: 6px;
+    border-radius: 2px;
+    padding-top: 15px;
+    border-top: 9px solid #639;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 300px;
+    height: 358px;
+    white-space: normal
+  }
+  .cardbank>li:last-child {
+    white-space: normal
+  }
+  .cardbank>li>.icon-lg {
+    margin: auto
+  }
+  .card-header {
+    height: 56px;
+    margin-bottom: 0
+  }
+  .card-subtext>li {
+    margin-bottom: 10px
+  }
+  .cardbank>li:last-child>card-header {
+    margin: 0;
+    margin-top: 17px;
+    margin-bottom: 12px
+  }
+  .cardbank>li:last-child>ul>li:last-child {
+    margin-bottom: 0
+  }
+  .button {
+    position: relative;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    width: 209px;
+    top: 8;
+    margin: auto;
+    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+    transition: all .2s
+  }
+  .button:hover {
+    top: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    transition: all .2s
+  }
+  footer {
+    background: #302e2f;
+    color: hsla(0, 0%, 100%, .95)
+  }
+  .footer-header {
+    width: 100%;
+    height: 12px;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: a 6s ease infinite;
+    animation: a 6s ease infinite;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+  }
+  .footer-bottom {
+    padding: 10px;
+    background: rgba(0, 0, 0, .3)
+  }
+  .footer-bottom ul li {
+    margin-right: 25px
+  }
+  .footer-bottom ul li:last-child {
+    margin-right: 0
+  }
+  .footer-content {
+    padding: 10px;
+    padding-bottom: 0;
+    margin-bottom: 7px
+  }
+  .footer-content .content:first-child {
+    vertical-align: top;
+    margin-right: 32px;
+    margin-left: 14px;
+    margin-top: 3px
+  }
+  .footer-content .content:nth-child(2) {
+    min-width: 280px;
+    vertical-align: top;
+    margin-top: 17px;
+    position: relative;
+    left: 22%;
+    transform: translateX(-50%)
+  }
+  .footer-content .content:last-child {
+    vertical-align: top;
+    margin-top: 17px;
+    margin-right: 32px;
+    float: right
+  }
+  .footer-content .content .footer-logo .companylogo {
+    cursor: pointer;
+    width: 39px;
+    height: 68px;
+    background-position: 50%;
+    background-repeat: no-repeat
+  }
+  .footer-content .content .footer-logo span {
+    position: relative;
+    top: -25px
+  }
+  .footer-content .content ul li {
+    margin-bottom: 8px
+  }
+  .footer-content .content p:first-child {
+    margin-top: 0
+  }
+
+}
+@media only screen and (min-width:1200px)  and (max-width:2559px){
+  /* Large Laptop */
+
+  .inline {
+    display: inline-block
+  }
+  ul {
+    margin: 0;
+    padding: 0
+  }
+  header {
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+  }
+  a {
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    color: inherit
+  }
+  header>.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1064px;
+    padding-left: 15px;
+    position: relative
+  }
+  header>.wrapper>.upper:after {
+    position: absolute;
+    right: -41px;
+    top: -33px;
+    width: 35px;
+    height: 74px;
+    content: "";
+    background: #7b1fa2;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg)
+  }
+  header>.wrapper>.upper>.extra {
+    background: hsla(0, 0%, 100%, .15)
+  }
+  header>.wrapper>.upper>ul>li>.icon-sm {
+    opacity: .9
+  }
+  header>.wrapper>.upper>.extra>p {
+    margin: 8px 30px
+  }
+  header>.wrapper>.upper>.extra:before {
+    left: -26px;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg)
+  }
+  header>.wrapper>.upper>.extra:after, header>.wrapper>.upper>.extra:before {
+    position: absolute;
+    top: -33px;
+    width: 35px;
+    height: 74px;
+    content: "";
+    background: #8f40b0
+  }
+  header>.wrapper>.upper>.extra:after {
+    left: 265px;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg)
+  }
+  header>.wrapper>.upper>ul {
+    margin-left: 69px;
+    position: absolute;
+    top: 0;
+    height: 35px
+  }
+  header>.wrapper>.upper>ul>li:nth-child(1) {
+    margin-right: 34px
+  }
+  header>.wrapper>.upper>ul>li:nth-child(2) {
+    margin-right: 64px
+  }
+  header>.wrapper>.upper>ul>li>span {
+    position: relative;
+    top: -9px
+  }
+  header>.wrapper>.lower {
+    position: relative
+  }
+  header>.wrapper>.lower>.companylogo>.icon-md {
+    margin-top: 5px;
+    background-position: 50%;
+    background-size: contain;
+    height: 68px;
+    width: 39px;
+    cursor: pointer
+  }
+  header>.wrapper>.lower>.companylogo>.logo-title {
+    position: relative;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 0;
+    top: -8px;
+    cursor: pointer
+  }
+  header>.wrapper>.lower>ul {
+    position: absolute;
+    margin-left: 15%;
+    height: 100%
+  }
+  header>.wrapper>.lower>ul>li {
+    top: 50%;
+    margin-right: 15px;
+    position: relative;
+    height: 50%;
+    transition: all .2s;
+    border-bottom: 0 solid #13dc90
+  }
+  header>.wrapper>.lower>ul>li:hover {
+    cursor: pointer
+  }
+  header>.wrapper>.lower>ul>.active, header>.wrapper>.lower>ul>li:hover {
+    transition: all .2s;
+    border-bottom: 5px solid #13dc90
+  }
+
+  .fancy {
+    overflow: overlay;
+    display: table;
+    float: left;
+    margin-top: 1%;
+    margin-right: 3%;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: a 6s ease infinite;
+    animation: a 6s ease infinite
+  }
+  .fancy div {
+    mix-blend-mode: lighten;
+    background: #fff;
+    width: 100%
+  }
+  section .wrapper {
+    padding: 10px 25px;
+    position: relative;
+    width: 97%;
+    height: 100%;
+    margin: auto
+  }
+  section .wrapper.para {
+    width: 100%
+  }
+  section.xl {
+    height: 664px
+  }
+  section.lg {
+    height: 564px
+  }
+  section.med {
+    height: 420px
+  }
+  section.sm {
+    height: 364px
+  }
+  section.tiny {
+    height: 300px
+  }
+  section.micro {
+    height: 120px
+  }
+  .cover.para {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1
+  }
+  .statement-side {
+    width: 48%;
+    margin-top: 3%;
+    float: right
+  }
+  .innerleft {
+    padding-left: 6%
+  }
+  .upperleft {
+    margin-top: 1%;
+    margin-left: 1%
+  }
+  .bottomright {
+    margin: 0!important;
+    bottom: 32px!important;
+    right: 40px!important;
+    position: absolute!important;
+    top: auto!important
+  }
+  .bottomright.button:hover {
+    bottom: 37px!important
+  }
+  .heading {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px
+  }
+  .link {
+    position: relative;
+    top: 0;
+    border-bottom: 0 solid #477eff;
+    color: currentColor
+  }
+  .link, .link:hover {
+    cursor: pointer;
+    transition: all ease .2s
+  }
+  .link:hover {
+    top: -5px
+  }
+  .flexcards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    text-align: center;
+    margin-bottom: 7px
+  }
+  .flexcards>div {
+    margin-right: 16px;
+    margin-left: 16px;
+    padding: 6px;
+    border-radius: 2px;
+    padding-top: 15px;
+    border-top: 9px solid #639;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 300px;
+    height: 358px;
+    white-space: normal;
+    background: #fff
+  }
+  .flexcards>div, .flexcards>div:last-child>.card-header {
+    margin-bottom: 15px
+  }
+  .flexcards>div>.icon-lg {
+    margin: auto
+  }
+  .cardbank {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    white-space: normal
+  }
+  .cardbank>li {
+    margin-right: 32px
+  }
+  .cardbank>li, .cardbank>li:last-child {
+    padding: 6px;
+    border-radius: 2px;
+    padding-top: 15px;
+    border-top: 9px solid #639;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 300px;
+    height: 358px;
+    white-space: normal
+  }
+  .cardbank>li:last-child {
+    white-space: normal
+  }
+  .cardbank>li>.icon-lg {
+    margin: auto
+  }
+  .card-header {
+    height: 56px;
+    margin-bottom: 0
+  }
+  .card-subtext>li {
+    margin-bottom: 10px
+  }
+  .cardbank>li:last-child>card-header {
+    margin: 0;
+    margin-top: 17px;
+    margin-bottom: 12px
+  }
+  .cardbank>li:last-child>ul>li:last-child {
+    margin-bottom: 0
+  }
+  .button {
+    position: relative;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    width: 209px;
+    top: 8;
+    margin: auto;
+    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+    transition: all .2s
+  }
+  .button:hover {
+    top: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    transition: all .2s
+  }
+  footer {
+    background: #302e2f;
+    color: hsla(0, 0%, 100%, .95)
+  }
+  .footer-header {
+    width: 100%;
+    height: 12px;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: a 6s ease infinite;
+    animation: a 6s ease infinite;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+  }
+  .footer-bottom {
+    padding: 10px;
+    background: rgba(0, 0, 0, .3)
+  }
+  .footer-bottom ul li {
+    margin-right: 25px
+  }
+  .footer-bottom ul li:last-child {
+    margin-right: 0
+  }
+  .footer-content {
+    padding: 10px;
+    padding-bottom: 0;
+    margin-bottom: 7px
+  }
+  .footer-content .content:first-child {
+    vertical-align: top;
+    margin-right: 32px;
+    margin-left: 14px;
+    margin-top: 3px
+  }
+  .footer-content .content:nth-child(2) {
+    min-width: 280px;
+    vertical-align: top;
+    margin-top: 17px;
+    position: relative;
+    left: 22%;
+    transform: translateX(-50%)
+  }
+  .footer-content .content:last-child {
+    vertical-align: top;
+    margin-top: 17px;
+    margin-right: 32px;
+    float: right
+  }
+  .footer-content .content .footer-logo .companylogo {
+    cursor: pointer;
+    width: 39px;
+    height: 68px;
+    background-position: 50%;
+    background-repeat: no-repeat
+  }
+  .footer-content .content .footer-logo span {
+    position: relative;
+    top: -25px
+  }
+  .footer-content .content ul li {
+    margin-bottom: 8px
+  }
+  .footer-content .content p:first-child {
+    margin-top: 0
+  }
 }
 
-@media only screen and (min-width:1054px) and (max-width:1199px) {
-/*Large*/
+@media only screen and (min-width:1094px) and (max-width:1199px) {
+  /* Regular Laptop */
+  .inline {
+    display: inline-block
+  }
+  ul {
+    margin: 0;
+    padding: 0
+  }
+  header {
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+  }
+  a {
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    color: inherit
+  }
+  header>.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1064px;
+    padding-left: 15px;
+    position: relative
+  }
+  header>.wrapper>.upper:after {
+    position: absolute;
+    right: -41px;
+    top: -33px;
+    width: 35px;
+    height: 74px;
+    content: "";
+    background: #7b1fa2;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg)
+  }
+  header>.wrapper>.upper>.extra {
+    background: hsla(0, 0%, 100%, .15)
+  }
+  header>.wrapper>.upper>ul>li>.icon-sm {
+    opacity: .9
+  }
+  header>.wrapper>.upper>.extra>p {
+    margin: 8px 30px
+  }
+  header>.wrapper>.upper>.extra:before {
+    left: -26px;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg)
+  }
+  header>.wrapper>.upper>.extra:after, header>.wrapper>.upper>.extra:before {
+    position: absolute;
+    top: -33px;
+    width: 35px;
+    height: 74px;
+    content: "";
+    background: #8f40b0
+  }
+  header>.wrapper>.upper>.extra:after {
+    left: 265px;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg)
+  }
+  header>.wrapper>.upper>ul {
+    margin-left: 69px;
+    position: absolute;
+    top: 0;
+    height: 35px
+  }
+  header>.wrapper>.upper>ul>li:nth-child(1) {
+    margin-right: 34px
+  }
+  header>.wrapper>.upper>ul>li:nth-child(2) {
+    margin-right: 64px
+  }
+  header>.wrapper>.upper>ul>li>span {
+    position: relative;
+    top: -9px
+  }
+  header>.wrapper>.lower {
+    position: relative
+  }
+  header>.wrapper>.lower>.companylogo>.icon-md {
+    margin-top: 5px;
+    background-position: 50%;
+    background-size: contain;
+    height: 68px;
+    width: 39px;
+    cursor: pointer
+  }
+  header>.wrapper>.lower>.companylogo>.logo-title {
+    position: relative;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 0;
+    top: -8px;
+    cursor: pointer
+  }
+  header>.wrapper>.lower>ul {
+    position: absolute;
+    margin-left: 15%;
+    height: 100%
+  }
+  header>.wrapper>.lower>ul>li {
+    top: 50%;
+    margin-right: 15px;
+    position: relative;
+    height: 50%;
+    transition: all .2s;
+    border-bottom: 0 solid #13dc90
+  }
+  header>.wrapper>.lower>ul>li:hover {
+    cursor: pointer
+  }
+  header>.wrapper>.lower>ul>.active, header>.wrapper>.lower>ul>li:hover {
+    transition: all .2s;
+    border-bottom: 5px solid #13dc90
+  }
+
+  .fancy {
+    overflow: overlay;
+    display: table;
+    float: left;
+    margin-top: 1%;
+    margin-right: 3%;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: a 6s ease infinite;
+    animation: a 6s ease infinite
+  }
+  .fancy div {
+    mix-blend-mode: lighten;
+    background: #fff;
+    width: 100%
+  }
+  section .wrapper {
+    padding: 10px 25px;
+    position: relative;
+    width: 97%;
+    height: 100%;
+    margin: auto
+  }
+  section .wrapper.para {
+    width: 100%
+  }
+  section.xl {
+    height: 664px
+  }
+  section.lg {
+    height: 564px
+  }
+  section.med {
+    height: 420px
+  }
+  section.sm {
+    height: 364px
+  }
+  section.tiny {
+    height: 300px
+  }
+  section.micro {
+    height: 120px
+  }
+  .cover.para {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1
+  }
+  .statement-side {
+    width: 48%;
+    margin-top: 3%;
+    float: right
+  }
+  .innerleft {
+    padding-left: 6%
+  }
+  .upperleft {
+    margin-top: 1%;
+    margin-left: 1%
+  }
+  .bottomright {
+    margin: 0!important;
+    bottom: 32px!important;
+    right: 40px!important;
+    position: absolute!important;
+    top: auto!important
+  }
+  .bottomright.button:hover {
+    bottom: 37px!important
+  }
+  .heading {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px
+  }
+  .link {
+    position: relative;
+    top: 0;
+    border-bottom: 0 solid #477eff;
+    color: currentColor
+  }
+  .link, .link:hover {
+    cursor: pointer;
+    transition: all ease .2s
+  }
+  .link:hover {
+    top: -5px
+  }
+  .flexcards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    text-align: center;
+    margin-bottom: 7px
+  }
+  .flexcards>div {
+    margin-right: 16px;
+    margin-left: 16px;
+    padding: 6px;
+    border-radius: 2px;
+    padding-top: 15px;
+    border-top: 9px solid #639;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 300px;
+    height: 358px;
+    white-space: normal;
+    background: #fff
+  }
+  .flexcards>div, .flexcards>div:last-child>.card-header {
+    margin-bottom: 15px
+  }
+  .flexcards>div>.icon-lg {
+    margin: auto
+  }
+  .cardbank {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    white-space: normal
+  }
+  .cardbank>li {
+    margin-right: 32px
+  }
+  .cardbank>li, .cardbank>li:last-child {
+    padding: 6px;
+    border-radius: 2px;
+    padding-top: 15px;
+    border-top: 9px solid #639;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 300px;
+    height: 358px;
+    white-space: normal
+  }
+  .cardbank>li:last-child {
+    white-space: normal
+  }
+  .cardbank>li>.icon-lg {
+    margin: auto
+  }
+  .card-header {
+    height: 56px;
+    margin-bottom: 0
+  }
+  .card-subtext>li {
+    margin-bottom: 10px
+  }
+  .cardbank>li:last-child>card-header {
+    margin: 0;
+    margin-top: 17px;
+    margin-bottom: 12px
+  }
+  .cardbank>li:last-child>ul>li:last-child {
+    margin-bottom: 0
+  }
+  .button {
+    position: relative;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    width: 209px;
+    top: 8;
+    margin: auto;
+    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+    transition: all .2s
+  }
+  .button:hover {
+    top: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    transition: all .2s
+  }
+  footer {
+    background: #302e2f;
+    color: hsla(0, 0%, 100%, .95)
+  }
+  .footer-header {
+    width: 100%;
+    height: 12px;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: a 6s ease infinite;
+    animation: a 6s ease infinite;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+  }
+  .footer-bottom {
+    padding: 10px;
+    background: rgba(0, 0, 0, .3)
+  }
+  .footer-bottom ul li {
+    margin-right: 25px
+  }
+  .footer-bottom ul li:last-child {
+    margin-right: 0
+  }
+  .footer-content {
+    padding: 10px;
+    padding-bottom: 0;
+    margin-bottom: 7px
+  }
+  .footer-content .content:first-child {
+    vertical-align: top;
+    margin-right: 32px;
+    margin-left: 14px;
+    margin-top: 3px
+  }
+  .footer-content .content:nth-child(2) {
+    min-width: 280px;
+    vertical-align: top;
+    margin-top: 17px;
+    position: relative;
+    left: 22%;
+    transform: translateX(-50%)
+  }
+  .footer-content .content:last-child {
+    vertical-align: top;
+    margin-top: 17px;
+    margin-right: 32px;
+    float: right
+  }
+  .footer-content .content .footer-logo .companylogo {
+    cursor: pointer;
+    width: 39px;
+    height: 68px;
+    background-position: 50%;
+    background-repeat: no-repeat
+  }
+  .footer-content .content .footer-logo span {
+    position: relative;
+    top: -25px
+  }
+  .footer-content .content ul li {
+    margin-bottom: 8px
+  }
+  .footer-content .content p:first-child {
+    margin-top: 0
+  }
 }
 
-@media only screen and (min-width:894px) and (max-width:1053px){
-/*Medium*/
+@media only screen and (min-width:993px) and (max-width:1093px) {
+  /*Small Laptop & Big Tablet */
+  .inline {
+    display: inline-block
+  }
+  ul {
+    margin: 0;
+    padding: 0
+  }
+  header {
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+  }
+  a {
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    color: inherit
+  }
+  header>.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1064px;
+    padding-left: 15px;
+    position: relative
+  }
+  header>.wrapper>.upper:after {
+    position: absolute;
+    right: -41px;
+    top: -33px;
+    width: 35px;
+    height: 74px;
+    content: "";
+    background: #7b1fa2;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg)
+  }
+  header>.wrapper>.upper>.extra {
+    background: hsla(0, 0%, 100%, .15)
+  }
+  header>.wrapper>.upper>ul>li>.icon-sm {
+    opacity: .9
+  }
+  header>.wrapper>.upper>.extra>p {
+    margin: 8px 30px
+  }
+  header>.wrapper>.upper>.extra:before {
+    left: -26px;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg)
+  }
+  header>.wrapper>.upper>.extra:after, header>.wrapper>.upper>.extra:before {
+    position: absolute;
+    top: -33px;
+    width: 35px;
+    height: 74px;
+    content: "";
+    background: #8f40b0
+  }
+  header>.wrapper>.upper>.extra:after {
+    left: 259px;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg)
+  }
+  header>.wrapper>.upper>ul {
+    margin-left: 69px;
+    position: absolute;
+    top: 0;
+    height: 35px
+  }
+  header>.wrapper>.upper>ul>li:nth-child(1) {
+    margin-right: 34px
+  }
+  header>.wrapper>.upper>ul>li:nth-child(2) {
+    margin-right: 64px
+  }
+  header>.wrapper>.upper>ul>li>span {
+    position: relative;
+    top: -9px
+  }
+  header>.wrapper>.lower {
+    position: relative
+  }
+  header>.wrapper>.lower>.companylogo>.icon-md {
+    margin-top: 5px;
+    background-position: 50%;
+    background-size: contain;
+    height: 68px;
+    width: 39px;
+    cursor: pointer
+  }
+  header>.wrapper>.lower>.companylogo>.logo-title {
+    position: relative;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 0;
+    top: -8px;
+    cursor: pointer
+  }
+  header>.wrapper>.lower>ul {
+    position: absolute;
+    margin-left: 10%;
+    height: 100%
+  }
+  header>.wrapper>.lower>ul>li {
+    top: 50%;
+    margin-right: 15px;
+    position: relative;
+    height: 50%;
+    transition: all .2s;
+    border-bottom: 0 solid #13dc90
+  }
+  header>.wrapper>.lower>ul>li:hover {
+    cursor: pointer
+  }
+  header>.wrapper>.lower>ul>.active, header>.wrapper>.lower>ul>li:hover {
+    transition: all .2s;
+    border-bottom: 5px solid #13dc90
+  }
+
+  .fancy {
+    overflow: overlay;
+    display: table;
+    float: left;
+    margin-top: 1%;
+    margin-right: 3%;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: a 6s ease infinite;
+    animation: a 6s ease infinite
+  }
+  .fancy div {
+    mix-blend-mode: lighten;
+    background: #fff;
+    width: 100%
+  }
+  section .wrapper {
+    padding: 10px 25px;
+    position: relative;
+    width: 97%;
+    height: 100%;
+    margin: auto
+  }
+  section .wrapper.para {
+    width: 100%
+  }
+  section.xl {
+    height: 664px
+  }
+  section.lg {
+    height: 564px
+  }
+  section.med {
+    height: 420px
+  }
+  section.sm {
+    height: 364px
+  }
+  section.tiny {
+    height: 300px
+  }
+  section.micro {
+    height: 120px
+  }
+  .cover.para {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1
+  }
+  .statement-side {
+    width: 43%;
+    margin-top: 3%;
+    float: right
+  }
+  .innerleft {
+    padding-left: 6%
+  }
+  .upperleft {
+    margin-top: 1%;
+    margin-left: 1%
+  }
+  .bottomright {
+    margin: 0!important;
+    bottom: 32px!important;
+    right: 40px!important;
+    position: absolute!important;
+    top: auto!important
+  }
+  .bottomright.button:hover {
+    bottom: 37px!important
+  }
+  .heading {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px
+  }
+  .link {
+    position: relative;
+    top: 0;
+    border-bottom: 0 solid #477eff;
+    color: currentColor
+  }
+  .link, .link:hover {
+    cursor: pointer;
+    transition: all ease .2s
+  }
+  .link:hover {
+    top: -5px
+  }
+  .flexcards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    text-align: center;
+    margin-bottom: 7px
+  }
+  .flexcards>div {
+    margin-right: 16px;
+    margin-left: 16px;
+    padding: 6px;
+    border-radius: 2px;
+    padding-top: 15px;
+    border-top: 9px solid #639;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 261px;
+    height: 358px;
+    white-space: normal;
+    background: #fff
+  }
+  .flexcards>div, .flexcards>div:last-child>.card-header {
+    margin-bottom: 15px
+  }
+  .flexcards>div>.icon-lg {
+    margin: auto
+  }
+  .cardbank {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    white-space: normal
+  }
+  .cardbank>li {
+    margin-right: 32px
+  }
+  .cardbank>li, .cardbank>li:last-child {
+    padding: 6px;
+    border-radius: 2px;
+    padding-top: 15px;
+    border-top: 9px solid #639;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 300px;
+    height: 358px;
+    white-space: normal
+  }
+  .cardbank>li:last-child {
+    white-space: normal
+  }
+  .cardbank>li>.icon-lg {
+    margin: auto
+  }
+  .card-header {
+    height: 56px;
+    margin-bottom: 0
+  }
+  .card-subtext>li {
+    margin-bottom: 10px
+  }
+  .cardbank>li:last-child>card-header {
+    margin: 0;
+    margin-top: 17px;
+    margin-bottom: 12px
+  }
+  .cardbank>li:last-child>ul>li:last-child {
+    margin-bottom: 0
+  }
+  .button {
+    position: relative;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    width: 209px;
+    top: 8;
+    margin: auto;
+    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+    transition: all .2s
+  }
+  .button:hover {
+    top: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    transition: all .2s
+  }
+  footer {
+    background: #302e2f;
+    color: hsla(0, 0%, 100%, .95)
+  }
+  .footer-header {
+    width: 100%;
+    height: 12px;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: a 6s ease infinite;
+    animation: a 6s ease infinite;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+  }
+  .footer-bottom {
+    padding: 10px;
+    background: rgba(0, 0, 0, .3)
+  }
+  .footer-bottom ul li {
+    margin-right: 9px
+  }
+  .footer-bottom ul li:last-child {
+    margin-right: 0
+  }
+  .footer-content {
+    padding: 10px;
+    padding-bottom: 0;
+    margin-bottom: 7px
+  }
+  .footer-content .content:first-child {
+    vertical-align: top;
+    margin-right: 32px;
+    margin-left: 14px;
+    margin-top: 3px
+  }
+  .footer-content .content:nth-child(2) {
+    min-width: 280px;
+    vertical-align: top;
+    margin-top: 17px;
+    position: relative;
+  }
+  .footer-content .content:last-child {
+    vertical-align: top;
+    margin-top: 17px;
+    margin-right: 32px;
+    float: right;
+    width:280px;
+  }
+  .footer-content .content .footer-logo .companylogo {
+    cursor: pointer;
+    width: 39px;
+    height: 68px;
+    background-position: 50%;
+    background-repeat: no-repeat
+  }
+  .footer-content .content .footer-logo span {
+    position: relative;
+    top: -25px
+  }
+  .footer-content .content ul li {
+    margin-bottom: 8px
+  }
+  .footer-content .content p:first-child {
+    margin-top: 0
+  }
 }
 
-@media only screen and (min-width:790px) and (max-width:893px){
-/*Small*/
+@media only screen and (min-width:600px) and (max-width:992px) {
+  /*Regular Tablet*/
+  .inline {
+    display: inline-block
+  }
+  ul {
+    margin: 0;
+    padding: 0
+  }
+  header {
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+  }
+  a {
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    color: inherit
+  }
+  header>.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1064px;
+    padding-left: 15px;
+    position: relative
+  }
+  header>.wrapper>.upper:after {
+    position: absolute;
+    right: -41px;
+    top: -33px;
+    width: 35px;
+    height: 74px;
+    content: "";
+    background: #7b1fa2;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg)
+  }
+  header>.wrapper>.upper>.extra {
+    background: hsla(0, 0%, 100%, .15)
+  }
+  header>.wrapper>.upper>ul>li>.icon-sm {
+    opacity: .9
+  }
+  header>.wrapper>.upper>.extra>p {
+    margin: 8px 30px
+  }
+  header>.wrapper>.upper>.extra:before {
+    left: -19px;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(0deg)
+  }
+  header>.wrapper>.upper>.extra:after, header>.wrapper>.upper>.extra:before {
+    position: absolute;
+    top: -31px;
+    width: 35px;
+    height: 68px;
+    content: "";
+    background: #8f40b0
+  }
+  header>.wrapper>.upper>.extra:after {
+    left: 251px;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg)
+  }
+  header>.wrapper>.upper>ul {
+    margin-left: 69px;
+    position: absolute;
+    top: 0;
+    height: 35px
+  }
+  header>.wrapper>.upper>ul>li:nth-child(1) {
+    margin-right: 34px
+  }
+  header>.wrapper>.upper>ul>li:nth-child(2) {
+    margin-right: 64px
+  }
+  header>.wrapper>.upper>ul>li>span {
+    position: relative;
+    top: -9px
+  }
+  header>.wrapper>.lower {
+    position: relative
+  }
+  header>.wrapper>.lower>.companylogo>.icon-md {
+    margin-top: 5px;
+    background-position: 50%;
+    background-size: contain;
+    height: 68px;
+    width: 39px;
+    cursor: pointer
+  }
+  header>.wrapper>.lower>.companylogo>.logo-title {
+    position: relative;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 0;
+    top: -8px;
+    cursor: pointer
+  }
+  header>.wrapper>.lower>ul {
+    position: absolute;
+    margin-left: 10%;
+    height: 100%
+  }
+  header>.wrapper>.lower>ul>li {
+    top: 50%;
+    margin-right: 15px;
+    position: relative;
+    height: 50%;
+    transition: all .2s;
+    border-bottom: 0 solid #13dc90
+  }
+  header>.wrapper>.lower>ul>li:hover {
+    cursor: pointer
+  }
+  header>.wrapper>.lower>ul>.active, header>.wrapper>.lower>ul>li:hover {
+    transition: all .2s;
+    border-bottom: 5px solid #13dc90
+  }
+
+  .fancy {
+    overflow: overlay;
+    display: table;
+    float: left;
+    margin-top: 1%;
+    margin-right: 3%;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: a 6s ease infinite;
+    animation: a 6s ease infinite
+  }
+  .fancy div {
+    mix-blend-mode: lighten;
+    background: #fff;
+    width: 100%
+  }
+  section .wrapper {
+    padding: 10px 25px;
+    position: relative;
+    width: 97%;
+    height: 100%;
+    margin: auto
+  }
+  section .wrapper.para {
+    width: 100%
+  }
+  section.xl {
+    height: 664px
+  }
+  section.lg {
+    height: 564px
+  }
+  section.med {
+    height: 420px
+  }
+  section.sm {
+    height: 364px
+  }
+  section.tiny {
+    height: 300px
+  }
+  section.micro {
+    height: 120px
+  }
+  .cover.para {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1
+  }
+  .statement-side {
+    width: 45%;
+    margin-top: 3%;
+    float: right
+  }
+  .innerleft {
+    padding-left: 6%
+  }
+  .upperleft {
+    margin-top: 1%;
+    margin-left: 1%
+  }
+  .bottomright {
+    margin: 0!important;
+    bottom: 32px!important;
+    right: 40px!important;
+    position: absolute!important;
+    top: auto!important
+  }
+  .bottomright.button:hover {
+    bottom: 37px!important
+  }
+  .heading {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px
+  }
+  .link {
+    position: relative;
+    top: 0;
+    border-bottom: 0 solid #477eff;
+    color: currentColor
+  }
+  .link, .link:hover {
+    cursor: pointer;
+    transition: all ease .2s
+  }
+  .link:hover {
+    top: -5px
+  }
+  .flexcards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    text-align: center;
+    margin-bottom: 7px
+  }
+  .flexcards>div {
+    margin-right: 16px;
+    margin-left: 16px;
+    padding: 6px;
+    border-radius: 2px;
+    padding-top: 15px;
+    border-top: 9px solid #639;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 261px;
+    height: 358px;
+    white-space: normal;
+    background: #fff
+  }
+  .flexcards>div, .flexcards>div:last-child>.card-header {
+    margin-bottom: 15px
+  }
+  .flexcards>div>.icon-lg {
+    margin: auto
+  }
+  .cardbank {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    white-space: normal
+  }
+  .cardbank>li {
+    margin-right: 32px
+  }
+  .cardbank>li, .cardbank>li:last-child {
+    padding: 6px;
+    border-radius: 2px;
+    padding-top: 15px;
+    border-top: 9px solid #639;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 300px;
+    height: 358px;
+    white-space: normal
+  }
+  .cardbank>li:last-child {
+    white-space: normal
+  }
+  .cardbank>li>.icon-lg {
+    margin: auto
+  }
+  .card-header {
+    height: 56px;
+    margin-bottom: 0
+  }
+  .card-subtext>li {
+    margin-bottom: 10px
+  }
+  .cardbank>li:last-child>card-header {
+    margin: 0;
+    margin-top: 17px;
+    margin-bottom: 12px
+  }
+  .cardbank>li:last-child>ul>li:last-child {
+    margin-bottom: 0
+  }
+  .button {
+    position: relative;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    width: 209px;
+    top: 8;
+    margin: auto;
+    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+    transition: all .2s
+  }
+  .button:hover {
+    top: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    transition: all .2s
+  }
+  footer {
+    background: #302e2f;
+    color: hsla(0, 0%, 100%, .95)
+  }
+  .footer-header {
+    width: 100%;
+    height: 12px;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: a 6s ease infinite;
+    animation: a 6s ease infinite;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+  }
+  .footer-bottom {
+    padding: 10px;
+    background: rgba(0, 0, 0, .3)
+  }
+  .footer-bottom ul li {
+    margin-right: 25px
+  }
+  .footer-bottom ul li:last-child {
+    margin-right: 0
+  }
+  .footer-content {
+    padding: 10px;
+    padding-bottom: 0;
+    margin-bottom: 7px
+  }
+  .footer-content .content:first-child {
+    vertical-align: top;
+    margin-right: 32px;
+    margin-left: 14px;
+    margin-top: 3px
+  }
+  .footer-content .content:nth-child(2) {
+    min-width: 280px;
+    vertical-align: top;
+    margin-top: 17px;
+    position: relative;
+    left: 22%;
+    transform: translateX(-50%)
+  }
+  .footer-content .content:last-child {
+    vertical-align: top;
+    margin-top: 17px;
+    margin-right: 32px;
+    float: right
+  }
+  .footer-content .content .footer-logo .companylogo {
+    cursor: pointer;
+    width: 39px;
+    height: 68px;
+    background-position: 50%;
+    background-repeat: no-repeat
+  }
+  .footer-content .content .footer-logo span {
+    position: relative;
+    top: -25px
+  }
+  .footer-content .content ul li {
+    margin-bottom: 8px
+  }
+  .footer-content .content p:first-child {
+    margin-top: 0
+  }
 }
 
-@media only screen and (min-width: 550px) and (max-width:789px){
-/*Tiny*/
+@media only screen and (max-width:599px) {
+  /* Smart Phone & Smaller */
+  .inline {
+    display: inline-block
+  }
+  ul {
+    margin: 0;
+    padding: 0
+  }
+  header {
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+  }
+  a {
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    color: inherit
+  }
+  header>.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1064px;
+    padding-left: 15px;
+    position: relative
+  }
+  header>.wrapper>.upper:after {
+    position: absolute;
+    right: -41px;
+    top: -33px;
+    width: 35px;
+    height: 74px;
+    content: "";
+    background: #7b1fa2;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg)
+  }
+  header>.wrapper>.upper>.extra {
+    background: hsla(0, 0%, 100%, .15)
+  }
+  header>.wrapper>.upper>ul>li>.icon-sm {
+    opacity: .9
+  }
+  header>.wrapper>.upper>.extra>p {
+    margin: 8px 30px
+  }
+  header>.wrapper>.upper>.extra:before {
+    left: -26px;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg)
+  }
+  header>.wrapper>.upper>.extra:after, header>.wrapper>.upper>.extra:before {
+    position: absolute;
+    top: -33px;
+    width: 35px;
+    height: 74px;
+    content: "";
+    background: #8f40b0
+  }
+  header>.wrapper>.upper>.extra:after {
+    left: 265px;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg)
+  }
+  header>.wrapper>.upper>ul {
+    margin-left: 69px;
+    position: absolute;
+    top: 0;
+    height: 35px
+  }
+  header>.wrapper>.upper>ul>li:nth-child(1) {
+    margin-right: 34px
+  }
+  header>.wrapper>.upper>ul>li:nth-child(2) {
+    margin-right: 64px
+  }
+  header>.wrapper>.upper>ul>li>span {
+    position: relative;
+    top: -9px
+  }
+  header>.wrapper>.lower {
+    position: relative
+  }
+  header>.wrapper>.lower>.companylogo>.icon-md {
+    margin-top: 5px;
+    background-position: 50%;
+    background-size: contain;
+    height: 68px;
+    width: 39px;
+    cursor: pointer
+  }
+  header>.wrapper>.lower>.companylogo>.logo-title {
+    position: relative;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 0;
+    top: -8px;
+    cursor: pointer
+  }
+  header>.wrapper>.lower>ul {
+    position: absolute;
+    margin-left: 15%;
+    height: 100%
+  }
+  header>.wrapper>.lower>ul>li {
+    top: 50%;
+    margin-right: 15px;
+    position: relative;
+    height: 50%;
+    transition: all .2s;
+    border-bottom: 0 solid #13dc90
+  }
+  header>.wrapper>.lower>ul>li:hover {
+    cursor: pointer
+  }
+  header>.wrapper>.lower>ul>.active, header>.wrapper>.lower>ul>li:hover {
+    transition: all .2s;
+    border-bottom: 5px solid #13dc90
+  }
+
+  .fancy {
+    overflow: overlay;
+    display: table;
+    float: left;
+    margin-top: 1%;
+    margin-right: 3%;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: a 6s ease infinite;
+    animation: a 6s ease infinite
+  }
+  .fancy div {
+    mix-blend-mode: lighten;
+    background: #fff;
+    width: 100%
+  }
+  section .wrapper {
+    padding: 10px 25px;
+    position: relative;
+    width: 97%;
+    height: 100%;
+    margin: auto
+  }
+  section .wrapper.para {
+    width: 100%
+  }
+  section.xl {
+    height: 664px
+  }
+  section.lg {
+    height: 564px
+  }
+  section.med {
+    height: 420px
+  }
+  section.sm {
+    height: 364px
+  }
+  section.tiny {
+    height: 300px
+  }
+  section.micro {
+    height: 120px
+  }
+  .cover.para {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1
+  }
+  .statement-side {
+    width: 48%;
+    margin-top: 3%;
+    float: right
+  }
+  .innerleft {
+    padding-left: 6%
+  }
+  .upperleft {
+    margin-top: 1%;
+    margin-left: 1%
+  }
+  .bottomright {
+    margin: 0!important;
+    bottom: 32px!important;
+    right: 40px!important;
+    position: absolute!important;
+    top: auto!important
+  }
+  .bottomright.button:hover {
+    bottom: 37px!important
+  }
+  .heading {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px
+  }
+  .link {
+    position: relative;
+    top: 0;
+    border-bottom: 0 solid #477eff;
+    color: currentColor
+  }
+  .link, .link:hover {
+    cursor: pointer;
+    transition: all ease .2s
+  }
+  .link:hover {
+    top: -5px
+  }
+  .flexcards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    text-align: center;
+    margin-bottom: 7px
+  }
+  .flexcards>div {
+    margin-right: 16px;
+    margin-left: 16px;
+    padding: 6px;
+    border-radius: 2px;
+    padding-top: 15px;
+    border-top: 9px solid #639;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 300px;
+    height: 358px;
+    white-space: normal;
+    background: #fff
+  }
+  .flexcards>div, .flexcards>div:last-child>.card-header {
+    margin-bottom: 15px
+  }
+  .flexcards>div>.icon-lg {
+    margin: auto
+  }
+  .cardbank {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    white-space: normal
+  }
+  .cardbank>li {
+    margin-right: 32px
+  }
+  .cardbank>li, .cardbank>li:last-child {
+    padding: 6px;
+    border-radius: 2px;
+    padding-top: 15px;
+    border-top: 9px solid #639;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 300px;
+    height: 358px;
+    white-space: normal
+  }
+  .cardbank>li:last-child {
+    white-space: normal
+  }
+  .cardbank>li>.icon-lg {
+    margin: auto
+  }
+  .card-header {
+    height: 56px;
+    margin-bottom: 0
+  }
+  .card-subtext>li {
+    margin-bottom: 10px
+  }
+  .cardbank>li:last-child>card-header {
+    margin: 0;
+    margin-top: 17px;
+    margin-bottom: 12px
+  }
+  .cardbank>li:last-child>ul>li:last-child {
+    margin-bottom: 0
+  }
+  .button {
+    position: relative;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    width: 209px;
+    top: 8;
+    margin: auto;
+    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+    transition: all .2s
+  }
+  .button:hover {
+    top: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    transition: all .2s
+  }
+  footer {
+    background: #302e2f;
+    color: hsla(0, 0%, 100%, .95)
+  }
+  .footer-header {
+    width: 100%;
+    height: 12px;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: a 6s ease infinite;
+    animation: a 6s ease infinite;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+  }
+  .footer-bottom {
+    padding: 10px;
+    background: rgba(0, 0, 0, .3)
+  }
+  .footer-bottom ul li {
+    margin-right: 25px
+  }
+  .footer-bottom ul li:last-child {
+    margin-right: 0
+  }
+  .footer-content {
+    padding: 10px;
+    padding-bottom: 0;
+    margin-bottom: 7px
+  }
+  .footer-content .content:first-child {
+    vertical-align: top;
+    margin-right: 32px;
+    margin-left: 14px;
+    margin-top: 3px
+  }
+  .footer-content .content:nth-child(2) {
+    min-width: 280px;
+    vertical-align: top;
+    margin-top: 17px;
+    position: relative;
+    left: 22%;
+    transform: translateX(-50%)
+  }
+  .footer-content .content:last-child {
+    vertical-align: top;
+    margin-top: 17px;
+    margin-right: 32px;
+    float: right
+  }
+  .footer-content .content .footer-logo .companylogo {
+    cursor: pointer;
+    width: 39px;
+    height: 68px;
+    background-position: 50%;
+    background-repeat: no-repeat
+  }
+  .footer-content .content .footer-logo span {
+    position: relative;
+    top: -25px
+  }
+  .footer-content .content ul li {
+    margin-bottom: 8px
+  }
+  .footer-content .content p:first-child {
+    margin-top: 0
+  }
+}
+
+@-webkit-keyframes a {
+  0% {
+    background-position: 0 51%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  to {
+    background-position: 0 51%
+  }
+}
+@keyframes a {
+  0% {
+    background-position: 0 51%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  to {
+    background-position: 0 51%
+  }
 }
