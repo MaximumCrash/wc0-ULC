@@ -24,6 +24,9 @@ body {
   background-color: #fff;
   color: rgba(0, 0, 0, .8)
 }
+.txt-white {
+  color: white;
+}
 .col-break {
   background-color: #eceff1
 }
@@ -81,7 +84,9 @@ body {
 .icon-sm {
   height: 34px;
   width: 34px;
-  margin-right: 8px;
+  margin-right: 8px
+}
+.icon-md, .icon-sm {
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: contain
@@ -92,7 +97,10 @@ body {
 }
 .icon-lg {
   width: 100px;
-  height: 100px
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain
 }
 .inline {
   display: inline-block
@@ -221,7 +229,11 @@ section .wrapper {
   padding: 10px 25px;
   position: relative;
   width: 97%;
+  height: 100%;
   margin: auto
+}
+section .wrapper.para {
+  width: 100%
 }
 section.xl {
   height: 664px
@@ -230,26 +242,75 @@ section.lg {
   height: 564px
 }
 section.med {
-  height: 364px
+  height: 420px
 }
 section.sm {
-  height: 300px
+  height: 364px
 }
 section.tiny {
-  height: 250px
+  height: 300px
 }
 section.micro {
   height: 120px
+}
+.cover.para {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .4;
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index:-1;
 }
 .statement-side {
   width: 50%;
   margin-top: 3%;
   float: right
 }
+.innerleft {
+  padding-left: 6%
+}
+.upperleft {
+  margin-top:1%;
+  margin-left:1%;
+}
+.bottomright {
+  margin: 0 !important;
+  bottom: 32px !important;
+  right: 40px !important;
+  position: absolute !important;
+}
 .heading {
   text-align: center;
-  margin-top: 0;
+  margin-top: 15px;
   margin-bottom: 30px
+}
+.flexcards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center
+}
+.flexcards>div {
+  margin-right: 16px;
+  margin-left: 16px;
+  padding: 6px;
+  border-radius: 2px;
+  padding-top: 15px;
+  border-top: 9px solid #639;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  width: 300px;
+  height: 358px;
+  white-space: normal;
+  background: #fff
+}
+.flexcards>div, .flexcards>div:last-child>.card-header {
+  margin-bottom: 15px
+}
+.flexcards>div>.icon-lg {
+  margin: auto
 }
 .cardbank {
   text-align: center;
@@ -261,20 +322,15 @@ section.micro {
   margin-right: 32px
 }
 .cardbank>li, .cardbank>li:last-child {
-  padding: 6px; */
-      background: white;
-      border-radius: 2px;
-      /* padding-bottom: 50px; */
-      /* margin-right: 32px; */
-      padding-top: 15px;
-      border-top: 9px solid rebeccapurple;
-      /* border-bottom: 1px solid rebeccapurple; */
-      /* border: 1px solid rebeccapurple; */
-      border-top: 9px solid rebeccapurple;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-      width: 300px;
-      height: 358px;
-      white-space: normal;
+  padding: 6px;
+  */: #fff;
+  border-radius: 2px;
+  padding-top: 15px;
+  border-top: 9px solid #639;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  width: 300px;
+  height: 358px;
+  white-space: normal
 }
 .cardbank>li:last-child {
   white-space: normal
@@ -298,13 +354,26 @@ section.micro {
   margin-bottom: 0
 }
 .button {
-  position: absolute;
+  position: relative;
   padding: 12px;
-  padding-left: 32px;
-  padding-right: 32px;
-  left: 50%;
-  margin-top: 2%;
-  transform: translateX(-50%)
+  text-align: center;
+  cursor: pointer;
+  width: 209px;
+  margin-top: 0;
+  margin: auto;
+  transition: all .2s
+}
+.button:hover {
+  margin-top: -5px;
+  transition: all .2s
+}
+.footer-header {
+  width: 100%;
+  height: 12px;
+  background: #3a0f4d;
+  background: -webkit-linear-gradient(left, #3a0f4d, #7b1fa2 12%, #5564e5 26%, #5564e5 60%, #13dc90);
+  background: linear-gradient(90deg, #3a0f4d, #7b1fa2 12%, #5564e5 26%, #5564e5 60%, #13dc90);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#3a0f4d', endColorstr='#13dc90', GradientType=1)
 }
 @media only screen and (max-width:600px) {
   .hide-phone, .hideDown-phone {
