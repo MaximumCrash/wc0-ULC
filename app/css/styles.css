@@ -3,6 +3,9 @@ body {
   display: block;
   overflow-x: hidden
 }
+.parallax {
+  height:100%;
+}
 .col-prime {
   background-color: #7b1fa2;
   color: hsla(0, 0%, 100%, .95)
@@ -29,6 +32,12 @@ body {
 }
 .col-break {
   background-color: #e0e7eb
+}
+.footer-content .content ul li.link {
+  color:#039be5;
+}
+.footer-bottom ul li.link {
+  color:#039be5;
 }
 .f0a {
   font-weight: 400
@@ -130,7 +139,15 @@ body {
     background-position: 0 51%
   }
 }
+section {
+  position:relative;
+}
 @media only screen and (min-width:1764px) {
+  section  .wrapper.para {
+    width: 100%;
+    position:absolute;
+    top:0;
+  }
   header>.wrapper>.linktabs {
     display: none
   }
@@ -237,7 +254,9 @@ body {
     margin: auto
   }
   section .wrapper.para {
-    width: 100%
+    width: 100%;
+    position:absolute;
+    top:0;
   }
   section.xl {
     height: 664px
@@ -323,7 +342,7 @@ body {
     top: -5px
   }
   .flexcards {
-    display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     flex-direction: row;
@@ -332,6 +351,7 @@ body {
     -webkit-flex-direction: row;
     -webkit-flex-wrap: wrap;
     -webkit-justify-content: center;
+    -webkit-align-items: center;
     text-align: center;
     margin-bottom: 7px
   }
@@ -486,6 +506,22 @@ body {
   }
 }
 @media only screen and (min-width:1200px) and (max-width:1764px) {
+  section  .wrapper.para {
+    width: 100%;
+    position:absolute;
+    top:0;
+  }
+  .subtext>span {
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: all .2s
+  }
+  .subtext>span:hover {
+    top: -5px;
+    transition: all .2s
+  }
   header>.wrapper>.linktabs {
     display: none
   }
@@ -640,7 +676,7 @@ body {
     height: 564px
   }
   section.med, section.smtomed {
-    height: 420px
+    height: 480px
   }
   section.sm {
     height: 364px
@@ -702,7 +738,7 @@ body {
     top: -5px
   }
   .flexcards {
-    display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     flex-direction: row;
@@ -711,6 +747,7 @@ body {
     -webkit-flex-direction: row;
     -webkit-flex-wrap: wrap;
     -webkit-justify-content: center;
+    -webkit-align-items: center;
     text-align: center;
     margin-bottom: 7px
   }
@@ -856,6 +893,22 @@ body {
   }
 }
 @media only screen and (min-width:1094px) and (max-width:1199px) {
+  section  .wrapper.para {
+    width: 100%;
+    position:absolute;
+    top:0;
+  }
+  .subtext>span {
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: all .2s
+  }
+  .subtext>span:hover {
+    top: -5px;
+    transition: all .2s
+  }
   header>.wrapper>.linktabs {
     display: none
   }
@@ -967,7 +1020,11 @@ body {
     position: relative;
     height: 50%;
     transition: all .2s;
-    border-bottom: 0 solid #13dc90
+    border-bottom: 0 solid #13dc90;
+
+  }
+  header a{
+    color:currentColor;
   }
   header>.wrapper>.lower>ul>li:hover {
     cursor: pointer
@@ -999,8 +1056,10 @@ body {
     height: 100%;
     margin: auto
   }
-  section .wrapper.para {
-    width: 100%
+  section  .wrapper.para {
+    width: 100%;
+    position:absolute;
+    top:0;
   }
   section.xl {
     height: 664px
@@ -1071,7 +1130,7 @@ body {
     top: -5px
   }
   .flexcards {
-    display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     flex-direction: row;
@@ -1080,6 +1139,7 @@ body {
     -webkit-flex-direction: row;
     -webkit-flex-wrap: wrap;
     -webkit-justify-content: center;
+    -webkit-align-items: center;
     text-align: center;
     margin-bottom: 7px
   }
@@ -1226,6 +1286,22 @@ body {
   }
 }
 @media only screen and (min-width:993px) and (max-width:1093px) {
+  section  .wrapper.para {
+    width: 100%;
+    position:absolute;
+    top:0;
+  }
+  .subtext>span {
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: all .2s
+  }
+  .subtext>span:hover {
+    top: -5px;
+    transition: all .2s
+  }
   header>.wrapper>.linktabs {
     display: none
   }
@@ -1441,7 +1517,7 @@ body {
     top: -5px
   }
   .flexcards {
-    display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     flex-direction: row;
@@ -1450,6 +1526,7 @@ body {
     -webkit-flex-direction: row;
     -webkit-flex-wrap: wrap;
     -webkit-justify-content: center;
+    -webkit-align-items: center;
     text-align: center;
     margin-bottom: 7px
   }
@@ -1594,6 +1671,22 @@ body {
   }
 }
 @media only screen and (min-width:891px) and (max-width:992px) {
+  section  .wrapper.para {
+    width: 100%;
+    position:absolute;
+    top:0;
+  }
+  .subtext>span {
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: all .2s
+  }
+  .subtext>span:hover {
+    top: -5px;
+    transition: all .2s
+  }
   header>.wrapper>.linktabs {
     display: none
   }
@@ -1809,7 +1902,7 @@ body {
     top: -5px
   }
   .flexcards {
-    display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     flex-direction: row;
@@ -1818,6 +1911,7 @@ body {
     -webkit-flex-direction: row;
     -webkit-flex-wrap: wrap;
     -webkit-justify-content: center;
+    -webkit-align-items: center;
     text-align: center;
     margin-bottom: 7px
   }
@@ -1885,7 +1979,7 @@ body {
     padding: 12px;
     text-align: center;
     cursor: pointer;
-    width: 209px;
+    width: 185px;
     top: -20px;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
@@ -1944,7 +2038,7 @@ body {
     margin-top: 17px;
     margin-right: 32px;
     float: right;
-    width: 190px
+    width: 165px
   }
   .footer-content .content .footer-logo .companylogo {
     cursor: pointer;
@@ -1965,6 +2059,22 @@ body {
   }
 }
 @media only screen and (max-width:890px) and (min-width:601px) {
+  section  .wrapper.para {
+    width: 100%;
+    position:absolute;
+    top:0;
+  }
+  .subtext>span {
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: all .2s
+  }
+  .subtext>span:hover {
+    top: -5px;
+    transition: all .2s
+  }
   .inline {
     display: inline-block
   }
@@ -2173,7 +2283,7 @@ body {
     top: -5px
   }
   .flexcards {
-    display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     flex-direction: column;
@@ -2182,6 +2292,7 @@ body {
     -webkit-flex-direction: column;
     -webkit-flex-wrap: wrap;
     -webkit-justify-content: center;
+    -webkit-align-items: center;
     text-align: center;
     align-items: center
   }
@@ -2303,6 +2414,22 @@ body {
   }
 }
 @media only screen and (max-width:600px) {
+  section  .wrapper.para {
+    width: 100%;
+    position:absolute;
+    top:0;
+  }
+  .subtext>span {
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: all .2s
+  }
+  .subtext>span:hover {
+    top: -5px;
+    transition: all .2s
+  }
   .inline {
     display: inline-block
   }
@@ -2430,10 +2557,10 @@ body {
     font-size: 1.5rem
   }
   .f-BigtoXl {
-    font-size: 3.2rem
+    font-size: 3rem
   }
   .f-smalltolarge {
-    font-size: 2rem
+    font-size: 1.7rem
   }
   .f-microtosmall {
     font-size: 1.25rem
@@ -2451,7 +2578,7 @@ body {
     height: 420px
   }
   section.sm {
-    height: 830px
+    height: 800px
   }
   section.tiny {
     height: 300px
@@ -2513,7 +2640,7 @@ body {
     top: -5px
   }
   .flexcards {
-    display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     flex-direction: column;
@@ -2522,6 +2649,7 @@ body {
     -webkit-flex-direction: column;
     -webkit-flex-wrap: wrap;
     -webkit-justify-content: center;
+    -webkit-align-items: center;
     text-align: center;
     align-items: center
   }
