@@ -19,12 +19,13 @@ gulp.task('sass', function() {
   }))
 });
 
-gulp.task('css', function() {
-  return gulp.src('app/css/**/*.css')
-  .pipe(cssnano())
-  .pipe(gulp.dest('app/css'))
 
-})
+//gulp.task('css', function() {
+//  return gulp.src('app/css/**/*.css')
+//  .pipe(cssnano())
+//  .pipe(gulp.dest('app/css'))
+
+//})
 
 gulp.task('images', function() {
   return gulp.src('app/images/**/*.+(png|jpg|gif|svg)')
@@ -72,10 +73,10 @@ gulp.task('watch', ['css', 'browserSync'],function() {
 
 gulp.task('chew', function(callback) {
   console.log("Deleting Distro")
-  runSequence('clean:dist',['css','useref','images','fonts'], callback)
+  runSequence('clean:dist',['useref','images','fonts'], callback)
 });
 
 gulp.task('default', function(callback) {
-  runSequence('chew',['css','browserSync','watch'],
+  runSequence('chew',['browserSync','watch'],
   callback
 )});
