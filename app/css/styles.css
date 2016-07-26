@@ -51,26 +51,32 @@ body {
 .f1c {
   font-weight: 700
 }
-.f-micro {
+.f-micro, .f-microtosmall {
   font-size: 1rem
 }
 .f-tiny {
   font-size: 1.1rem
 }
-.f-small {
+.f-small, .f-smalltomedium {
   font-size: 1.25rem
 }
 .f-medium {
   font-size: 1.5rem
 }
+.f-smalltolarge {
+  font-size: 1.25rem
+}
 .f-large {
   font-size: 2rem
 }
-.f-xl {
+.f-BigtoXl, .f-xl {
   font-size: 2.64rem
 }
 .f-Xxl {
   font-size: 3.5rem
+}
+.f-XXXL {
+  font-size: 4.4rem
 }
 .txtcenter {
   text-align: center
@@ -102,374 +108,389 @@ body {
   background-position: 50%;
   background-size: contain
 }
-.inline {
-  display: inline-block
+@-webkit-keyframes GradAnim {
+  0% {
+    background-position: 0 51%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  to {
+    background-position: 0 51%
+  }
 }
-ul {
-  margin: 0;
-  padding: 0
+@keyframes GradAnim {
+  0% {
+    background-position: 0 51%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  to {
+    background-position: 0 51%
+  }
 }
-header {
-  width: 100%;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
-}
-a {
-  text-decoration: none;
-  position: relative;
-  top: 0;
-  color: inherit
-}
-header>.wrapper {
-  margin-right: auto;
-  margin-left: auto;
-  width: 1064px;
-  padding-left: 15px;
-  position: relative
-}
-header>.wrapper>.upper:after {
-  position: absolute;
-  right: -41px;
-  top: -33px;
-  width: 35px;
-  height: 74px;
-  content: "";
-  background: #7b1fa2;
-  -webkit-transform: rotate(60deg);
-  transform: rotate(60deg)
-}
-header>.wrapper>.upper>.extra {
-  background: hsla(0, 0%, 100%, .15)
-}
-header>.wrapper>.upper>ul>li>.icon-sm {
-  opacity: .9
-}
-header>.wrapper>.upper>.extra>p {
-  margin: 8px 30px
-}
-header>.wrapper>.upper>.extra:before {
-  left: -26px;
-  -webkit-transform: rotate(-60deg);
-  transform: rotate(-60deg)
-}
-header>.wrapper>.upper>.extra:after, header>.wrapper>.upper>.extra:before {
-  position: absolute;
-  top: -33px;
-  width: 35px;
-  height: 74px;
-  content: "";
-  background: #8f40b0
-}
-header>.wrapper>.upper>.extra:after {
-  left: 265px;
-  -webkit-transform: rotate(60deg);
-  transform: rotate(60deg)
-}
-header>.wrapper>.upper>ul {
-  margin-left: 69px;
-  position: absolute;
-  top: 0;
-  height: 35px
-}
-header>.wrapper>.upper>ul>li:nth-child(1) {
-  margin-right: 34px
-}
-header>.wrapper>.upper>ul>li:nth-child(2) {
-  margin-right: 64px
-}
-header>.wrapper>.upper>ul>li>span {
-  position: relative;
-  top: -9px
-}
-header>.wrapper>.lower {
-  position: relative
-}
-header>.wrapper>.lower>.companylogo>.icon-md {
-  margin-top: 5px;
-  background-position: 50%;
-  background-size: contain;
-  height: 68px;
-  width: 39px;
-  cursor: pointer
-}
-header>.wrapper>.lower>.companylogo>.logo-title {
-  position: relative;
-  text-align: center;
-  margin-top: 8px;
-  margin-bottom: 0;
-  top: -8px;
-  cursor: pointer
-}
-header>.wrapper>.lower>ul {
-  position: absolute;
-  margin-left: 15%;
-  height: 100%
-}
-header>.wrapper>.lower>ul>li {
-  top: 50%;
-  margin-right: 15px;
-  position: relative;
-  height: 50%;
-  transition: all .2s;
-  border-bottom: 0 solid #13dc90
-}
-header>.wrapper>.lower>ul>li:hover {
-  cursor: pointer
-}
-header>.wrapper>.lower>ul>.active, header>.wrapper>.lower>ul>li:hover {
-  transition: all .2s;
-  border-bottom: 5px solid #13dc90
-}
+@media only screen and (min-width:1764px) {
+  header>.wrapper>.linktabs {
+    display: none
+  }
+  .inline {
+    display: inline-block
+  }
+  ul {
+    margin: 0;
+    padding: 0
+  }
+  header {
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0
+  }
+  a {
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    color: inherit
+  }
+  header>.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    padding-top: 7px;
+    position: relative
+  }
+  header>.wrapper>.upper {
+    display: none
+  }
+  header>.wrapper>.lower {
+    position: relative;
+    background: rgba(0,0,0,0);
+    color:white;
+  }
+  header>.wrapper>.lower>.companylogo {
+    margin-left: 5%
+  }
+  header>.wrapper>.lower>.companylogo>.icon-md {
+    margin-top: 5px;
+    background-position: 50%;
+    background-size: contain;
+    height: 68px;
+    width: 39px;
+    cursor: pointer
+  }
+  header>.wrapper>.lower>.companylogo>.logo-title {
+    position: relative;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 0;
+    top: -8px;
+    cursor: pointer
+  }
+  header>.wrapper>.lower>ul {
+    position: absolute;
+    margin-left: 39%;
+    height: 64%
+  }
+  header>.wrapper>.lower>ul>li {
+    top: 50%;
+    margin-right: 15px;
+    position: relative;
+    height: 70%;
+    transition: all .2s;
+    border-bottom: 0 solid #13dc90
+  }
+  header>.wrapper>.lower>ul>li:hover {
+    cursor: pointer
+  }
+  header>.wrapper>.lower>ul>.active, header>.wrapper>.lower>ul>li:hover {
+    transition: all .2s;
+    border-bottom: 5px solid #13dc90
+  }
+  .fancy {
+    overflow: overlay;
+    display: table;
+    float: left;
+    margin-top: 1%;
+    margin-right: 3%;
+    margin-left: 4%;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite
+  }
+  .fancy div {
+    mix-blend-mode: lighten;
+    background: #fff;
+    width: 100%
+  }
+  .f-Xxl {
+    font-size: 5rem
+  }
+  section .wrapper {
+    padding: 10px 25px;
+    position: relative;
+    width: 97%;
+    height: 100%;
+    margin: auto
+  }
+  section .wrapper.para {
+    width: 100%
+  }
+  section.xl {
+    height: 664px
+  }
+  section.lg {
+    height: 700px
+  }
+  section.med {
+    height: 500px
+  }
+  section.smtomed {
+    height: 847px
+  }
+  section.sm {
+    height: 420px
+  }
+  section.tiny {
+    height: 300px
+  }
+  section.micro {
+    height: 120px
+  }
+  .cover.para {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1
+  }
+  .statement-side {
+    width: 48%;
+    margin-top: 3%;
+    float: right
+  }
+  .innerleft {
+    padding-left: 9%
+  }
+  .subtext>span {
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: all .2s;
 
-.fancy {
-  overflow: overlay;
-  display: table;
-  float: left;
-  margin-top: 1%;
-  margin-right: 3%;
-  background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
-  background-size: 300% 300%;
-  -webkit-animation: a 6s ease infinite;
-  animation: a 6s ease infinite
-}
-.fancy div {
-  mix-blend-mode: lighten;
-  background: #fff;
-  width: 100%
-}
-section .wrapper {
-  padding: 10px 25px;
-  position: relative;
-  width: 97%;
-  height: 100%;
-  margin: auto
-}
-section .wrapper.para {
-  width: 100%
-}
-section.xl {
-  height: 664px
-}
-section.lg {
-  height: 564px
-}
-section.med {
-  height: 420px
-}
-section.sm {
-  height: 364px
-}
-section.tiny {
-  height: 300px
-}
-section.micro {
-  height: 120px
-}
-.cover.para {
-  width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: .4;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: -1
-}
-.statement-side {
-  width: 48%;
-  margin-top: 3%;
-  float: right
-}
-.innerleft {
-  padding-left: 6%
-}
-.upperleft {
-  margin-top: 1%;
-  margin-left: 1%
-}
-.bottomright {
-  margin: 0!important;
-  bottom: 32px!important;
-  right: 40px!important;
-  position: absolute!important;
-  top: auto!important
-}
-.bottomright.button:hover {
-  bottom: 37px!important
-}
-.heading {
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 20px
-}
-.link {
-  position: relative;
-  top: 0;
-  border-bottom: 0 solid #477eff;
-  color: currentColor
-}
-.link, .link:hover {
-  cursor: pointer;
-  transition: all ease .2s
-}
-.link:hover {
-  top: -5px
-}
-.flexcards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -webkit-justify-content: center;
-  text-align: center;
-  margin-bottom: 7px
-}
-.flexcards>div {
-  margin-right: 16px;
-  margin-left: 16px;
-  padding: 6px;
-  border-radius: 2px;
-  padding-top: 15px;
-  border-top: 9px solid #639;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-  width: 300px;
-  height: 358px;
-  white-space: normal;
-  background: #fff
-}
-.flexcards>div, .flexcards>div:last-child>.card-header {
-  margin-bottom: 15px
-}
-.flexcards>div>.icon-lg {
-  margin: auto
-}
-.cardbank {
-  text-align: center;
-  width: 100%;
-  position: relative;
-  white-space: normal
-}
-.cardbank>li {
-  margin-right: 32px
-}
-.cardbank>li, .cardbank>li:last-child {
-  padding: 6px;
-  border-radius: 2px;
-  padding-top: 15px;
-  border-top: 9px solid #639;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-  width: 300px;
-  height: 358px;
-  white-space: normal
-}
-.cardbank>li:last-child {
-  white-space: normal
-}
-.cardbank>li>.icon-lg {
-  margin: auto
-}
-.card-header {
-  height: 56px;
-  margin-bottom: 0
-}
-.card-subtext>li {
-  margin-bottom: 10px
-}
-.cardbank>li:last-child>card-header {
-  margin: 0;
-  margin-top: 17px;
-  margin-bottom: 12px
-}
-.cardbank>li:last-child>ul>li:last-child {
-  margin-bottom: 0
-}
-.button {
-  position: relative;
-  padding: 12px;
-  text-align: center;
-  cursor: pointer;
-  width: 209px;
-  top: 8;
-  margin: auto;
-  box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-  transition: all .2s
-}
-.button:hover {
-  top: 3px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-  transition: all .2s
-}
-footer {
-  background: #302e2f;
-  color: hsla(0, 0%, 100%, .95)
-}
-.footer-header {
-  width: 100%;
-  height: 12px;
-  background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
-  background-size: 300% 300%;
-  -webkit-animation: a 6s ease infinite;
-  animation: a 6s ease infinite;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
-}
-.footer-bottom {
-  padding: 10px;
-  background: rgba(0, 0, 0, .3)
-}
-.footer-bottom ul li {
-  margin-right: 25px
-}
-.footer-bottom ul li:last-child {
-  margin-right: 0
-}
-.footer-content {
-  padding: 10px;
-  padding-bottom: 0;
-  margin-bottom: 7px
-}
-.footer-content .content:first-child {
-  vertical-align: top;
-  margin-right: 32px;
-  margin-left: 14px;
-  margin-top: 3px
-}
-.footer-content .content:nth-child(2) {
-  min-width: 280px;
-  vertical-align: top;
-  margin-top: 17px;
-  position: relative;
-  left: 22%;
-  transform: translateX(-50%)
-}
-.footer-content .content:last-child {
-  vertical-align: top;
-  margin-top: 17px;
-  margin-right: 32px;
-  float: right
-}
-.footer-content .content .footer-logo .companylogo {
-  cursor: pointer;
-  width: 39px;
-  height: 68px;
-  background-position: 50%;
-  background-repeat: no-repeat
-}
-.footer-content .content .footer-logo span {
-  position: relative;
-  top: -25px
-}
-.footer-content .content ul li {
-  margin-bottom: 8px
-}
-.footer-content .content p:first-child {
-  margin-top: 0
-}
+  }
+  .subtext >span:hover {
+    top: -5px;
 
-@media only screen and (min-width:2560px) {
-  /* 4K */
+    transition: all .2s;
+  }
+  .upperleft {
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-bottom: 1%
+  }
+  .bottomright {
+    margin: 0!important;
+    bottom: 32px!important;
+    right: 40px!important;
+    position: absolute!important;
+    top: auto!important
+  }
+  .bottomright.button:hover {
+    bottom: 37px!important
+  }
+  .heading {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 50px
+  }
+  .link {
+    position: relative;
+    top: 0;
+    border-bottom: 0 solid #477eff;
+    color: currentColor
+  }
+  .link, .link:hover {
+    cursor: pointer;
+    transition: all ease .2s
+  }
+  .link:hover {
+    top: -5px
+  }
+  .flexcards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    text-align: center;
+    margin-bottom: 7px
+  }
+  .flexcards>div {
+    margin-right: 16px;
+    margin-left: 16px;
+    padding: 6px;
+    border-radius: 2px;
+    padding-top: 15px;
+    border-top: 9px solid #639;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 362px;
+    height: 420px;
+    white-space: normal;
+    background: #fff
+  }
+  .f-smalltolarge {
+    font-size: 1.5rem
+  }
+  .f-microtosmall {
+    font-size: 1.2rem
+  }
+  .flexcards>div {
+    margin-bottom: 15px
+  }
+  .flexcards>div:last-child>.card-header {
+    margin-bottom: 25px
+  }
+  .flexcards>div>.icon-lg {
+    margin: auto
+  }
+  .cardbank {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    white-space: normal
+  }
+  .cardbank>li {
+    margin-right: 32px
+  }
+  .cardbank>li, .cardbank>li:last-child {
+    padding: 6px;
+    border-radius: 2px;
+    padding-top: 15px;
+    border-top: 9px solid #639;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 300px;
+    height: 358px;
+    white-space: normal
+  }
+  .cardbank>li:last-child {
+    white-space: normal
+  }
+  .cardbank>li>.icon-lg {
+    margin: auto
+  }
+  .card-header {
+    height: 56px;
+    margin-bottom: 0
+  }
+  .card-subtext>li {
+    margin-bottom: 10px
+  }
+  .cardbank>li:last-child>card-header {
+    margin: 0;
+    margin-top: 17px;
+    margin-bottom: 12px
+  }
+  .cardbank>li:last-child>ul>li:last-child {
+    margin-bottom: 0
+  }
+  .button {
+    position: relative;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    width: 209px;
+    top: 8;
+    margin: auto;
+    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+    transition: all .2s
+  }
+  .button:hover {
+    top: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    transition: all .2s
+  }
+  footer {
+    background: #302e2f;
+    color: hsla(0, 0%, 100%, .95)
+  }
+  .footer-header {
+    width: 100%;
+    height: 12px;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+  }
+  .footer-bottom {
+    padding: 10px;
+    background: rgba(0, 0, 0, .3)
+  }
+  .footer-bottom ul li {
+    margin-right: 25px
+  }
+  .footer-bottom ul li:last-child {
+    margin-right: 0
+  }
+  .footer-content {
+    padding: 10px;
+    padding-bottom: 0;
+    margin-bottom: 7px
+  }
+  .footer-content .content:first-child {
+    vertical-align: top;
+    margin-right: 32px;
+    margin-left: 14px;
+    margin-top: 3px
+  }
+  .footer-content .content:nth-child(2) {
+    min-width: 280px;
+    vertical-align: top;
+    margin-top: 17px;
+    position: relative;
+    left: 25%;
+    transform: translateX(-50%)
+  }
+  .footer-content .content:last-child {
+    vertical-align: top;
+    margin-top: 17px;
+    margin-right: 32px;
+    float: right
+  }
+  .footer-content .content .footer-logo .companylogo {
+    cursor: pointer;
+    width: 39px;
+    height: 68px;
+    background-position: 50%;
+    background-repeat: no-repeat
+  }
+  .footer-content .content .footer-logo span {
+    position: relative;
+    top: -25px
+  }
+  .footer-content .content ul li {
+    margin-bottom: 8px
+  }
+  .footer-content .content p:first-child {
+    margin-top: 0
+  }
+}
+@media only screen and (min-width:1200px) and (max-width:1764px) {
+  header>.wrapper>.linktabs {
+    display: none
+  }
   .inline {
     display: inline-block
   }
@@ -587,7 +608,6 @@ footer {
     transition: all .2s;
     border-bottom: 5px solid #13dc90
   }
-
   .fancy {
     overflow: overlay;
     display: table;
@@ -596,8 +616,9 @@ footer {
     margin-right: 3%;
     background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
     background-size: 300% 300%;
-    -webkit-animation: a 6s ease infinite;
-    animation: a 6s ease infinite
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite;
+        margin-left: 4%;
   }
   .fancy div {
     mix-blend-mode: lighten;
@@ -620,7 +641,7 @@ footer {
   section.lg {
     height: 564px
   }
-  section.med {
+  section.med, section.smtomed {
     height: 420px
   }
   section.sm {
@@ -779,378 +800,8 @@ footer {
     height: 12px;
     background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
     background-size: 300% 300%;
-    -webkit-animation: a 6s ease infinite;
-    animation: a 6s ease infinite;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
-  }
-  .footer-bottom {
-    padding: 10px;
-    background: rgba(0, 0, 0, .3)
-  }
-  .footer-bottom ul li {
-    margin-right: 25px
-  }
-  .footer-bottom ul li:last-child {
-    margin-right: 0
-  }
-  .footer-content {
-    padding: 10px;
-    padding-bottom: 0;
-    margin-bottom: 7px
-  }
-  .footer-content .content:first-child {
-    vertical-align: top;
-    margin-right: 32px;
-    margin-left: 14px;
-    margin-top: 3px
-  }
-  .footer-content .content:nth-child(2) {
-    min-width: 280px;
-    vertical-align: top;
-    margin-top: 17px;
-    position: relative;
-    left: 22%;
-    transform: translateX(-50%)
-  }
-  .footer-content .content:last-child {
-    vertical-align: top;
-    margin-top: 17px;
-    margin-right: 32px;
-    float: right
-  }
-  .footer-content .content .footer-logo .companylogo {
-    cursor: pointer;
-    width: 39px;
-    height: 68px;
-    background-position: 50%;
-    background-repeat: no-repeat
-  }
-  .footer-content .content .footer-logo span {
-    position: relative;
-    top: -25px
-  }
-  .footer-content .content ul li {
-    margin-bottom: 8px
-  }
-  .footer-content .content p:first-child {
-    margin-top: 0
-  }
-
-}
-@media only screen and (min-width:1200px)  and (max-width:2559px){
-  /* Large Laptop */
-
-  .inline {
-    display: inline-block
-  }
-  ul {
-    margin: 0;
-    padding: 0
-  }
-  header {
-    width: 100%;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
-  }
-  a {
-    text-decoration: none;
-    position: relative;
-    top: 0;
-    color: inherit
-  }
-  header>.wrapper {
-    margin-right: auto;
-    margin-left: auto;
-    width: 1064px;
-    padding-left: 15px;
-    position: relative
-  }
-  header>.wrapper>.upper:after {
-    position: absolute;
-    right: -41px;
-    top: -33px;
-    width: 35px;
-    height: 74px;
-    content: "";
-    background: #7b1fa2;
-    -webkit-transform: rotate(60deg);
-    transform: rotate(60deg)
-  }
-  header>.wrapper>.upper>.extra {
-    background: hsla(0, 0%, 100%, .15)
-  }
-  header>.wrapper>.upper>ul>li>.icon-sm {
-    opacity: .9
-  }
-  header>.wrapper>.upper>.extra>p {
-    margin: 8px 30px
-  }
-  header>.wrapper>.upper>.extra:before {
-    left: -26px;
-    -webkit-transform: rotate(-60deg);
-    transform: rotate(-60deg)
-  }
-  header>.wrapper>.upper>.extra:after, header>.wrapper>.upper>.extra:before {
-    position: absolute;
-    top: -33px;
-    width: 35px;
-    height: 74px;
-    content: "";
-    background: #8f40b0
-  }
-  header>.wrapper>.upper>.extra:after {
-    left: 265px;
-    -webkit-transform: rotate(60deg);
-    transform: rotate(60deg)
-  }
-  header>.wrapper>.upper>ul {
-    margin-left: 69px;
-    position: absolute;
-    top: 0;
-    height: 35px
-  }
-  header>.wrapper>.upper>ul>li:nth-child(1) {
-    margin-right: 34px
-  }
-  header>.wrapper>.upper>ul>li:nth-child(2) {
-    margin-right: 64px
-  }
-  header>.wrapper>.upper>ul>li>span {
-    position: relative;
-    top: -9px
-  }
-  header>.wrapper>.lower {
-    position: relative
-  }
-  header>.wrapper>.lower>.companylogo>.icon-md {
-    margin-top: 5px;
-    background-position: 50%;
-    background-size: contain;
-    height: 68px;
-    width: 39px;
-    cursor: pointer
-  }
-  header>.wrapper>.lower>.companylogo>.logo-title {
-    position: relative;
-    text-align: center;
-    margin-top: 8px;
-    margin-bottom: 0;
-    top: -8px;
-    cursor: pointer
-  }
-  header>.wrapper>.lower>ul {
-    position: absolute;
-    margin-left: 15%;
-    height: 100%
-  }
-  header>.wrapper>.lower>ul>li {
-    top: 50%;
-    margin-right: 15px;
-    position: relative;
-    height: 50%;
-    transition: all .2s;
-    border-bottom: 0 solid #13dc90
-  }
-  header>.wrapper>.lower>ul>li:hover {
-    cursor: pointer
-  }
-  header>.wrapper>.lower>ul>.active, header>.wrapper>.lower>ul>li:hover {
-    transition: all .2s;
-    border-bottom: 5px solid #13dc90
-  }
-
-  .fancy {
-    overflow: overlay;
-    display: table;
-    float: left;
-    margin-top: 1%;
-    margin-right: 3%;
-    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
-    background-size: 300% 300%;
-    -webkit-animation: a 6s ease infinite;
-    animation: a 6s ease infinite
-  }
-  .fancy div {
-    mix-blend-mode: lighten;
-    background: #fff;
-    width: 100%
-  }
-  section .wrapper {
-    padding: 10px 25px;
-    position: relative;
-    width: 97%;
-    height: 100%;
-    margin: auto
-  }
-  section .wrapper.para {
-    width: 100%
-  }
-  section.xl {
-    height: 664px
-  }
-  section.lg {
-    height: 564px
-  }
-  section.med {
-    height: 420px
-  }
-  section.sm {
-    height: 364px
-  }
-  section.tiny {
-    height: 300px
-  }
-  section.micro {
-    height: 120px
-  }
-  .cover.para {
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: .4;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: -1
-  }
-  .statement-side {
-    width: 48%;
-    margin-top: 3%;
-    float: right
-  }
-  .innerleft {
-    padding-left: 6%
-  }
-  .upperleft {
-    margin-top: 1%;
-    margin-left: 1%
-  }
-  .bottomright {
-    margin: 0!important;
-    bottom: 32px!important;
-    right: 40px!important;
-    position: absolute!important;
-    top: auto!important
-  }
-  .bottomright.button:hover {
-    bottom: 37px!important
-  }
-  .heading {
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 20px
-  }
-  .link {
-    position: relative;
-    top: 0;
-    border-bottom: 0 solid #477eff;
-    color: currentColor
-  }
-  .link, .link:hover {
-    cursor: pointer;
-    transition: all ease .2s
-  }
-  .link:hover {
-    top: -5px
-  }
-  .flexcards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    -webkit-flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -webkit-justify-content: center;
-    text-align: center;
-    margin-bottom: 7px
-  }
-  .flexcards>div {
-    margin-right: 16px;
-    margin-left: 16px;
-    padding: 6px;
-    border-radius: 2px;
-    padding-top: 15px;
-    border-top: 9px solid #639;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-    width: 300px;
-    height: 358px;
-    white-space: normal;
-    background: #fff
-  }
-  .flexcards>div, .flexcards>div:last-child>.card-header {
-    margin-bottom: 15px
-  }
-  .flexcards>div>.icon-lg {
-    margin: auto
-  }
-  .cardbank {
-    text-align: center;
-    width: 100%;
-    position: relative;
-    white-space: normal
-  }
-  .cardbank>li {
-    margin-right: 32px
-  }
-  .cardbank>li, .cardbank>li:last-child {
-    padding: 6px;
-    border-radius: 2px;
-    padding-top: 15px;
-    border-top: 9px solid #639;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-    width: 300px;
-    height: 358px;
-    white-space: normal
-  }
-  .cardbank>li:last-child {
-    white-space: normal
-  }
-  .cardbank>li>.icon-lg {
-    margin: auto
-  }
-  .card-header {
-    height: 56px;
-    margin-bottom: 0
-  }
-  .card-subtext>li {
-    margin-bottom: 10px
-  }
-  .cardbank>li:last-child>card-header {
-    margin: 0;
-    margin-top: 17px;
-    margin-bottom: 12px
-  }
-  .cardbank>li:last-child>ul>li:last-child {
-    margin-bottom: 0
-  }
-  .button {
-    position: relative;
-    padding: 12px;
-    text-align: center;
-    cursor: pointer;
-    width: 209px;
-    top: 8;
-    margin: auto;
-    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-    transition: all .2s
-  }
-  .button:hover {
-    top: 3px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-    transition: all .2s
-  }
-  footer {
-    background: #302e2f;
-    color: hsla(0, 0%, 100%, .95)
-  }
-  .footer-header {
-    width: 100%;
-    height: 12px;
-    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
-    background-size: 300% 300%;
-    -webkit-animation: a 6s ease infinite;
-    animation: a 6s ease infinite;
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
   }
   .footer-bottom {
@@ -1206,9 +857,10 @@ footer {
     margin-top: 0
   }
 }
-
 @media only screen and (min-width:1094px) and (max-width:1199px) {
-  /* Regular Laptop */
+  header>.wrapper>.linktabs {
+    display: none
+  }
   .inline {
     display: inline-block
   }
@@ -1267,7 +919,7 @@ footer {
     background: #8f40b0
   }
   header>.wrapper>.upper>.extra:after {
-    left: 265px;
+    left: 260px;
     -webkit-transform: rotate(60deg);
     transform: rotate(60deg)
   }
@@ -1326,7 +978,6 @@ footer {
     transition: all .2s;
     border-bottom: 5px solid #13dc90
   }
-
   .fancy {
     overflow: overlay;
     display: table;
@@ -1335,8 +986,8 @@ footer {
     margin-right: 3%;
     background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
     background-size: 300% 300%;
-    -webkit-animation: a 6s ease infinite;
-    animation: a 6s ease infinite
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite
   }
   .fancy div {
     mix-blend-mode: lighten;
@@ -1359,7 +1010,7 @@ footer {
   section.lg {
     height: 564px
   }
-  section.med {
+  section.med, section.smtomed {
     height: 420px
   }
   section.sm {
@@ -1518,8 +1169,8 @@ footer {
     height: 12px;
     background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
     background-size: 300% 300%;
-    -webkit-animation: a 6s ease infinite;
-    animation: a 6s ease infinite;
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
   }
   .footer-bottom {
@@ -1555,7 +1206,8 @@ footer {
     vertical-align: top;
     margin-top: 17px;
     margin-right: 32px;
-    float: right
+    float: right;
+    width: 280px
   }
   .footer-content .content .footer-logo .companylogo {
     cursor: pointer;
@@ -1575,9 +1227,10 @@ footer {
     margin-top: 0
   }
 }
-
 @media only screen and (min-width:993px) and (max-width:1093px) {
-  /*Small Laptop & Big Tablet */
+  header>.wrapper>.linktabs {
+    display: none
+  }
   .inline {
     display: inline-block
   }
@@ -1620,37 +1273,37 @@ footer {
     opacity: .9
   }
   header>.wrapper>.upper>.extra>p {
-    margin: 8px 30px
+    margin: 8px 9px
   }
   header>.wrapper>.upper>.extra:before {
-    left: -26px;
+    left: -19px;
     -webkit-transform: rotate(-60deg);
-    transform: rotate(-60deg)
+    transform: rotate(0deg)
   }
   header>.wrapper>.upper>.extra:after, header>.wrapper>.upper>.extra:before {
     position: absolute;
-    top: -33px;
+    top: -31px;
     width: 35px;
-    height: 74px;
+    height: 68px;
     content: "";
     background: #8f40b0
   }
   header>.wrapper>.upper>.extra:after {
-    left: 259px;
+    left: 215px;
     -webkit-transform: rotate(60deg);
     transform: rotate(60deg)
   }
   header>.wrapper>.upper>ul {
-    margin-left: 69px;
+    margin-left: 58px;
     position: absolute;
     top: 0;
     height: 35px
   }
   header>.wrapper>.upper>ul>li:nth-child(1) {
-    margin-right: 34px
+    margin-right: 17px
   }
   header>.wrapper>.upper>ul>li:nth-child(2) {
-    margin-right: 64px
+    margin-right: 34px
   }
   header>.wrapper>.upper>ul>li>span {
     position: relative;
@@ -1695,7 +1348,6 @@ footer {
     transition: all .2s;
     border-bottom: 5px solid #13dc90
   }
-
   .fancy {
     overflow: overlay;
     display: table;
@@ -1704,8 +1356,8 @@ footer {
     margin-right: 3%;
     background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
     background-size: 300% 300%;
-    -webkit-animation: a 6s ease infinite;
-    animation: a 6s ease infinite
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite
   }
   .fancy div {
     mix-blend-mode: lighten;
@@ -1728,7 +1380,7 @@ footer {
   section.lg {
     height: 564px
   }
-  section.med {
+  section.med, section.smtomed {
     height: 420px
   }
   section.sm {
@@ -1887,8 +1539,8 @@ footer {
     height: 12px;
     background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
     background-size: 300% 300%;
-    -webkit-animation: a 6s ease infinite;
-    animation: a 6s ease infinite;
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
   }
   .footer-bottom {
@@ -1916,14 +1568,14 @@ footer {
     min-width: 280px;
     vertical-align: top;
     margin-top: 17px;
-    position: relative;
+    position: relative
   }
   .footer-content .content:last-child {
     vertical-align: top;
     margin-top: 17px;
     margin-right: 32px;
     float: right;
-    width:280px;
+    width: 280px
   }
   .footer-content .content .footer-logo .companylogo {
     cursor: pointer;
@@ -1943,9 +1595,10 @@ footer {
     margin-top: 0
   }
 }
-
-@media only screen and (min-width:600px) and (max-width:992px) {
-  /*Regular Tablet*/
+@media only screen and (min-width:891px) and (max-width:992px) {
+  header>.wrapper>.linktabs {
+    display: none
+  }
   .inline {
     display: inline-block
   }
@@ -1988,7 +1641,7 @@ footer {
     opacity: .9
   }
   header>.wrapper>.upper>.extra>p {
-    margin: 8px 30px
+    margin: 8px 9px
   }
   header>.wrapper>.upper>.extra:before {
     left: -19px;
@@ -2004,21 +1657,21 @@ footer {
     background: #8f40b0
   }
   header>.wrapper>.upper>.extra:after {
-    left: 251px;
+    left: 209px;
     -webkit-transform: rotate(60deg);
     transform: rotate(60deg)
   }
   header>.wrapper>.upper>ul {
-    margin-left: 69px;
+    margin-left: 58px;
     position: absolute;
     top: 0;
     height: 35px
   }
   header>.wrapper>.upper>ul>li:nth-child(1) {
-    margin-right: 34px
+    margin-right: 17px
   }
   header>.wrapper>.upper>ul>li:nth-child(2) {
-    margin-right: 64px
+    margin-right: 34px
   }
   header>.wrapper>.upper>ul>li>span {
     position: relative;
@@ -2045,7 +1698,7 @@ footer {
   }
   header>.wrapper>.lower>ul {
     position: absolute;
-    margin-left: 10%;
+    margin-left: 3%;
     height: 100%
   }
   header>.wrapper>.lower>ul>li {
@@ -2063,7 +1716,6 @@ footer {
     transition: all .2s;
     border-bottom: 5px solid #13dc90
   }
-
   .fancy {
     overflow: overlay;
     display: table;
@@ -2072,8 +1724,8 @@ footer {
     margin-right: 3%;
     background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
     background-size: 300% 300%;
-    -webkit-animation: a 6s ease infinite;
-    animation: a 6s ease infinite
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite
   }
   .fancy div {
     mix-blend-mode: lighten;
@@ -2096,7 +1748,7 @@ footer {
   section.lg {
     height: 564px
   }
-  section.med {
+  section.med, section.smtomed {
     height: 420px
   }
   section.sm {
@@ -2119,7 +1771,7 @@ footer {
     z-index: -1
   }
   .statement-side {
-    width: 45%;
+    width: 40%;
     margin-top: 3%;
     float: right
   }
@@ -2179,13 +1831,13 @@ footer {
     padding-top: 15px;
     border-top: 9px solid #639;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-    width: 261px;
-    height: 358px;
+    width: 231px;
+    height: 377px;
     white-space: normal;
     background: #fff
   }
   .flexcards>div, .flexcards>div:last-child>.card-header {
-    margin-bottom: 15px
+    margin-bottom: 34px
   }
   .flexcards>div>.icon-lg {
     margin: auto
@@ -2236,13 +1888,13 @@ footer {
     text-align: center;
     cursor: pointer;
     width: 209px;
-    top: 8;
+    top: -20px;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
     transition: all .2s
   }
   .button:hover {
-    top: 3px;
+    top: -25px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     transition: all .2s
   }
@@ -2255,13 +1907,14 @@ footer {
     height: 12px;
     background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
     background-size: 300% 300%;
-    -webkit-animation: a 6s ease infinite;
-    animation: a 6s ease infinite;
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
   }
   .footer-bottom {
     padding: 10px;
-    background: rgba(0, 0, 0, .3)
+    background: rgba(0, 0, 0, .3);
+    font-size: 12px
   }
   .footer-bottom ul li {
     margin-right: 25px
@@ -2285,14 +1938,15 @@ footer {
     vertical-align: top;
     margin-top: 17px;
     position: relative;
-    left: 22%;
+    left: 16%;
     transform: translateX(-50%)
   }
   .footer-content .content:last-child {
     vertical-align: top;
     margin-top: 17px;
     margin-right: 32px;
-    float: right
+    float: right;
+    width: 190px
   }
   .footer-content .content .footer-logo .companylogo {
     cursor: pointer;
@@ -2312,9 +1966,7 @@ footer {
     margin-top: 0
   }
 }
-
-@media only screen and (max-width:599px) {
-  /* Smart Phone & Smaller */
+@media only screen and (max-width:890px) and (min-width:601px) {
   .inline {
     display: inline-block
   }
@@ -2323,6 +1975,10 @@ footer {
     padding: 0
   }
   header {
+    position: fixed;
+    z-index: 1000;
+    background: #fff;
+    top: 0;
     width: 100%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
   }
@@ -2335,66 +1991,36 @@ footer {
   header>.wrapper {
     margin-right: auto;
     margin-left: auto;
-    width: 1064px;
-    padding-left: 15px;
+    width: 100%;
     position: relative
   }
-  header>.wrapper>.upper:after {
-    position: absolute;
-    right: -41px;
-    top: -33px;
-    width: 35px;
-    height: 74px;
-    content: "";
-    background: #7b1fa2;
-    -webkit-transform: rotate(60deg);
-    transform: rotate(60deg)
-  }
-  header>.wrapper>.upper>.extra {
-    background: hsla(0, 0%, 100%, .15)
-  }
-  header>.wrapper>.upper>ul>li>.icon-sm {
-    opacity: .9
-  }
-  header>.wrapper>.upper>.extra>p {
-    margin: 8px 30px
-  }
-  header>.wrapper>.upper>.extra:before {
-    left: -26px;
-    -webkit-transform: rotate(-60deg);
-    transform: rotate(-60deg)
-  }
-  header>.wrapper>.upper>.extra:after, header>.wrapper>.upper>.extra:before {
-    position: absolute;
-    top: -33px;
-    width: 35px;
-    height: 74px;
-    content: "";
-    background: #8f40b0
-  }
-  header>.wrapper>.upper>.extra:after {
-    left: 265px;
-    -webkit-transform: rotate(60deg);
-    transform: rotate(60deg)
-  }
-  header>.wrapper>.upper>ul {
-    margin-left: 69px;
-    position: absolute;
-    top: 0;
-    height: 35px
-  }
-  header>.wrapper>.upper>ul>li:nth-child(1) {
-    margin-right: 34px
-  }
-  header>.wrapper>.upper>ul>li:nth-child(2) {
-    margin-right: 64px
-  }
-  header>.wrapper>.upper>ul>li>span {
-    position: relative;
-    top: -9px
+  header>.wrapper>.upper {
+    display: none
   }
   header>.wrapper>.lower {
-    position: relative
+    position: relative;
+    text-align: center;
+    z-index: 1000
+  }
+  header>.wrapper>.lower>.sandwhich {
+    width: 76px;
+    padding: 16px;
+    height: 79px;
+    position: absolute;
+    left: 0;
+    margin-left: 14px;
+    cursor: pointer
+  }
+  header>.wrapper>.lower>.sandwhich>.bar {
+    width: 100%;
+    height: 4px;
+    background: #7b1fa2;
+    margin-bottom: 12px;
+    margin-top: 6px;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite
   }
   header>.wrapper>.lower>.companylogo>.icon-md {
     margin-top: 5px;
@@ -2413,36 +2039,42 @@ footer {
     cursor: pointer
   }
   header>.wrapper>.lower>ul {
-    position: absolute;
-    margin-left: 15%;
-    height: 100%
+    display: none
   }
-  header>.wrapper>.lower>ul>li {
-    top: 50%;
-    margin-right: 15px;
-    position: relative;
-    height: 50%;
+  header>.wrapper>.linktabs {
+    display: block
+  }
+  header>.wrapper>.linktabs>.links {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px
+  }
+  header>.wrapper>.linktabs>.links>li {
+    margin-right: 10px;
+    margin-left: 10px;
     transition: all .2s;
     border-bottom: 0 solid #13dc90
   }
-  header>.wrapper>.lower>ul>li:hover {
-    cursor: pointer
-  }
-  header>.wrapper>.lower>ul>.active, header>.wrapper>.lower>ul>li:hover {
+  header>.wrapper>.linktabs>.links>.active, header>.wrapper>.linktabs>.links>li:hover {
     transition: all .2s;
     border-bottom: 5px solid #13dc90
   }
-
+  header>.wrapper>.linktabs>.links>li:hover {
+    cursor: pointer
+  }
+  section:first-child {
+    margin-top: 127px
+  }
   .fancy {
     overflow: overlay;
+    text-align: center;
     display: table;
-    float: left;
-    margin-top: 1%;
-    margin-right: 3%;
+    float: none;
+    margin: auto;
     background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
     background-size: 300% 300%;
-    -webkit-animation: a 6s ease infinite;
-    animation: a 6s ease infinite
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite
   }
   .fancy div {
     mix-blend-mode: lighten;
@@ -2456,23 +2088,38 @@ footer {
     height: 100%;
     margin: auto
   }
+  .f-Xxl {
+    font-size: 4rem
+  }
+  .f-smalltomedium {
+    font-size: 1.5rem
+  }
+  .f-BigtoXl {
+    font-size: 3.2rem
+  }
+  .f-smalltolarge {
+    font-size: 2rem
+  }
+  .f-microtosmall {
+    font-size: 1.25rem
+  }
   section .wrapper.para {
     width: 100%
   }
-  section.xl {
-    height: 664px
+  section.lg, section.xl {
+    height: 1615px
   }
-  section.lg {
-    height: 564px
-  }
-  section.med {
+  section.med, section.smtomed {
     height: 420px
   }
   section.sm {
-    height: 364px
+    height: 580px
   }
   section.tiny {
     height: 300px
+  }
+  section:first-of-type {
+    margin-top: 130px
   }
   section.micro {
     height: 120px
@@ -2488,23 +2135,23 @@ footer {
     z-index: -1
   }
   .statement-side {
-    width: 48%;
-    margin-top: 3%;
-    float: right
+    float: none;
+    margin: auto;
+    width: 84%;
+    text-align: center;
+    display: table;
+    margin-top: 45px
   }
   .innerleft {
-    padding-left: 6%
+    text-align: center;
+    margin-top: 20px
   }
   .upperleft {
-    margin-top: 1%;
-    margin-left: 1%
+    text-align: center;
+    margin-top: 1%
   }
   .bottomright {
-    margin: 0!important;
-    bottom: 32px!important;
-    right: 40px!important;
-    position: absolute!important;
-    top: auto!important
+    margin-top: 100px!important
   }
   .bottomright.button:hover {
     bottom: 37px!important
@@ -2512,7 +2159,7 @@ footer {
   .heading {
     text-align: center;
     margin-top: 15px;
-    margin-bottom: 20px
+    margin-bottom: 30px
   }
   .link {
     position: relative;
@@ -2531,87 +2178,56 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    -webkit-flex-direction: row;
+    -webkit-flex-direction: column;
     -webkit-flex-wrap: wrap;
     -webkit-justify-content: center;
     text-align: center;
-    margin-bottom: 7px
+    align-items: center
   }
   .flexcards>div {
     margin-right: 16px;
     margin-left: 16px;
     padding: 6px;
     border-radius: 2px;
-    padding-top: 15px;
-    border-top: 9px solid #639;
+    padding-top: 0;
+    border-top: 12px solid #639;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-    width: 300px;
-    height: 358px;
+    width: 380px;
+    height: 438px;
     white-space: normal;
-    background: #fff
+    background: #fff;
+    margin-bottom: 32
+  }
+  .flexcards>div>.card-header {
+    margin-top: 0
   }
   .flexcards>div, .flexcards>div:last-child>.card-header {
-    margin-bottom: 15px
-  }
-  .flexcards>div>.icon-lg {
-    margin: auto
-  }
-  .cardbank {
-    text-align: center;
-    width: 100%;
-    position: relative;
-    white-space: normal
-  }
-  .cardbank>li {
-    margin-right: 32px
-  }
-  .cardbank>li, .cardbank>li:last-child {
-    padding: 6px;
-    border-radius: 2px;
-    padding-top: 15px;
-    border-top: 9px solid #639;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-    width: 300px;
-    height: 358px;
-    white-space: normal
-  }
-  .cardbank>li:last-child {
-    white-space: normal
-  }
-  .cardbank>li>.icon-lg {
-    margin: auto
-  }
-  .card-header {
-    height: 56px;
-    margin-bottom: 0
-  }
-  .card-subtext>li {
     margin-bottom: 10px
   }
-  .cardbank>li:last-child>card-header {
-    margin: 0;
-    margin-top: 17px;
-    margin-bottom: 12px
+  .flexcards>div>.card-subtext>li {
+    margin-bottom: 5px
   }
-  .cardbank>li:last-child>ul>li:last-child {
-    margin-bottom: 0
+  .flexcards>div>.icon-lg {
+    margin: auto;
+    width: 164px;
+    height: 164px
   }
   .button {
     position: relative;
-    padding: 12px;
+    padding: 20px;
     text-align: center;
     cursor: pointer;
-    width: 209px;
-    top: 8;
+    width: 264px;
+    top: 30;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
     transition: all .2s
   }
   .button:hover {
-    top: 3px;
+    top: 25px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     transition: all .2s
   }
@@ -2621,16 +2237,25 @@ footer {
   }
   .footer-header {
     width: 100%;
-    height: 12px;
+    height: 20px;
     background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
     background-size: 300% 300%;
-    -webkit-animation: a 6s ease infinite;
-    animation: a 6s ease infinite;
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
   }
   .footer-bottom {
     padding: 10px;
-    background: rgba(0, 0, 0, .3)
+    background: rgba(0, 0, 0, .3);
+    text-align: center
+  }
+  .footer-bottom:first-child {
+    margin-bottom: 13px;
+    display: block
+  }
+  .footer-bottom ul {
+    float: none!important;
+    margin-top: 10px
   }
   .footer-bottom ul li {
     margin-right: 25px
@@ -2645,23 +2270,21 @@ footer {
   }
   .footer-content .content:first-child {
     vertical-align: top;
-    margin-right: 32px;
-    margin-left: 14px;
-    margin-top: 3px
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 3px;
+    text-align: center;
+    width: 100%
   }
   .footer-content .content:nth-child(2) {
-    min-width: 280px;
-    vertical-align: top;
-    margin-top: 17px;
-    position: relative;
-    left: 22%;
-    transform: translateX(-50%)
+    display: none;
+    width: 100%
   }
   .footer-content .content:last-child {
     vertical-align: top;
-    margin-top: 17px;
-    margin-right: 32px;
-    float: right
+    margin-top: 5px;
+    text-align: center;
+    width: 100%
   }
   .footer-content .content .footer-logo .companylogo {
     cursor: pointer;
@@ -2681,26 +2304,345 @@ footer {
     margin-top: 0
   }
 }
-
-@-webkit-keyframes a {
-  0% {
-    background-position: 0 51%
+@media only screen and (max-width:600px) {
+  .inline {
+    display: inline-block
   }
-  50% {
-    background-position: 100% 50%
+  ul {
+    margin: 0;
+    padding: 0
   }
-  to {
-    background-position: 0 51%
+  header {
+    position: fixed;
+    z-index: 1000;
+    background: #fff;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
   }
-}
-@keyframes a {
-  0% {
-    background-position: 0 51%
+  a {
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    color: inherit
   }
-  50% {
-    background-position: 100% 50%
+  header>.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    position: relative
   }
-  to {
-    background-position: 0 51%
+  header>.wrapper>.upper {
+    display: none
+  }
+  header>.wrapper>.lower {
+    position: relative;
+    text-align: center;
+    z-index: 1000
+  }
+  header>.wrapper>.lower>.sandwhich {
+    width: 76px;
+    padding: 16px;
+    height: 79px;
+    position: absolute;
+    left: 0;
+    cursor: pointer
+  }
+  header>.wrapper>.lower>.sandwhich>.bar {
+    width: 100%;
+    height: 4px;
+    background: #7b1fa2;
+    margin-bottom: 12px;
+    margin-top: 6px;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite
+  }
+  header>.wrapper>.lower>.companylogo {
+    margin-left: 5%
+  }
+  header>.wrapper>.lower>.companylogo>.icon-md {
+    margin-top: 5px;
+    background-position: 50%;
+    background-size: contain;
+    height: 68px;
+    width: 39px;
+    cursor: pointer
+  }
+  header>.wrapper>.lower>.companylogo>.logo-title {
+    position: relative;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 0;
+    top: -8px;
+    cursor: pointer
+  }
+  header>.wrapper>.linktabs, header>.wrapper>.lower>ul {
+    display: none
+  }
+  header>.wrapper>.linktabs>.links {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px
+  }
+  header>.wrapper>.linktabs>.links>li {
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: all .2s;
+    border-bottom: 0 solid #13dc90
+  }
+  header>.wrapper>.linktabs>.links>.active, header>.wrapper>.linktabs>.links>li:hover {
+    transition: all .2s;
+    border-bottom: 5px solid #13dc90
+  }
+  header>.wrapper>.linktabs>.links>li:hover {
+    cursor: pointer
+  }
+  section:first-child {
+    margin-top: 80px
+  }
+  .fancy {
+    overflow: overlay;
+    text-align: center;
+    display: table;
+    float: none;
+    margin: auto;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite
+  }
+  .fancy div {
+    mix-blend-mode: lighten;
+    background: #fff;
+    width: 100%
+  }
+  section .wrapper {
+    padding: 10px 0;
+    position: relative;
+    width: 97%;
+    height: 100%;
+    margin: auto
+  }
+  .f-Xxl {
+    font-size: 3.6rem
+  }
+  .f-smalltomedium {
+    font-size: 1.5rem
+  }
+  .f-BigtoXl {
+    font-size: 3.2rem
+  }
+  .f-smalltolarge {
+    font-size: 2rem
+  }
+  .f-microtosmall {
+    font-size: 1.25rem
+  }
+  section .wrapper.para {
+    width: 100%
+  }
+  section.xl {
+    height: 1615px
+  }
+  section.lg {
+    height: 1665px
+  }
+  section.med, section.smtomed {
+    height: 420px
+  }
+  section.sm {
+    height: 830px
+  }
+  section.tiny {
+    height: 300px
+  }
+  section:first-of-type {
+    margin-top: 80px
+  }
+  section.micro {
+    height: 120px
+  }
+  .cover.para {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1
+  }
+  .statement-side {
+    float: none;
+    margin: auto;
+    width: 84%;
+    text-align: center;
+    display: table;
+    margin-top: 64px
+  }
+  .innerleft {
+    text-align: center;
+    margin-top: 30px
+  }
+  .upperleft {
+    text-align: center;
+    margin-top: 1%
+  }
+  .bottomright {
+    margin-top: 100px!important
+  }
+  .bottomright.button:hover {
+    bottom: 37px!important
+  }
+  .heading {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px
+  }
+  .link {
+    position: relative;
+    top: 0;
+    border-bottom: 0 solid #477eff;
+    color: currentColor
+  }
+  .link, .link:hover {
+    cursor: pointer;
+    transition: all ease .2s
+  }
+  .link:hover {
+    top: -5px
+  }
+  .flexcards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    text-align: center;
+    align-items: center
+  }
+  .flexcards>div {
+    margin-right: 16px;
+    margin-left: 16px;
+    padding: 6px;
+    border-radius: 2px;
+    padding-top: 0;
+    border-top: 12px solid #639;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 320px;
+    height: 438px;
+    white-space: normal;
+    background: #fff;
+    margin-bottom: 32
+  }
+  .flexcards>div>.card-header {
+    margin-top: 0
+  }
+  .flexcards>div, .flexcards>div:last-child>.card-header {
+    margin-bottom: 10px
+  }
+  .flexcards>div>.card-subtext>li {
+    margin-bottom: 5px
+  }
+  .flexcards>div>.icon-lg {
+    margin: auto;
+    width: 164px;
+    height: 164px
+  }
+  .button {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 264px;
+    top: 18;
+    margin: auto;
+    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+    transition: all .2s
+  }
+  .button:hover {
+    top: 13px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    transition: all .2s
+  }
+  footer {
+    background: #302e2f;
+    color: hsla(0, 0%, 100%, .95)
+  }
+  .footer-header {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+  }
+  .footer-bottom {
+    padding: 10px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center
+  }
+  .footer-bottom:first-child {
+    margin-bottom: 13px;
+    display: block
+  }
+  .footer-bottom ul {
+    float: none!important;
+    margin-top: 10px
+  }
+  .footer-bottom ul li {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: block
+  }
+  .footer-bottom ul li:last-child {
+    margin-right: 0
+  }
+  .footer-content {
+    padding: 10px;
+    padding-bottom: 0;
+    margin-bottom: 7px
+  }
+  .footer-content .content:first-child {
+    vertical-align: top;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 3px;
+    text-align: center;
+    width: 100%
+  }
+  .footer-content .content:nth-child(2) {
+    display: none;
+    width: 100%
+  }
+  .footer-content .content:last-child {
+    vertical-align: top;
+    margin-top: 5px;
+    text-align: center;
+    width: 100%
+  }
+  .footer-content .content .footer-logo .companylogo {
+    cursor: pointer;
+    width: 39px;
+    height: 68px;
+    background-position: 50%;
+    background-repeat: no-repeat
+  }
+  .footer-content .content .footer-logo span {
+    position: relative;
+    top: -25px
+  }
+  .footer-content .content ul li {
+    margin-bottom: 8px
+  }
+  .footer-content .content p:first-child {
+    margin-top: 0
   }
 }
