@@ -4,7 +4,7 @@ body {
   overflow-x: hidden
 }
 .parallax {
-  height:100%;
+  height: 100%;
 }
 .col-prime {
   background-color: #7b1fa2;
@@ -34,10 +34,10 @@ body {
   background-color: #e0e7eb
 }
 .footer-content .content ul li.link {
-  color:#039be5;
+  color: #039be5;
 }
 .footer-bottom ul li.link {
-  color:#039be5;
+  color: #039be5;
 }
 .f0a {
   font-weight: 400
@@ -70,7 +70,7 @@ body {
   font-size: 1.25rem
 }
 .f-smalltomedium {
-  font-size:1.5rem;
+  font-size: 1.5rem;
 }
 .f-medium {
   font-size: 1.5rem
@@ -142,36 +142,78 @@ body {
     background-position: 0 51%
   }
 }
+.parallax img {
+  bottom: 230!important;
+}
 section {
-  position:relative;
+  position: relative;
+}
+.upperleft.head {
+  margin-top: 6%;
+}
+.extratag {
+  width: 200px;
+  height: 100px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 20;
+  background-image: url(/images/ogmandino.png);
+}
+.statement-side.left {
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 50%;
+}
+.listicons.right {
+  width: 35%;
+  padding: 11px;
+  height: 90px;
+  margin-right: 105px;
+}
+.listicons li {
+  position: relative;
+  margin-bottom: 0px;
+}
+.listicons li div {
+  height: 74px;
+  width: 96px;
+}
+.listicons> li> p {
+  position: absolute;
+  top: 15px;
+  margin: 0;
+  margin-left: 30px;
+  white-space: nowrap;
 }
 @media only screen and (min-width:1764px) {
   .footer-content .button {
     position: relative;
-padding: 18px;
-text-align: center;
-cursor: pointer;
-width: 320px;
-top: -10px;
-margin: auto;
-box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-transition: all .2s;
-
+    padding: 18px;
+    text-align: center;
+    cursor: pointer;
+    width: 320px;
+    top: -10px;
+    margin: auto;
+    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+    transition: all .2s;
   }
-    .footer-content .button:hover {
-      top:-15px;
-      transition: all .2s;
-    }
+  .footer-content .button:hover {
+    top: -15px;
+    transition: all .2s;
+  }
   .f-BigtoXl {
-    font-size:3rem;
+    font-size: 3rem;
   }
   .f-medium {
-    font-size:1.8rem;
+    font-size: 1.8rem;
   }
-  section  .wrapper.para {
+  section .wrapper.para {
     width: 100%;
-    position:absolute;
-    top:0;
+    position: absolute;
+    top: 0;
   }
   header>.wrapper>.linktabs {
     display: none
@@ -185,10 +227,14 @@ transition: all .2s;
   }
   header {
     width: 100%;
-    background: -moz-linear-gradient(top, rgba(0,0,0,0.33) 0%, rgba(0,0,0,0) 55%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(0,0,0,0.33) 0%,rgba(0,0,0,0) 55%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(0,0,0,0.33) 0%,rgba(0,0,0,0) 55%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#54000000', endColorstr='#00000000', GradientType=0);
+    /* IE6-9 */
     position: absolute;
     z-index: 1000;
     top: 0;
@@ -283,8 +329,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', e
   }
   section .wrapper.para {
     width: 100%;
-    position:absolute;
-    top:0;
+    position: absolute;
+    top: 0;
   }
   section.xl {
     height: 664px
@@ -292,7 +338,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', e
   section.lg {
     height: 700px
   }
-  section.med {
+  section.med,section.medtolg  {
     height: 500px
   }
   section.smtomed {
@@ -411,31 +457,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', e
   .flexcards>div>.icon-lg {
     margin: auto
   }
-  .cardbank {
-    text-align: center;
-    width: 100%;
-    position: relative;
-    white-space: normal
-  }
-  .cardbank>li {
-    margin-right: 32px
-  }
-  .cardbank>li, .cardbank>li:last-child {
-    padding: 6px;
-    border-radius: 2px;
-    padding-top: 15px;
-    border-top: 9px solid #639;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-    width: 300px;
-    height: 358px;
-    white-space: normal
-  }
-  .cardbank>li:last-child {
-    white-space: normal
-  }
-  .cardbank>li>.icon-lg {
-    margin: auto
-  }
   .card-header {
     height: 56px;
     margin-bottom: 0
@@ -443,30 +464,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', e
   .card-subtext>li {
     margin-bottom: 10px
   }
-  .cardbank>li:last-child>card-header {
-    margin: 0;
-    margin-top: 17px;
-    margin-bottom: 12px
-  }
-  .cardbank>li:last-child>ul>li:last-child {
-    margin-bottom: 0
-  }
   .footer-content .button {
     position: relative;
-padding: 18px;
-text-align: center;
-cursor: pointer;
-width: 320px;
-top: -10px;
-margin: auto;
-box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-transition: all .2s;
-
+    padding: 18px;
+    text-align: center;
+    cursor: pointer;
+    width: 320px;
+    top: -10px;
+    margin: auto;
+    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+    transition: all .2s;
   }
-    .footer-content .button:hover {
-      top:-15px;
-      transition: all .2s;
-    }
+  .footer-content .button:hover {
+    top: -15px;
+    transition: all .2s;
+  }
   .button {
     position: relative;
     padding: 18px;
@@ -548,12 +560,28 @@ transition: all .2s;
   .footer-content .content p:first-child {
     margin-top: 0
   }
+  .listicons li {
+    position:relative;
+    margin-bottom:0px;
+  }
+
+  .listicons li div{
+    height:87px;
+    width:96px;
+  }
+
+  .listicons > li > p {
+    position:absolute;
+    margin:0;
+    white-space: nowrap;
+    top:25px;
+  }
 }
 @media only screen and (min-width:1200px) and (max-width:1763px) {
-  section  .wrapper.para {
+  section .wrapper.para {
     width: 100%;
-    position:absolute;
-    top:0;
+    position: absolute;
+    top: 0;
   }
   .subtext>span {
     border-bottom: 2px solid #fff;
@@ -719,7 +747,7 @@ transition: all .2s;
   section.lg {
     height: 564px
   }
-  section.med, section.smtomed {
+  section.med, section.smtomed,section.medtolg  {
     height: 480px
   }
   section.sm {
@@ -814,31 +842,6 @@ transition: all .2s;
   .flexcards>div>.icon-lg {
     margin: auto
   }
-  .cardbank {
-    text-align: center;
-    width: 100%;
-    position: relative;
-    white-space: normal
-  }
-  .cardbank>li {
-    margin-right: 32px
-  }
-  .cardbank>li, .cardbank>li:last-child {
-    padding: 6px;
-    border-radius: 2px;
-    padding-top: 15px;
-    border-top: 9px solid #639;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-    width: 300px;
-    height: 358px;
-    white-space: normal
-  }
-  .cardbank>li:last-child {
-    white-space: normal
-  }
-  .cardbank>li>.icon-lg {
-    margin: auto
-  }
   .card-header {
     height: 56px;
     margin-bottom: 0
@@ -846,30 +849,21 @@ transition: all .2s;
   .card-subtext>li {
     margin-bottom: 10px
   }
-  .cardbank>li:last-child>card-header {
-    margin: 0;
-    margin-top: 17px;
-    margin-bottom: 12px
-  }
-  .cardbank>li:last-child>ul>li:last-child {
-    margin-bottom: 0
-  }
   .footer-content .button {
     position: relative;
-padding: 18px;
-text-align: center;
-cursor: pointer;
-width: 320px;
-top: -10px;
-margin: auto;
-box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-transition: all .2s;
-
+    padding: 18px;
+    text-align: center;
+    cursor: pointer;
+    width: 320px;
+    top: -10px;
+    margin: auto;
+    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+    transition: all .2s;
   }
-    .footer-content .button:hover {
-      top:-15px;
-      transition: all .2s;
-    }
+  .footer-content .button:hover {
+    top: -15px;
+    transition: all .2s;
+  }
   .button {
     position: relative;
     padding: 12px;
@@ -880,7 +874,6 @@ transition: all .2s;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
     transition: all .2s;
-
   }
   .button:hover {
     top: 3px;
@@ -955,12 +948,44 @@ transition: all .2s;
   .f-smalltomedium {
     font-size: 1.25rem;
   }
+  .listicons li {
+    position:relative;
+    margin-bottom:0px;
+  }
+
+  .listicons li div{
+    height:87px;
+    width:96px;
+  }
+
+  .listicons > li > p {
+    position:absolute;
+    margin:0;
+    white-space: nowrap;
+    top:25px;
+  }
+  .listicons li {
+    position:relative;
+    margin-bottom:0px;
+  }
+
+  .listicons li div{
+    height:87px;
+    width:96px;
+  }
+
+  .listicons > li > p {
+    position:absolute;
+    margin:0;
+    white-space: nowrap;
+    top:25px;
+  }
 }
 @media only screen and (min-width:1097px) and (max-width:1199px) {
-  section  .wrapper.para {
+  section .wrapper.para {
     width: 100%;
-    position:absolute;
-    top:0;
+    position: absolute;
+    top: 0;
   }
   .subtext>span {
     border-bottom: 2px solid #fff;
@@ -1085,10 +1110,9 @@ transition: all .2s;
     height: 50%;
     transition: all .2s;
     border-bottom: 0 solid #13dc90;
-
   }
-  header a{
-    color:currentColor;
+  header a {
+    color: currentColor;
   }
   header>.wrapper>.lower>ul>li:hover {
     cursor: pointer
@@ -1120,10 +1144,10 @@ transition: all .2s;
     height: 100%;
     margin: auto
   }
-  section  .wrapper.para {
+  section .wrapper.para {
     width: 100%;
-    position:absolute;
-    top:0;
+    position: absolute;
+    top: 0;
   }
   section.xl {
     height: 664px
@@ -1131,7 +1155,7 @@ transition: all .2s;
   section.lg {
     height: 564px
   }
-  section.med, section.smtomed {
+  section.med, section.smtomed,section.medtolg  {
     height: 420px
   }
   section.sm {
@@ -1226,31 +1250,6 @@ transition: all .2s;
   .flexcards>div>.icon-lg {
     margin: auto
   }
-  .cardbank {
-    text-align: center;
-    width: 100%;
-    position: relative;
-    white-space: normal
-  }
-  .cardbank>li {
-    margin-right: 32px
-  }
-  .cardbank>li, .cardbank>li:last-child {
-    padding: 6px;
-    border-radius: 2px;
-    padding-top: 15px;
-    border-top: 9px solid #639;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-    width: 300px;
-    height: 358px;
-    white-space: normal
-  }
-  .cardbank>li:last-child {
-    white-space: normal
-  }
-  .cardbank>li>.icon-lg {
-    margin: auto
-  }
   .card-header {
     height: 56px;
     margin-bottom: 0
@@ -1258,30 +1257,21 @@ transition: all .2s;
   .card-subtext>li {
     margin-bottom: 10px
   }
-  .cardbank>li:last-child>card-header {
-    margin: 0;
-    margin-top: 17px;
-    margin-bottom: 12px
-  }
-  .cardbank>li:last-child>ul>li:last-child {
-    margin-bottom: 0
-  }
   .footer-content .button {
     position: relative;
-padding: 13px;
-text-align: center;
-cursor: pointer;
-width: 264px;
-top: -10px;
-margin: auto;
-box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-transition: all .2s;
-
+    padding: 13px;
+    text-align: center;
+    cursor: pointer;
+    width: 264px;
+    top: -10px;
+    margin: auto;
+    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+    transition: all .2s;
   }
-    .footer-content .button:hover {
-      top:-15px;
-      transition: all .2s;
-    }
+  .footer-content .button:hover {
+    top: -15px;
+    transition: all .2s;
+  }
   .button {
     position: relative;
     padding: 12px;
@@ -1292,7 +1282,6 @@ transition: all .2s;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
     transition: all .2s;
-
   }
   .button:hover {
     top: 3px;
@@ -1368,15 +1357,31 @@ transition: all .2s;
   .f-smalltomedium {
     font-size: 1.3rem;
   }
+  .listicons li {
+    position:relative;
+    margin-bottom:0px;
+  }
+
+  .listicons li div{
+    height:74px;
+    width:96px;
+  }
+
+  .listicons > li > p {
+    position:absolute;
+    margin:0;
+    white-space: nowrap;
+    top:25px;
+  }
 }
 @media only screen and (min-width:993px) and (max-width:1097px) {
   .f-smalltomedium {
     font-size: 1.3rem;
   }
-  section  .wrapper.para {
+  section .wrapper.para {
     width: 100%;
-    position:absolute;
-    top:0;
+    position: absolute;
+    top: 0;
   }
   .subtext>span {
     border-bottom: 2px solid #fff;
@@ -1541,7 +1546,7 @@ transition: all .2s;
   section.lg {
     height: 564px
   }
-  section.med, section.smtomed {
+  section.med, section.smtomed,section.medtolg  {
     height: 420px
   }
   section.sm {
@@ -1636,31 +1641,6 @@ transition: all .2s;
   .flexcards>div>.icon-lg {
     margin: auto
   }
-  .cardbank {
-    text-align: center;
-    width: 100%;
-    position: relative;
-    white-space: normal
-  }
-  .cardbank>li {
-    margin-right: 32px
-  }
-  .cardbank>li, .cardbank>li:last-child {
-    padding: 6px;
-    border-radius: 2px;
-    padding-top: 15px;
-    border-top: 9px solid #639;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-    width: 300px;
-    height: 358px;
-    white-space: normal
-  }
-  .cardbank>li:last-child {
-    white-space: normal
-  }
-  .cardbank>li>.icon-lg {
-    margin: auto
-  }
   .card-header {
     height: 56px;
     margin-bottom: 0
@@ -1668,30 +1648,21 @@ transition: all .2s;
   .card-subtext>li {
     margin-bottom: 10px
   }
-  .cardbank>li:last-child>card-header {
-    margin: 0;
-    margin-top: 17px;
-    margin-bottom: 12px
-  }
-  .cardbank>li:last-child>ul>li:last-child {
-    margin-bottom: 0
-  }
   .footer-content .button {
     position: relative;
-padding: 13px;
-text-align: center;
-cursor: pointer;
-width: 264px;
-top: -10px;
-margin: auto;
-box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-transition: all .2s;
-
+    padding: 13px;
+    text-align: center;
+    cursor: pointer;
+    width: 264px;
+    top: -10px;
+    margin: auto;
+    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+    transition: all .2s;
   }
-    .footer-content .button:hover {
-      top:-15px;
-      transition: all .2s;
-    }
+  .footer-content .button:hover {
+    top: -15px;
+    transition: all .2s;
+  }
   .button {
     position: relative;
     padding: 12px;
@@ -1702,7 +1673,6 @@ transition: all .2s;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
     transition: all .2s;
-
   }
   .button:hover {
     top: 3px;
@@ -1778,10 +1748,10 @@ transition: all .2s;
   .f-smalltomedium {
     font-size: 1.25rem;
   }
-  section  .wrapper.para {
+  section .wrapper.para {
     width: 100%;
-    position:absolute;
-    top:0;
+    position: absolute;
+    top: 0;
   }
   .subtext>span {
     border-bottom: 2px solid #fff;
@@ -1946,7 +1916,7 @@ transition: all .2s;
   section.lg {
     height: 564px
   }
-  section.med, section.smtomed {
+  section.med, section.smtomed,section.medtolg  {
     height: 420px
   }
   section.sm {
@@ -2041,31 +2011,6 @@ transition: all .2s;
   .flexcards>div>.icon-lg {
     margin: auto
   }
-  .cardbank {
-    text-align: center;
-    width: 100%;
-    position: relative;
-    white-space: normal
-  }
-  .cardbank>li {
-    margin-right: 32px
-  }
-  .cardbank>li, .cardbank>li:last-child {
-    padding: 6px;
-    border-radius: 2px;
-    padding-top: 15px;
-    border-top: 9px solid #639;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-    width: 300px;
-    height: 358px;
-    white-space: normal
-  }
-  .cardbank>li:last-child {
-    white-space: normal
-  }
-  .cardbank>li>.icon-lg {
-    margin: auto
-  }
   .card-header {
     height: 56px;
     margin-bottom: 0
@@ -2073,30 +2018,21 @@ transition: all .2s;
   .card-subtext>li {
     margin-bottom: 10px
   }
-  .cardbank>li:last-child>card-header {
-    margin: 0;
-    margin-top: 17px;
-    margin-bottom: 12px
-  }
-  .cardbank>li:last-child>ul>li:last-child {
-    margin-bottom: 0
-  }
   .footer-content .button {
     position: relative;
-padding: 10px;
-text-align: center;
-cursor: pointer;
-width: 177px;
-top: -10px;
-margin: auto;
-box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-transition: all .2s;
-
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 177px;
+    top: -10px;
+    margin: auto;
+    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+    transition: all .2s;
   }
-    .footer-content .button:hover {
-      top:-15px;
-      transition: all .2s;
-    }
+  .footer-content .button:hover {
+    top: -15px;
+    transition: all .2s;
+  }
   .button {
     position: relative;
     padding: 12px;
@@ -2107,7 +2043,6 @@ transition: all .2s;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
     transition: all .2s;
-
   }
   .button:hover {
     top: -29px;
@@ -2183,10 +2118,10 @@ transition: all .2s;
   }
 }
 @media only screen and (max-width:890px) and (min-width:611px) {
-  section  .wrapper.para {
+  section .wrapper.para {
     width: 100%;
-    position:absolute;
-    top:0;
+    position: absolute;
+    top: 0;
   }
   .subtext>span {
     border-bottom: 2px solid #fff;
@@ -2450,20 +2385,19 @@ transition: all .2s;
   }
   .footer-content .button {
     position: relative;
-padding: 18px;
-text-align: center;
-cursor: pointer;
-width: 320px;
-top: -10px;
-margin: auto;
-box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-transition: all .2s;
-
+    padding: 18px;
+    text-align: center;
+    cursor: pointer;
+    width: 320px;
+    top: -10px;
+    margin: auto;
+    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+    transition: all .2s;
   }
-    .footer-content .button:hover {
-      top:-15px;
-      transition: all .2s;
-    }
+  .footer-content .button:hover {
+    top: -15px;
+    transition: all .2s;
+  }
   .button {
     position: relative;
     padding: 18px;
@@ -2474,7 +2408,6 @@ transition: all .2s;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
     transition: all .2s;
-
   }
   .button:hover {
     top: 3px;
@@ -2553,12 +2486,75 @@ transition: all .2s;
   .footer-content .content p:first-child {
     margin-top: 0
   }
+  .upperleft.head {
+    margin-top: 6%;
+  }
+  .extratag {
+    width: 200px;
+    height: 100px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 20;
+    background-image: url(/images/ogmandino.png);
+  }
+  .statement-side.left {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 100%;
+  }
+  .listicons.right {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 4px;
+    padding: 11px;
+    height: 90px;
+  }
+  .listicons li {
+    position: relative;
+    margin-bottom: 47px;
+    width: 49%;
+    display: inline-block;
+  }
+  .listicons li div {
+    height: 99px;
+    width: 140px;
+    margin: auto;
+    background-size: cover;
+    display: block;
+  }
+  .listicons> li> p {
+    position: relative;
+    margin: 0;
+    margin-left: 30px;
+    white-space: nowrap;
+    text-align: center;
+    margin-left: 0;
+    display: block;
+  }
+  .listicons> li:last-child {
+    width: 100%;
+  }
+  section.medtolg {
+    height: 880px;
+  }
+  .parallax-container {
+    height: 100%!important;
+  }
+  .parallax {
+    height: 100%;
+  }
+  .parallax img {
+    bottom: 0!important;
+  }
 }
 @media only screen and (max-width:611px) {
-  section  .wrapper.para {
+  section .wrapper.para {
     width: 100%;
-    position:absolute;
-    top:0;
+    position: absolute;
+    top: 0;
   }
   .subtext>span {
     border-bottom: 2px solid #fff;
@@ -2715,7 +2711,7 @@ transition: all .2s;
   section.lg {
     height: 1665px
   }
-  section.med, section.smtomed {
+  section.med, section.smtomed,section.medtolg {
     height: 420px
   }
   section.sm {
@@ -2793,7 +2789,7 @@ transition: all .2s;
     -webkit-align-items: center;
     text-align: center;
     align-items: center;
-    margin-bottom:45px;
+    margin-bottom: 45px;
   }
   .flexcards>div {
     margin-right: 16px;
@@ -2825,32 +2821,30 @@ transition: all .2s;
   }
   .footer-content .button {
     position: relative;
-padding: 18px;
-text-align: center;
-cursor: pointer;
-width: 320px;
-top: -10px;
-margin: auto;
-box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-transition: all .2s;
-
+    padding: 18px;
+    text-align: center;
+    cursor: pointer;
+    width: 320px;
+    top: -10px;
+    margin: auto;
+    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+    transition: all .2s;
   }
-    .footer-content .button:hover {
-      top:-15px;
-      transition: all .2s;
-    }
-    .button {
-      position: relative;
-      padding: 18px;
-      text-align: center;
-      cursor: pointer;
-      width: 264px;
-      top: 8;
-      margin: auto;
-      box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-      transition: all .2s;
-
-    }
+  .footer-content .button:hover {
+    top: -15px;
+    transition: all .2s;
+  }
+  .button {
+    position: relative;
+    padding: 18px;
+    text-align: center;
+    cursor: pointer;
+    width: 264px;
+    top: 8;
+    margin: auto;
+    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+    transition: all .2s;
+  }
   .button:hover {
     top: 3px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
@@ -2929,5 +2923,49 @@ transition: all .2s;
   }
   .footer-content .content p:first-child {
     margin-top: 0
+  }
+
+  .statement-side.left {
+    margin-top:10px;
+    margin-left:0px;
+    width:100%;
+  }
+  .listicons.right {
+    width:100%;
+    margin-right:0;
+    margin-top:0px;
+    padding:11px;
+    padding-left: 0;
+    height:90px;
+  }
+
+  .listicons li {
+    position:relative;
+    margin-bottom:0px;
+  }
+
+  .listicons li div{
+    height:76px;
+    width:86px;
+  }
+
+  .listicons > li > p {
+    position:absolute;
+    margin:0;
+    white-space: nowrap;
+    top:15px;
+  }
+  section.medtolg {
+    height:910px;
+  }
+
+  .parallax-container {
+    height:100%!important;
+  }
+  .parallax {
+    height:100%;
+  }
+  .parallax img {
+    bottom:0!important;
   }
 }
