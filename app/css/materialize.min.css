@@ -1090,7 +1090,7 @@
    height: 100%;
    padding-bottom: 60px;
    background-color: #fff;
-   z-index: 999;
+   z-index: 2999;
    overflow-y: auto;
    will-change: transform;
    -webkit-backface-visibility: hidden;
@@ -1187,7 +1187,7 @@
    right: 0;
    height: 120vh;
    background-color: rgba(0, 0, 0, .5);
-   z-index: 997;
+   z-index: 2997;
    will-change: opacity
  }
  .preloader-wrapper {

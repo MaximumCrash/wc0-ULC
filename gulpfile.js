@@ -73,7 +73,7 @@ gulp.task('watch', ['browserSync'],function() {
 
 gulp.task('chew', function(callback) {
   console.log("Deleting Distro")
-  runSequence('clean:dist',['useref','images','fonts'], callback)
+  runSequence('clean:dist',['useref','fonts'], callback)
 });
 
 gulp.task('default', function(callback) {

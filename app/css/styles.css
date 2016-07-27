@@ -315,7 +315,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', e
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: -1
+    z-index: 0;
   }
   .statement-side {
     width: 48%;
@@ -461,7 +461,7 @@ top: -10px;
 margin: auto;
 box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
 transition: all .2s;
-border-radius: 50px;
+
   }
     .footer-content .button:hover {
       top:-15px;
@@ -477,7 +477,6 @@ border-radius: 50px;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
     transition: all .2s;
-    border-radius:50px;
   }
   .button:hover {
     top: 3px;
@@ -550,7 +549,7 @@ border-radius: 50px;
     margin-top: 0
   }
 }
-@media only screen and (min-width:1200px) and (max-width:1764px) {
+@media only screen and (min-width:1200px) and (max-width:1763px) {
   section  .wrapper.para {
     width: 100%;
     position:absolute;
@@ -724,7 +723,7 @@ border-radius: 50px;
     height: 480px
   }
   section.sm {
-    height: 364px
+    height: 320px
   }
   section.tiny {
     height: 300px
@@ -740,7 +739,7 @@ border-radius: 50px;
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: -1
+    z-index: 0
   }
   .statement-side {
     width: 48%;
@@ -865,7 +864,7 @@ top: -10px;
 margin: auto;
 box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
 transition: all .2s;
-border-radius: 50px;
+
   }
     .footer-content .button:hover {
       top:-15px;
@@ -881,7 +880,7 @@ border-radius: 50px;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
     transition: all .2s;
-    border-radius: 50px;
+
   }
   .button:hover {
     top: 3px;
@@ -1152,7 +1151,7 @@ border-radius: 50px;
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: -1
+    z-index: 0
   }
   .statement-side {
     width: 48%;
@@ -1269,15 +1268,15 @@ border-radius: 50px;
   }
   .footer-content .button {
     position: relative;
-padding: 18px;
+padding: 13px;
 text-align: center;
 cursor: pointer;
-width: 320px;
+width: 264px;
 top: -10px;
 margin: auto;
 box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
 transition: all .2s;
-border-radius: 50px;
+
   }
     .footer-content .button:hover {
       top:-15px;
@@ -1293,7 +1292,7 @@ border-radius: 50px;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
     transition: all .2s;
-    border-radius: 50px;
+
   }
   .button:hover {
     top: 3px;
@@ -1562,7 +1561,7 @@ border-radius: 50px;
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: -1
+    z-index: 0
   }
   .statement-side {
     width: 43%;
@@ -1679,15 +1678,15 @@ border-radius: 50px;
   }
   .footer-content .button {
     position: relative;
-padding: 18px;
+padding: 13px;
 text-align: center;
 cursor: pointer;
-width: 320px;
+width: 264px;
 top: -10px;
 margin: auto;
 box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
 transition: all .2s;
-border-radius: 50px;
+
   }
     .footer-content .button:hover {
       top:-15px;
@@ -1703,7 +1702,7 @@ border-radius: 50px;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
     transition: all .2s;
-    border-radius: 50px;
+
   }
   .button:hover {
     top: 3px;
@@ -1967,7 +1966,7 @@ border-radius: 50px;
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: -1
+    z-index: 0
   }
   .statement-side {
     width: 40%;
@@ -2084,15 +2083,15 @@ border-radius: 50px;
   }
   .footer-content .button {
     position: relative;
-padding: 18px;
+padding: 10px;
 text-align: center;
 cursor: pointer;
-width: 320px;
+width: 177px;
 top: -10px;
 margin: auto;
 box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
 transition: all .2s;
-border-radius: 50px;
+
   }
     .footer-content .button:hover {
       top:-15px;
@@ -2104,14 +2103,14 @@ border-radius: 50px;
     text-align: center;
     cursor: pointer;
     width: 209px;
-    top: 8;
+    top: -24px;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
     transition: all .2s;
-    border-radius: 50px;
+
   }
   .button:hover {
-    top: 3px;
+    top: -29px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     transition: all .2s
   }
@@ -2365,7 +2364,7 @@ border-radius: 50px;
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: -1
+    z-index: 0
   }
   .statement-side {
     float: none;
@@ -2459,7 +2458,7 @@ top: -10px;
 margin: auto;
 box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
 transition: all .2s;
-border-radius: 50px;
+
   }
     .footer-content .button:hover {
       top:-15px;
@@ -2467,15 +2466,15 @@ border-radius: 50px;
     }
   .button {
     position: relative;
-    padding: 12px;
+    padding: 18px;
     text-align: center;
     cursor: pointer;
-    width: 209px;
+    width: 264px;
     top: 8;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
     transition: all .2s;
-    border-radius: 50px;
+
   }
   .button:hover {
     top: 3px;
@@ -2739,7 +2738,7 @@ border-radius: 50px;
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: -1
+    z-index: 0
   }
   .statement-side {
     float: none;
@@ -2793,7 +2792,8 @@ border-radius: 50px;
     -webkit-justify-content: center;
     -webkit-align-items: center;
     text-align: center;
-    align-items: center
+    align-items: center;
+    margin-bottom:45px;
   }
   .flexcards>div {
     margin-right: 16px;
@@ -2833,24 +2833,24 @@ top: -10px;
 margin: auto;
 box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
 transition: all .2s;
-border-radius: 50px;
+
   }
     .footer-content .button:hover {
       top:-15px;
       transition: all .2s;
     }
-  .button {
-    position: relative;
-    padding: 12px;
-    text-align: center;
-    cursor: pointer;
-    width: 209px;
-    top: 8;
-    margin: auto;
-    box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-    transition: all .2s;
-    border-radius: 50px;
-  }
+    .button {
+      position: relative;
+      padding: 18px;
+      text-align: center;
+      cursor: pointer;
+      width: 264px;
+      top: 8;
+      margin: auto;
+      box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+      transition: all .2s;
+
+    }
   .button:hover {
     top: 3px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);

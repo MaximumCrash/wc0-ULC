@@ -72,7 +72,21 @@ $(".button").on("click", function () {
   }
 });
 
+$(window).resize(function () {
+  if ($(window).width() > 890) {
+    $('.button-collapse').sideNav("hide");
+  }
+})
+
 $(document).ready(function(){
       $('.slider').slider({full_width: true});
       $('.parallax').parallax();
+      $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 240
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );
+
+
     });
