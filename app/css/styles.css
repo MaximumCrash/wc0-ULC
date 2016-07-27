@@ -146,6 +146,22 @@ section {
   position:relative;
 }
 @media only screen and (min-width:1764px) {
+  .footer-content .button {
+    position: relative;
+padding: 18px;
+text-align: center;
+cursor: pointer;
+width: 320px;
+top: -10px;
+margin: auto;
+box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+transition: all .2s;
+
+  }
+    .footer-content .button:hover {
+      top:-15px;
+      transition: all .2s;
+    }
   .f-BigtoXl {
     font-size:3rem;
   }
@@ -435,6 +451,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', e
   .cardbank>li:last-child>ul>li:last-child {
     margin-bottom: 0
   }
+  .footer-content .button {
+    position: relative;
+padding: 18px;
+text-align: center;
+cursor: pointer;
+width: 320px;
+top: -10px;
+margin: auto;
+box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+transition: all .2s;
+border-radius: 50px;
+  }
+    .footer-content .button:hover {
+      top:-15px;
+      transition: all .2s;
+    }
   .button {
     position: relative;
     padding: 18px;
@@ -444,7 +476,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', e
     top: 8;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-    transition: all .2s
+    transition: all .2s;
+    border-radius:50px;
   }
   .button:hover {
     top: 3px;
@@ -822,6 +855,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', e
   .cardbank>li:last-child>ul>li:last-child {
     margin-bottom: 0
   }
+  .footer-content .button {
+    position: relative;
+padding: 18px;
+text-align: center;
+cursor: pointer;
+width: 320px;
+top: -10px;
+margin: auto;
+box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+transition: all .2s;
+border-radius: 50px;
+  }
+    .footer-content .button:hover {
+      top:-15px;
+      transition: all .2s;
+    }
   .button {
     position: relative;
     padding: 12px;
@@ -831,7 +880,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', e
     top: 8;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-    transition: all .2s
+    transition: all .2s;
+    border-radius: 50px;
   }
   .button:hover {
     top: 3px;
@@ -1217,6 +1267,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', e
   .cardbank>li:last-child>ul>li:last-child {
     margin-bottom: 0
   }
+  .footer-content .button {
+    position: relative;
+padding: 18px;
+text-align: center;
+cursor: pointer;
+width: 320px;
+top: -10px;
+margin: auto;
+box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+transition: all .2s;
+border-radius: 50px;
+  }
+    .footer-content .button:hover {
+      top:-15px;
+      transition: all .2s;
+    }
   .button {
     position: relative;
     padding: 12px;
@@ -1226,7 +1292,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', e
     top: 8;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-    transition: all .2s
+    transition: all .2s;
+    border-radius: 50px;
   }
   .button:hover {
     top: 3px;
@@ -1610,6 +1677,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', e
   .cardbank>li:last-child>ul>li:last-child {
     margin-bottom: 0
   }
+  .footer-content .button {
+    position: relative;
+padding: 18px;
+text-align: center;
+cursor: pointer;
+width: 320px;
+top: -10px;
+margin: auto;
+box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+transition: all .2s;
+border-radius: 50px;
+  }
+    .footer-content .button:hover {
+      top:-15px;
+      transition: all .2s;
+    }
   .button {
     position: relative;
     padding: 12px;
@@ -1619,7 +1702,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', e
     top: 8;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-    transition: all .2s
+    transition: all .2s;
+    border-radius: 50px;
   }
   .button:hover {
     top: 3px;
@@ -1998,19 +2082,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', e
   .cardbank>li:last-child>ul>li:last-child {
     margin-bottom: 0
   }
+  .footer-content .button {
+    position: relative;
+padding: 18px;
+text-align: center;
+cursor: pointer;
+width: 320px;
+top: -10px;
+margin: auto;
+box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+transition: all .2s;
+border-radius: 50px;
+  }
+    .footer-content .button:hover {
+      top:-15px;
+      transition: all .2s;
+    }
   .button {
     position: relative;
     padding: 12px;
     text-align: center;
     cursor: pointer;
-    width: 185px;
-    top: -20px;
+    width: 209px;
+    top: 8;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-    transition: all .2s
+    transition: all .2s;
+    border-radius: 50px;
   }
   .button:hover {
-    top: -25px;
+    top: 3px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     transition: all .2s
   }
@@ -2348,19 +2449,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', e
     width: 164px;
     height: 164px
   }
+  .footer-content .button {
+    position: relative;
+padding: 18px;
+text-align: center;
+cursor: pointer;
+width: 320px;
+top: -10px;
+margin: auto;
+box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+transition: all .2s;
+border-radius: 50px;
+  }
+    .footer-content .button:hover {
+      top:-15px;
+      transition: all .2s;
+    }
   .button {
     position: relative;
-    padding: 20px;
+    padding: 12px;
     text-align: center;
     cursor: pointer;
-    width: 264px;
-    top: 30;
+    width: 209px;
+    top: 8;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-    transition: all .2s
+    transition: all .2s;
+    border-radius: 50px;
   }
   .button:hover {
-    top: 25px;
+    top: 3px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     transition: all .2s
   }
@@ -2705,19 +2823,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', e
     width: 164px;
     height: 164px
   }
+  .footer-content .button {
+    position: relative;
+padding: 18px;
+text-align: center;
+cursor: pointer;
+width: 320px;
+top: -10px;
+margin: auto;
+box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
+transition: all .2s;
+border-radius: 50px;
+  }
+    .footer-content .button:hover {
+      top:-15px;
+      transition: all .2s;
+    }
   .button {
     position: relative;
-    padding: 20px;
+    padding: 12px;
     text-align: center;
     cursor: pointer;
-    width: 264px;
-    top: 18;
+    width: 209px;
+    top: 8;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
-    transition: all .2s
+    transition: all .2s;
+    border-radius: 50px;
   }
   .button:hover {
-    top: 13px;
+    top: 3px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     transition: all .2s
   }
