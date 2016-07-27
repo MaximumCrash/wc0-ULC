@@ -30,6 +30,9 @@ body {
 .txt-white {
   color: #fff
 }
+.txt-black {
+  color: #110519
+}
 .col-break {
   background-color: #e0e7eb
 }
@@ -142,11 +145,15 @@ body {
     background-position: 0 51%
   }
 }
-.parallax img {
+.parallax img.toosmall{
   bottom: 230!important;
 }
 section {
   position: relative;
+}
+
+section.maxedout {
+  height:100%;
 }
 .upperleft.head {
   margin-top: 6%;
@@ -189,6 +196,9 @@ section {
   white-space: nowrap;
 }
 @media only screen and (min-width:1764px) {
+  section.maxedin {
+    height:98%;
+  }
   .footer-content .button {
     position: relative;
     padding: 18px;
@@ -578,6 +588,9 @@ section {
   }
 }
 @media only screen and (min-width:1200px) and (max-width:1763px) {
+  section.maxedin {
+    height:564;
+  }
   section .wrapper.para {
     width: 100%;
     position: absolute;
@@ -982,6 +995,9 @@ section {
   }
 }
 @media only screen and (min-width:1097px) and (max-width:1199px) {
+  section.maxedin {
+    height:564;
+  }
   section .wrapper.para {
     width: 100%;
     position: absolute;
@@ -1375,6 +1391,9 @@ section {
   }
 }
 @media only screen and (min-width:993px) and (max-width:1097px) {
+  section.maxedin {
+    height:564;
+  }
   .f-smalltomedium {
     font-size: 1.3rem;
   }
@@ -1745,6 +1764,9 @@ section {
   }
 }
 @media only screen and (min-width:890px) and (max-width:993px) {
+  section.maxedin {
+    height:564;
+  }
   .f-smalltomedium {
     font-size: 1.25rem;
   }
@@ -2118,6 +2140,9 @@ section {
   }
 }
 @media only screen and (max-width:890px) and (min-width:611px) {
+  section.maxedin {
+    height:800;
+  }
   section .wrapper.para {
     width: 100%;
     position: absolute;
@@ -2551,6 +2576,9 @@ section {
   }
 }
 @media only screen and (max-width:611px) {
+  section.maxedin {
+    height:1000;
+  }
   section .wrapper.para {
     width: 100%;
     position: absolute;
