@@ -3,6 +3,18 @@ body {
   display: block;
   overflow-x: hidden
 }
+.wrap {
+  min-height: 100%;
+  padding-bottom: 352px;
+}
+footer {
+  margin-top: -352px;
+  clear: both;
+}
+  .flexcards.leaders.mobile {
+    display:none;
+  }
+
 .parallax {
   height: 100%;
 }
@@ -69,7 +81,7 @@ body {
 .f-tiny {
   font-size: 1.1rem
 }
-.f-small {
+.f-small, .f-smalltomicrotolarge {
   font-size: 1.25rem
 }
 .f-smalltomedium {
@@ -145,15 +157,45 @@ body {
     background-position: 0 51%
   }
 }
-.parallax img.toosmall{
-  bottom: 230!important;
+.more {
+  top: -80px!important;
+  transition: all ease .2s!important;
+}
+.leader0 {
+  background: linear-gradient(222deg, #7b1fa2, #9b58b7)!important;
+background-size: 400% 400%!important;
+
+-webkit-animation: GradAnim 1s ease infinite;
+-moz-animation: GradAnim 1s ease infinite;
+-o-animation: GradAnim 1s ease infinite;
+animation: GradAnim 1s ease infinite;
+}
+.leader1 {
+  background: linear-gradient(222deg, #477eff, #8eb0ff)!important;
+background-size: 400% 400%!important;
+
+-webkit-animation: GradAnim 1s ease infinite;
+-moz-animation: GradAnim 1s ease infinite;
+-o-animation: GradAnim 1s ease infinite;
+animation: GradAnim 1s ease infinite;
+}
+.leader2 {
+  background: linear-gradient(222deg, #13dc90, #61e2b1)!important;
+background-size: 400% 400%!important;
+
+-webkit-animation: GradAnim 1s ease infinite;
+-moz-animation: GradAnim 1s ease infinite;
+-o-animation: GradAnim 1s ease infinite;
+animation: GradAnim 1s ease infinite;
+}
+.parallax img.toosmall {
+  bottom: 200!important;
 }
 section {
   position: relative;
 }
-
 section.maxedout {
-  height:100%;
+  height: 100%;
 }
 .upperleft.head {
   margin-top: 6%;
@@ -196,8 +238,19 @@ section.maxedout {
   white-space: nowrap;
 }
 @media only screen and (min-width:1764px) {
+  #modal2 > div > p {
+    font-size:1.3rem;
+  }
+  .header.head {
+    margin-top:100px;
+    color:white;
+  }
   section.maxedin {
-    height:98%;
+    height: 100%;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite
   }
   .footer-content .button {
     position: relative;
@@ -348,7 +401,7 @@ section.maxedout {
   section.lg {
     height: 700px
   }
-  section.med,section.medtolg  {
+  section.med, section.medtolg {
     height: 500px
   }
   section.smtomed {
@@ -452,6 +505,34 @@ section.maxedout {
     white-space: normal;
     background: #fff
   }
+  .flexcards.leaders > div{
+    padding: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    position:relative;
+    top: 0;
+    transition: all .2s;
+    margin-top:36px;
+    margin-right: 16px;
+    margin-left: 16px;
+    border-top:0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 320;
+    height: 390px;
+    white-space: normal;
+    background: #fff;
+    transition: all .2s;
+  }
+  .flexcards.leaders > div:hover{
+    top: -8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 4px 13px 0 rgba(0, 0, 0, .2);
+    transition: all .2s;
+  }
+  .flexcards.leaders > div > .leadpic{
+    height:320px;
+    background: red;
+  }
+
   .f-smalltolarge {
     font-size: 1.5rem
   }
@@ -470,6 +551,16 @@ section.maxedout {
   .card-header {
     height: 56px;
     margin-bottom: 0
+  }
+  .flexcards.leaders > div>.card-header {
+    height: auto;
+    margin-bottom: 0;
+    margin-top:3px;
+  }
+  .flexcards.leaders > div>.card-header:last-child {
+    height: auto;
+    margin-bottom: 0;
+    margin-top:6px;
   }
   .card-subtext>li {
     margin-bottom: 10px
@@ -571,25 +662,31 @@ section.maxedout {
     margin-top: 0
   }
   .listicons li {
-    position:relative;
-    margin-bottom:0px;
+    position: relative;
+    margin-bottom: 0px;
   }
-
-  .listicons li div{
-    height:87px;
-    width:96px;
+  .listicons li div {
+    height: 87px;
+    width: 96px;
   }
-
-  .listicons > li > p {
-    position:absolute;
-    margin:0;
+  .listicons> li> p {
+    position: absolute;
+    margin: 0;
     white-space: nowrap;
-    top:25px;
+    top: 25px;
   }
 }
 @media only screen and (min-width:1200px) and (max-width:1763px) {
+  .header.head {
+    margin-top:15px;
+    color:white;
+  }
   section.maxedin {
-    height:564;
+    height: 564;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite
   }
   section .wrapper.para {
     width: 100%;
@@ -760,7 +857,7 @@ section.maxedout {
   section.lg {
     height: 564px
   }
-  section.med, section.smtomed,section.medtolg  {
+  section.med, section.smtomed, section.medtolg {
     height: 480px
   }
   section.sm {
@@ -836,6 +933,49 @@ section.maxedout {
     text-align: center;
     margin-bottom: 7px
   }
+  .flexcards.leaders {
+    margin-top:36px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    text-align: center;
+    margin-bottom: 7px
+  }
+  .flexcards.leaders > div{
+    padding: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    position:relative;
+    top: 0;
+    transition: all .2s;
+    margin-top:36px;
+    margin-right: 16px;
+    margin-left: 16px;
+    border-top:0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 237;
+    height: 309px;
+    white-space: normal;
+    background: #fff;
+    transition: all .2s;
+  }
+  .flexcards.leaders > div:hover{
+    top: -8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 4px 13px 0 rgba(0, 0, 0, .2);
+    transition: all .2s;
+  }
+  .flexcards.leaders > div > .leadpic{
+    height:237px;
+    background: red;
+  }
+
   .flexcards>div {
     margin-right: 16px;
     margin-left: 16px;
@@ -847,7 +987,7 @@ section.maxedout {
     width: 300px;
     height: 358px;
     white-space: normal;
-    background: #fff
+    background: #fff;
   }
   .flexcards>div, .flexcards>div:last-child>.card-header {
     margin-bottom: 15px
@@ -855,9 +995,20 @@ section.maxedout {
   .flexcards>div>.icon-lg {
     margin: auto
   }
-  .card-header {
+  .flexcards >div >.card-header {
     height: 56px;
     margin-bottom: 0
+  }
+
+  .flexcards.leaders > div>.card-header {
+    height: auto;
+    margin-bottom: 0;
+    margin-top:3px;
+  }
+  .flexcards.leaders > div>.card-header:last-child {
+    height: auto;
+    margin-bottom: 0;
+    margin-top:6px;
   }
   .card-subtext>li {
     margin-bottom: 10px
@@ -939,7 +1090,8 @@ section.maxedout {
     vertical-align: top;
     margin-top: 17px;
     margin-right: 32px;
-    float: right
+    float: right;
+    width:345px;
   }
   .footer-content .content .footer-logo .companylogo {
     cursor: pointer;
@@ -962,41 +1114,45 @@ section.maxedout {
     font-size: 1.25rem;
   }
   .listicons li {
-    position:relative;
-    margin-bottom:0px;
+    position: relative;
+    margin-bottom: 0px;
   }
-
-  .listicons li div{
-    height:87px;
-    width:96px;
+  .listicons li div {
+    height: 87px;
+    width: 96px;
   }
-
-  .listicons > li > p {
-    position:absolute;
-    margin:0;
+  .listicons> li> p {
+    position: absolute;
+    margin: 0;
     white-space: nowrap;
-    top:25px;
+    top: 25px;
   }
   .listicons li {
-    position:relative;
-    margin-bottom:0px;
+    position: relative;
+    margin-bottom: 0px;
   }
-
-  .listicons li div{
-    height:87px;
-    width:96px;
+  .listicons li div {
+    height: 87px;
+    width: 96px;
   }
-
-  .listicons > li > p {
-    position:absolute;
-    margin:0;
+  .listicons> li> p {
+    position: absolute;
+    margin: 0;
     white-space: nowrap;
-    top:25px;
+    top: 25px;
   }
 }
 @media only screen and (min-width:1097px) and (max-width:1199px) {
+  .header.head {
+    margin-top:15px;
+    color:white;
+  }
   section.maxedin {
-    height:564;
+    height: 564;
+    background: linear-gradient(235deg, #7b1fa2, #477eff, #13dc90);
+    background-size: 300% 300%;
+    -webkit-animation: GradAnim 6s ease infinite;
+    animation: GradAnim 6s ease infinite
   }
   section .wrapper.para {
     width: 100%;
@@ -1171,7 +1327,7 @@ section.maxedout {
   section.lg {
     height: 564px
   }
-  section.med, section.smtomed,section.medtolg  {
+  section.med, section.smtomed, section.medtolg {
     height: 420px
   }
   section.sm {
@@ -1273,6 +1429,58 @@ section.maxedout {
   .card-subtext>li {
     margin-bottom: 10px
   }
+  .flexcards.leaders {
+    margin-top:36px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    text-align: center;
+    margin-bottom: 7px
+  }
+  .flexcards.leaders > div{
+    padding: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    position:relative;
+    top: 0;
+    transition: all .2s;
+    margin-top:36px;
+    margin-right: 16px;
+    margin-left: 16px;
+    border-top:0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 226;
+    height: 309px;
+    white-space: normal;
+    background: #fff;
+    transition: all .2s;
+  }
+  .flexcards.leaders > div:hover{
+    top: -8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 4px 13px 0 rgba(0, 0, 0, .2);
+    transition: all .2s;
+  }
+  .flexcards.leaders > div > .leadpic{
+    height:237px;
+    background: red;
+  }
+  .flexcards.leaders > div>.card-header {
+    height: auto;
+    margin-bottom: 0;
+    margin-top:3px;
+  }
+  .flexcards.leaders > div>.card-header:last-child {
+    height: auto;
+    margin-bottom: 0;
+    margin-top:6px;
+  }
   .footer-content .button {
     position: relative;
     padding: 13px;
@@ -1306,7 +1514,12 @@ section.maxedout {
   }
   footer {
     background: #302e2f;
-    color: hsla(0, 0%, 100%, .95)
+    color: hsla(0, 0%, 100%, .95);
+    margin-top: -347px;
+clear: both;
+  }
+  .wrap {
+        padding-bottom: 347px;
   }
   .footer-header {
     width: 100%;
@@ -1374,25 +1587,28 @@ section.maxedout {
     font-size: 1.3rem;
   }
   .listicons li {
-    position:relative;
-    margin-bottom:0px;
+    position: relative;
+    margin-bottom: 0px;
   }
-
-  .listicons li div{
-    height:74px;
-    width:96px;
+  .listicons li div {
+    height: 74px;
+    width: 96px;
   }
-
-  .listicons > li > p {
-    position:absolute;
-    margin:0;
+  .listicons> li> p {
+    position: absolute;
+    margin: 0;
     white-space: nowrap;
-    top:25px;
+    top: 25px;
   }
 }
 @media only screen and (min-width:993px) and (max-width:1097px) {
+  #modal2 > div > p {
+    font-size:1.2rem;
+  }
+  .header.head {
+    margin-top:15px;}
   section.maxedin {
-    height:564;
+    height: 564;
   }
   .f-smalltomedium {
     font-size: 1.3rem;
@@ -1565,7 +1781,7 @@ section.maxedout {
   section.lg {
     height: 564px
   }
-  section.med, section.smtomed,section.medtolg  {
+  section.med, section.smtomed, section.medtolg {
     height: 420px
   }
   section.sm {
@@ -1654,6 +1870,65 @@ section.maxedout {
     white-space: normal;
     background: #fff
   }
+  .flexcards.leaders {
+    margin-top:36px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    text-align: center;
+    margin-bottom: 7px
+  }
+  .f-smalltomicrotolarge {
+    font-size:1rem;
+    font-weight:700;
+  }
+  .flexcards.leaders > div:nth-child(1) > .leadpic {
+    background-size: 109% 101%!important;
+  }
+  .flexcards.leaders > div{
+    padding: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    position:relative;
+    top: 0;
+    transition: all .2s;
+    margin-top:36px;
+    margin-right: 5px;
+    margin-left: 9px;
+    border-top:0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 214px;
+    height: 297px;
+    white-space: normal;
+    background: #fff;
+    transition: all .2s;
+  }
+  .flexcards.leaders > div:hover{
+    top: -8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 4px 13px 0 rgba(0, 0, 0, .2);
+    transition: all .2s;
+  }
+  .flexcards.leaders > div > .leadpic{
+    height:237px;
+    background: red;
+  }
+  .flexcards.leaders > div>.card-header {
+    height: auto;
+    margin-bottom: 0;
+    margin-top:3px;
+  }
+  .flexcards.leaders > div>.card-header:last-child {
+    height: auto;
+    margin-bottom: 0;
+    margin-top:6px;
+  }
   .flexcards>div, .flexcards>div:last-child>.card-header {
     margin-bottom: 15px
   }
@@ -1663,6 +1938,17 @@ section.maxedout {
   .card-header {
     height: 56px;
     margin-bottom: 0
+  }
+
+  .flexcards.leaders > div>.card-header {
+    height: auto;
+    margin-bottom: 0;
+    margin-top:3px;
+  }
+  .flexcards.leaders > div>.card-header:last-child {
+    height: auto;
+    margin-bottom: 0;
+    margin-top:6px;
   }
   .card-subtext>li {
     margin-bottom: 10px
@@ -1700,7 +1986,11 @@ section.maxedout {
   }
   footer {
     background: #302e2f;
-    color: hsla(0, 0%, 100%, .95)
+    color: hsla(0, 0%, 100%, .95);
+    margin-top:-347px;
+  }
+  .wrap{
+    padding-bottom:347px;
   }
   .footer-header {
     width: 100%;
@@ -1764,8 +2054,13 @@ section.maxedout {
   }
 }
 @media only screen and (min-width:890px) and (max-width:993px) {
+  #modal2 > div > p {
+    font-size:1.2rem;
+  }
+  .header.head {
+    margin-top:15px;}
   section.maxedin {
-    height:564;
+    height: 564;
   }
   .f-smalltomedium {
     font-size: 1.25rem;
@@ -1938,7 +2233,7 @@ section.maxedout {
   section.lg {
     height: 564px
   }
-  section.med, section.smtomed,section.medtolg  {
+  section.med, section.smtomed, section.medtolg {
     height: 420px
   }
   section.sm {
@@ -2027,6 +2322,41 @@ section.maxedout {
     white-space: normal;
     background: #fff
   }
+  .flexcards.leaders > div:nth-child(1) > .leadpic {
+    background-size: 109% 101%!important;
+  }
+  .flexcards.leaders > div{
+    padding: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    position:relative;
+    top: 0;
+    transition: all .2s;
+    margin-top:36px;
+    margin-right: 8px;
+    margin-left: 4px;
+    border-top:0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 188;
+    height: 265px;
+    white-space: normal;
+    background: #fff;
+    transition: all .2s;
+  }
+  .flexcards.leaders > div:hover{
+    top: -8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 4px 13px 0 rgba(0, 0, 0, .2);
+    transition: all .2s;
+  }
+  .flexcards.leaders > div > .leadpic{
+    height:197px;
+    background: red;
+  }
+  .f-smalltomicrotolarge {
+    font-size:1rem;
+    font-weight:700;
+  }
+
   .flexcards>div, .flexcards>div:last-child>.card-header {
     margin-bottom: 34px
   }
@@ -2036,6 +2366,16 @@ section.maxedout {
   .card-header {
     height: 56px;
     margin-bottom: 0
+  }
+  .flexcards.leaders > div>.card-header {
+    height: auto;
+    margin-bottom: 0;
+    margin-top:3px;
+  }
+  .flexcards.leaders > div>.card-header:last-child {
+    height: auto;
+    margin-bottom: 0;
+    margin-top:6px;
   }
   .card-subtext>li {
     margin-bottom: 10px
@@ -2073,7 +2413,11 @@ section.maxedout {
   }
   footer {
     background: #302e2f;
-    color: hsla(0, 0%, 100%, .95)
+    color: hsla(0, 0%, 100%, .95);
+    margin-top:-344px;
+  }
+  .wrap {
+    padding-bottom:344px;
   }
   .footer-header {
     width: 100%;
@@ -2140,8 +2484,26 @@ section.maxedout {
   }
 }
 @media only screen and (max-width:890px) and (min-width:611px) {
+  #modal2 > div > p {
+    font-size:1.2rem;
+  }
+  .parallax img.toosmall {
+    bottom: 0!important;
+}
+  .extratag {
+    width: 200px;
+    height: 100px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 125px;
+    left: 50%;
+    background-image: url(/images/ogmandino.png);
+    transform: translateX(-50%);
+}
   section.maxedin {
-    height:800;
+    height: 1700;
   }
   section .wrapper.para {
     width: 100%;
@@ -2366,6 +2728,9 @@ section.maxedout {
   .link:hover {
     top: -5px
   }
+  .leaders.flexcards{
+    margin-top:10px;
+  }
   .flexcards {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2394,12 +2759,99 @@ section.maxedout {
     background: #fff;
     margin-bottom: 32
   }
+
+  .flexcards.leaders > div:nth-child(1) > .leadpic {
+    background-size: 109% 101%!important;
+  }
+  .flexcards.leaders {
+    margin-top:10px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    text-align: center;
+    margin-bottom: 7px
+  }
+  .flexcards.leaders.mobile {
+    margin-top:35px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    text-align: center;
+    margin-bottom: 7px;
+    position:fixed;
+    z-index:2010;
+    width:0;
+    height:0;
+    top:2%;
+    opacity:0;
+    margin-right:4px;
+  }
+  .more {
+    opacity:0;
+    top:0!important;
+    transition: none!important;
+  }
+  .flexcards.leaders > div{
+    padding: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    position:relative;
+    top: 0;
+    transition: all .2s;
+    margin-top:17px;
+    margin-right: 8px;
+    margin-left: 4px;
+    border-top:0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 326;
+    height: 372px;
+    white-space: normal;
+    background: #fff;
+    transition: all .2s;
+    margin-bottom:10px;
+  }
+  .flexcards.leaders > div:hover{
+    top: -8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 4px 13px 0 rgba(0, 0, 0, .2);
+    transition: all .2s;
+  }
+  .flexcards.leaders > div > .leadpic{
+    height:297px;
+    background: red;
+  }
+  .f-smalltomicrotolarge {
+    font-size:1.4rem;
+    font-weight:500;
+  }
+
   .flexcards>div>.card-header {
     margin-top: 0
   }
-  .flexcards>div, .flexcards>div:last-child>.card-header {
-    margin-bottom: 10px
+  .flexcards.leaders > div>.card-header {
+    height: auto;
+    margin-bottom: 0;
+    margin-top:3px;
   }
+  .flexcards.leaders > div>.card-header:last-child {
+    height: auto;
+    margin-bottom: 0;
+    margin-top:3px;
+  }
+
   .flexcards>div>.card-subtext>li {
     margin-bottom: 5px
   }
@@ -2514,17 +2966,6 @@ section.maxedout {
   .upperleft.head {
     margin-top: 6%;
   }
-  .extratag {
-    width: 200px;
-    height: 100px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: 0;
-    left: 20;
-    background-image: url(/images/ogmandino.png);
-  }
   .statement-side.left {
     margin-top: 5px;
     margin-left: 10px;
@@ -2574,10 +3015,31 @@ section.maxedout {
   .parallax img {
     bottom: 0!important;
   }
+  #modal2 > div > p {
+    font-size:1.2rem;
+  }
 }
 @media only screen and (max-width:611px) {
+  #modal2 > div > p {
+    font-size:1.2rem;
+  }
+  .parallax img.toosmall {
+    bottom: 0!important;
+}
+  .extratag {
+    width: 200px;
+    height: 100px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 125px;
+    left: 50%;
+    background-image: url(/images/ogmandino.png);
+    transform: translateX(-50%);
+}
   section.maxedin {
-    height:1000;
+    height: 1864;
   }
   section .wrapper.para {
     width: 100%;
@@ -2739,7 +3201,7 @@ section.maxedout {
   section.lg {
     height: 1665px
   }
-  section.med, section.smtomed,section.medtolg {
+  section.med, section.smtomed, section.medtolg {
     height: 420px
   }
   section.sm {
@@ -2833,8 +3295,121 @@ section.maxedout {
     background: #fff;
     margin-bottom: 32
   }
+  .flexcards.leaders > div:nth-child(1) > .leadpic {
+    background-size: 109% 101%!important;
+  }
+  .flexcards.leaders {
+    margin-top:10px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    text-align: center;
+    margin-bottom: 7px
+  }
+  .modal.bottom-sheet {
+    min-height:30%!important;
+    max-height:30%!important;
+  }
+  .flexcards.leaders.mobile {
+    margin-top:35px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    text-align: center;
+    margin-bottom: 7px;
+    position:fixed;
+
+    top:10px;
+    z-index:2010;
+    width:0;
+    height:0;
+    opacity:0;
+    margin-right:4px;
+  }
+  .flexcards.leaders.mobile > div{
+    padding: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    position:relative;
+    top: 0;
+    transition: all .2s;
+    margin-top:17px;
+    margin-right: 8px;
+    margin-left: 4px;
+    border-top:0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 246;
+    height: 300px;
+    white-space: normal;
+    background: #fff;
+    transition: all .2s;
+  }
+
+    .flexcards.leaders.mobile > div > .leadpic{
+      height:219;
+    }
+  .more {
+    opacity:0;
+    top:0!important;
+    transition: none!important;
+  }
+  .flexcards.leaders > div{
+    padding: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    position:relative;
+    top: 0;
+    transition: all .2s;
+    margin-top:17px;
+    margin-right: 8px;
+    margin-left: 4px;
+    border-top:0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    width: 326;
+    height: 372px;
+    white-space: normal;
+    background: #fff;
+    transition: all .2s;
+  }
+  .flexcards.leaders > div:hover{
+    top: -8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 4px 13px 0 rgba(0, 0, 0, .2);
+    transition: all .2s;
+  }
+  .flexcards.leaders > div > .leadpic{
+    height:297px;
+    background: red;
+  }
+  .f-smalltomicrotolarge {
+    font-size:1.4rem;
+    font-weight:500;
+  }
   .flexcards>div>.card-header {
     margin-top: 0
+  }
+  .flexcards.leaders > div>.card-header {
+    height: auto;
+    margin-bottom: 0;
+    margin-top:3px;
+  }
+  .flexcards.leaders > div>.card-header:last-child {
+    height: auto;
+    margin-bottom: 0;
+    margin-top:3px;
   }
   .flexcards>div, .flexcards>div:last-child>.card-header {
     margin-bottom: 10px
@@ -2952,48 +3527,43 @@ section.maxedout {
   .footer-content .content p:first-child {
     margin-top: 0
   }
-
   .statement-side.left {
-    margin-top:10px;
-    margin-left:0px;
-    width:100%;
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 100%;
   }
   .listicons.right {
-    width:100%;
-    margin-right:0;
-    margin-top:0px;
-    padding:11px;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0px;
+    padding: 11px;
     padding-left: 0;
-    height:90px;
+    height: 90px;
   }
-
   .listicons li {
-    position:relative;
-    margin-bottom:0px;
+    position: relative;
+    margin-bottom: 0px;
   }
-
-  .listicons li div{
-    height:76px;
-    width:86px;
+  .listicons li div {
+    height: 76px;
+    width: 86px;
   }
-
-  .listicons > li > p {
-    position:absolute;
-    margin:0;
+  .listicons> li> p {
+    position: absolute;
+    margin: 0;
     white-space: nowrap;
-    top:15px;
+    top: 15px;
   }
   section.medtolg {
-    height:910px;
+    height: 910px;
   }
-
   .parallax-container {
-    height:100%!important;
+    height: 100%!important;
   }
   .parallax {
-    height:100%;
+    height: 100%;
   }
   .parallax img {
-    bottom:0!important;
+    bottom: 0!important;
   }
 }
