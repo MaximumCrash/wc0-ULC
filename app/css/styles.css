@@ -11,10 +11,9 @@ footer {
   margin-top: -352px;
   clear: both;
 }
-  .flexcards.leaders.mobile {
-    display:none;
-  }
-
+.flexcards.leaders.mobile {
+  display: none;
+}
 .parallax {
   height: 100%;
 }
@@ -163,30 +162,27 @@ footer {
 }
 .leader0 {
   background: linear-gradient(222deg, #7b1fa2, #9b58b7)!important;
-background-size: 400% 400%!important;
-
--webkit-animation: GradAnim 1s ease infinite;
--moz-animation: GradAnim 1s ease infinite;
--o-animation: GradAnim 1s ease infinite;
-animation: GradAnim 1s ease infinite;
+  background-size: 400% 400%!important;
+  -webkit-animation: GradAnim 1s ease infinite;
+  -moz-animation: GradAnim 1s ease infinite;
+  -o-animation: GradAnim 1s ease infinite;
+  animation: GradAnim 1s ease infinite;
 }
 .leader1 {
   background: linear-gradient(222deg, #477eff, #8eb0ff)!important;
-background-size: 400% 400%!important;
-
--webkit-animation: GradAnim 1s ease infinite;
--moz-animation: GradAnim 1s ease infinite;
--o-animation: GradAnim 1s ease infinite;
-animation: GradAnim 1s ease infinite;
+  background-size: 400% 400%!important;
+  -webkit-animation: GradAnim 1s ease infinite;
+  -moz-animation: GradAnim 1s ease infinite;
+  -o-animation: GradAnim 1s ease infinite;
+  animation: GradAnim 1s ease infinite;
 }
 .leader2 {
   background: linear-gradient(222deg, #13dc90, #61e2b1)!important;
-background-size: 400% 400%!important;
-
--webkit-animation: GradAnim 1s ease infinite;
--moz-animation: GradAnim 1s ease infinite;
--o-animation: GradAnim 1s ease infinite;
-animation: GradAnim 1s ease infinite;
+  background-size: 400% 400%!important;
+  -webkit-animation: GradAnim 1s ease infinite;
+  -moz-animation: GradAnim 1s ease infinite;
+  -o-animation: GradAnim 1s ease infinite;
+  animation: GradAnim 1s ease infinite;
 }
 .parallax img.toosmall {
   bottom: 200!important;
@@ -238,12 +234,12 @@ section.maxedout {
   white-space: nowrap;
 }
 @media only screen and (min-width:1764px) {
-  #modal2 > div > p {
-    font-size:1.3rem;
+  #modal2> div> p {
+    font-size: 1.3rem;
   }
   .header.head {
-    margin-top:100px;
-    color:white;
+    margin-top: 100px;
+    color: white;
   }
   section.maxedin {
     height: 100%;
@@ -411,7 +407,7 @@ section.maxedout {
     height: 420px
   }
   section.tiny {
-    height: 300px
+    height: 250px
   }
   section.micro {
     height: 120px
@@ -505,17 +501,17 @@ section.maxedout {
     white-space: normal;
     background: #fff
   }
-  .flexcards.leaders > div{
+  .flexcards.leaders> div {
     padding: 0;
     border-radius: 2px;
     cursor: pointer;
-    position:relative;
+    position: relative;
     top: 0;
     transition: all .2s;
-    margin-top:36px;
+    margin-top: 36px;
     margin-right: 16px;
     margin-left: 16px;
-    border-top:0;
+    border-top: 0;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     width: 320;
     height: 390px;
@@ -523,16 +519,15 @@ section.maxedout {
     background: #fff;
     transition: all .2s;
   }
-  .flexcards.leaders > div:hover{
+  .flexcards.leaders> div:hover {
     top: -8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 4px 13px 0 rgba(0, 0, 0, .2);
     transition: all .2s;
   }
-  .flexcards.leaders > div > .leadpic{
-    height:320px;
+  .flexcards.leaders> div> .leadpic {
+    height: 320px;
     background: red;
   }
-
   .f-smalltolarge {
     font-size: 1.5rem
   }
@@ -552,15 +547,15 @@ section.maxedout {
     height: 56px;
     margin-bottom: 0
   }
-  .flexcards.leaders > div>.card-header {
+  .flexcards.leaders> div>.card-header {
     height: auto;
     margin-bottom: 0;
-    margin-top:3px;
+    margin-top: 3px;
   }
-  .flexcards.leaders > div>.card-header:last-child {
+  .flexcards.leaders> div>.card-header:last-child {
     height: auto;
     margin-bottom: 0;
-    margin-top:6px;
+    margin-top: 6px;
   }
   .card-subtext>li {
     margin-bottom: 10px
@@ -675,11 +670,29 @@ section.maxedout {
     white-space: nowrap;
     top: 25px;
   }
+  .upper > .icon-lg {
+    height:70px;
+  }
+  .upper > .f-large {
+    position:relative; top:-27px; margin-left:10px;
+  }
+  .miny-statement-side.left{
+    margin-top:0;
+    width:33%;
+    margin-left:10px;
+  }
+  .miny-statement-side.left > li{
+    margin-top:10px;
+  }
+  .miny-statement-side.right {
+    margin-top: 0;
+    width:62%;
+  }
 }
 @media only screen and (min-width:1200px) and (max-width:1763px) {
   .header.head {
-    margin-top:15px;
-    color:white;
+    margin-top: 15px;
+    color: white;
   }
   section.maxedin {
     height: 564;
@@ -861,10 +874,10 @@ section.maxedout {
     height: 480px
   }
   section.sm {
-    height: 320px
+    height: 365px
   }
   section.tiny {
-    height: 300px
+    height: 200px
   }
   section.micro {
     height: 120px
@@ -934,7 +947,7 @@ section.maxedout {
     margin-bottom: 7px
   }
   .flexcards.leaders {
-    margin-top:36px;
+    margin-top: 36px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -948,17 +961,17 @@ section.maxedout {
     text-align: center;
     margin-bottom: 7px
   }
-  .flexcards.leaders > div{
+  .flexcards.leaders> div {
     padding: 0;
     border-radius: 2px;
     cursor: pointer;
-    position:relative;
+    position: relative;
     top: 0;
     transition: all .2s;
-    margin-top:36px;
+    margin-top: 36px;
     margin-right: 16px;
     margin-left: 16px;
-    border-top:0;
+    border-top: 0;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     width: 237;
     height: 309px;
@@ -966,16 +979,15 @@ section.maxedout {
     background: #fff;
     transition: all .2s;
   }
-  .flexcards.leaders > div:hover{
+  .flexcards.leaders> div:hover {
     top: -8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 4px 13px 0 rgba(0, 0, 0, .2);
     transition: all .2s;
   }
-  .flexcards.leaders > div > .leadpic{
-    height:237px;
+  .flexcards.leaders> div> .leadpic {
+    height: 237px;
     background: red;
   }
-
   .flexcards>div {
     margin-right: 16px;
     margin-left: 16px;
@@ -995,20 +1007,19 @@ section.maxedout {
   .flexcards>div>.icon-lg {
     margin: auto
   }
-  .flexcards >div >.card-header {
+  .flexcards>div>.card-header {
     height: 56px;
     margin-bottom: 0
   }
-
-  .flexcards.leaders > div>.card-header {
+  .flexcards.leaders> div>.card-header {
     height: auto;
     margin-bottom: 0;
-    margin-top:3px;
+    margin-top: 3px;
   }
-  .flexcards.leaders > div>.card-header:last-child {
+  .flexcards.leaders> div>.card-header:last-child {
     height: auto;
     margin-bottom: 0;
-    margin-top:6px;
+    margin-top: 6px;
   }
   .card-subtext>li {
     margin-bottom: 10px
@@ -1091,7 +1102,7 @@ section.maxedout {
     margin-top: 17px;
     margin-right: 32px;
     float: right;
-    width:345px;
+    width: 345px;
   }
   .footer-content .content .footer-logo .companylogo {
     cursor: pointer;
@@ -1141,11 +1152,29 @@ section.maxedout {
     white-space: nowrap;
     top: 25px;
   }
+  .upper > .icon-lg {
+    height:70px;
+  }
+  .upper > .f-large {
+    position:relative; top:-27px; margin-left:10px;
+  }
+  .miny-statement-side.left{
+    margin-top:0;
+    width:33%;
+    margin-left:10px;
+  }
+  .miny-statement-side.left > li{
+    margin-top:10px;
+  }
+  .miny-statement-side.right {
+    margin-top: 0;
+    width:62%;
+  }
 }
 @media only screen and (min-width:1097px) and (max-width:1199px) {
   .header.head {
-    margin-top:15px;
-    color:white;
+    margin-top: 15px;
+    color: white;
   }
   section.maxedin {
     height: 564;
@@ -1334,7 +1363,7 @@ section.maxedout {
     height: 364px
   }
   section.tiny {
-    height: 300px
+    height: 200px
   }
   section.micro {
     height: 120px
@@ -1430,7 +1459,7 @@ section.maxedout {
     margin-bottom: 10px
   }
   .flexcards.leaders {
-    margin-top:36px;
+    margin-top: 36px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -1444,17 +1473,17 @@ section.maxedout {
     text-align: center;
     margin-bottom: 7px
   }
-  .flexcards.leaders > div{
+  .flexcards.leaders> div {
     padding: 0;
     border-radius: 2px;
     cursor: pointer;
-    position:relative;
+    position: relative;
     top: 0;
     transition: all .2s;
-    margin-top:36px;
+    margin-top: 36px;
     margin-right: 16px;
     margin-left: 16px;
-    border-top:0;
+    border-top: 0;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     width: 226;
     height: 309px;
@@ -1462,24 +1491,24 @@ section.maxedout {
     background: #fff;
     transition: all .2s;
   }
-  .flexcards.leaders > div:hover{
+  .flexcards.leaders> div:hover {
     top: -8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 4px 13px 0 rgba(0, 0, 0, .2);
     transition: all .2s;
   }
-  .flexcards.leaders > div > .leadpic{
-    height:237px;
+  .flexcards.leaders> div> .leadpic {
+    height: 237px;
     background: red;
   }
-  .flexcards.leaders > div>.card-header {
+  .flexcards.leaders> div>.card-header {
     height: auto;
     margin-bottom: 0;
-    margin-top:3px;
+    margin-top: 3px;
   }
-  .flexcards.leaders > div>.card-header:last-child {
+  .flexcards.leaders> div>.card-header:last-child {
     height: auto;
     margin-bottom: 0;
-    margin-top:6px;
+    margin-top: 6px;
   }
   .footer-content .button {
     position: relative;
@@ -1516,10 +1545,10 @@ section.maxedout {
     background: #302e2f;
     color: hsla(0, 0%, 100%, .95);
     margin-top: -347px;
-clear: both;
+    clear: both;
   }
   .wrap {
-        padding-bottom: 347px;
+    padding-bottom: 347px;
   }
   .footer-header {
     width: 100%;
@@ -1600,13 +1629,34 @@ clear: both;
     white-space: nowrap;
     top: 25px;
   }
+  .upper> .icon-lg {
+    height: 70px;
+  }
+  .upper> .f-large {
+    position: relative;
+    top: -27px;
+    margin-left: 10px;
+  }
+  .miny-statement-side.left {
+    margin-top: 0;
+    width: 33%;
+    margin-left: 10px;
+  }
+  .miny-statement-side.left> li {
+    margin-top: 10px;
+  }
+  .miny-statement-side.right {
+    margin-top: 0;
+    width: 62%;
+  }
 }
 @media only screen and (min-width:993px) and (max-width:1097px) {
-  #modal2 > div > p {
-    font-size:1.2rem;
+  #modal2> div> p {
+    font-size: 1.2rem;
   }
   .header.head {
-    margin-top:15px;}
+    margin-top: 15px;
+  }
   section.maxedin {
     height: 564;
   }
@@ -1788,7 +1838,7 @@ clear: both;
     height: 364px
   }
   section.tiny {
-    height: 300px
+    height: 185px
   }
   section.micro {
     height: 120px
@@ -1871,7 +1921,7 @@ clear: both;
     background: #fff
   }
   .flexcards.leaders {
-    margin-top:36px;
+    margin-top: 36px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -1886,23 +1936,23 @@ clear: both;
     margin-bottom: 7px
   }
   .f-smalltomicrotolarge {
-    font-size:1rem;
-    font-weight:700;
+    font-size: 1rem;
+    font-weight: 700;
   }
-  .flexcards.leaders > div:nth-child(1) > .leadpic {
+  .flexcards.leaders> div:nth-child(1)> .leadpic {
     background-size: 109% 101%!important;
   }
-  .flexcards.leaders > div{
+  .flexcards.leaders> div {
     padding: 0;
     border-radius: 2px;
     cursor: pointer;
-    position:relative;
+    position: relative;
     top: 0;
     transition: all .2s;
-    margin-top:36px;
+    margin-top: 36px;
     margin-right: 5px;
     margin-left: 9px;
-    border-top:0;
+    border-top: 0;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     width: 214px;
     height: 297px;
@@ -1910,24 +1960,24 @@ clear: both;
     background: #fff;
     transition: all .2s;
   }
-  .flexcards.leaders > div:hover{
+  .flexcards.leaders> div:hover {
     top: -8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 4px 13px 0 rgba(0, 0, 0, .2);
     transition: all .2s;
   }
-  .flexcards.leaders > div > .leadpic{
-    height:237px;
+  .flexcards.leaders> div> .leadpic {
+    height: 237px;
     background: red;
   }
-  .flexcards.leaders > div>.card-header {
+  .flexcards.leaders> div>.card-header {
     height: auto;
     margin-bottom: 0;
-    margin-top:3px;
+    margin-top: 3px;
   }
-  .flexcards.leaders > div>.card-header:last-child {
+  .flexcards.leaders> div>.card-header:last-child {
     height: auto;
     margin-bottom: 0;
-    margin-top:6px;
+    margin-top: 6px;
   }
   .flexcards>div, .flexcards>div:last-child>.card-header {
     margin-bottom: 15px
@@ -1939,16 +1989,15 @@ clear: both;
     height: 56px;
     margin-bottom: 0
   }
-
-  .flexcards.leaders > div>.card-header {
+  .flexcards.leaders> div>.card-header {
     height: auto;
     margin-bottom: 0;
-    margin-top:3px;
+    margin-top: 3px;
   }
-  .flexcards.leaders > div>.card-header:last-child {
+  .flexcards.leaders> div>.card-header:last-child {
     height: auto;
     margin-bottom: 0;
-    margin-top:6px;
+    margin-top: 6px;
   }
   .card-subtext>li {
     margin-bottom: 10px
@@ -1987,10 +2036,10 @@ clear: both;
   footer {
     background: #302e2f;
     color: hsla(0, 0%, 100%, .95);
-    margin-top:-347px;
+    margin-top: -347px;
   }
-  .wrap{
-    padding-bottom:347px;
+  .wrap {
+    padding-bottom: 347px;
   }
   .footer-header {
     width: 100%;
@@ -2052,13 +2101,34 @@ clear: both;
   .footer-content .content p:first-child {
     margin-top: 0
   }
+  .upper> .icon-lg {
+    height: 70px;
+  }
+  .upper> .f-large {
+    position: relative;
+    top: -27px;
+    margin-left: 10px;
+  }
+  .miny-statement-side.left {
+    margin-top: 0;
+    width: 33%;
+    margin-left: 10px;
+  }
+  .miny-statement-side.left> li {
+    margin-top: 10px;
+  }
+  .miny-statement-side.right {
+    margin-top: 0;
+    width: 62%;
+  }
 }
 @media only screen and (min-width:890px) and (max-width:993px) {
-  #modal2 > div > p {
-    font-size:1.2rem;
+  #modal2> div> p {
+    font-size: 1.2rem;
   }
   .header.head {
-    margin-top:15px;}
+    margin-top: 15px;
+  }
   section.maxedin {
     height: 564;
   }
@@ -2240,7 +2310,7 @@ clear: both;
     height: 364px
   }
   section.tiny {
-    height: 300px
+    height: 150px
   }
   section.micro {
     height: 120px
@@ -2322,20 +2392,20 @@ clear: both;
     white-space: normal;
     background: #fff
   }
-  .flexcards.leaders > div:nth-child(1) > .leadpic {
+  .flexcards.leaders> div:nth-child(1)> .leadpic {
     background-size: 109% 101%!important;
   }
-  .flexcards.leaders > div{
+  .flexcards.leaders> div {
     padding: 0;
     border-radius: 2px;
     cursor: pointer;
-    position:relative;
+    position: relative;
     top: 0;
     transition: all .2s;
-    margin-top:36px;
+    margin-top: 36px;
     margin-right: 8px;
     margin-left: 4px;
-    border-top:0;
+    border-top: 0;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     width: 188;
     height: 265px;
@@ -2343,20 +2413,19 @@ clear: both;
     background: #fff;
     transition: all .2s;
   }
-  .flexcards.leaders > div:hover{
+  .flexcards.leaders> div:hover {
     top: -8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 4px 13px 0 rgba(0, 0, 0, .2);
     transition: all .2s;
   }
-  .flexcards.leaders > div > .leadpic{
-    height:197px;
+  .flexcards.leaders> div> .leadpic {
+    height: 197px;
     background: red;
   }
   .f-smalltomicrotolarge {
-    font-size:1rem;
-    font-weight:700;
+    font-size: 1rem;
+    font-weight: 700;
   }
-
   .flexcards>div, .flexcards>div:last-child>.card-header {
     margin-bottom: 34px
   }
@@ -2367,15 +2436,15 @@ clear: both;
     height: 56px;
     margin-bottom: 0
   }
-  .flexcards.leaders > div>.card-header {
+  .flexcards.leaders> div>.card-header {
     height: auto;
     margin-bottom: 0;
-    margin-top:3px;
+    margin-top: 3px;
   }
-  .flexcards.leaders > div>.card-header:last-child {
+  .flexcards.leaders> div>.card-header:last-child {
     height: auto;
     margin-bottom: 0;
-    margin-top:6px;
+    margin-top: 6px;
   }
   .card-subtext>li {
     margin-bottom: 10px
@@ -2414,10 +2483,10 @@ clear: both;
   footer {
     background: #302e2f;
     color: hsla(0, 0%, 100%, .95);
-    margin-top:-344px;
+    margin-top: -344px;
   }
   .wrap {
-    padding-bottom:344px;
+    padding-bottom: 344px;
   }
   .footer-header {
     width: 100%;
@@ -2482,14 +2551,32 @@ clear: both;
   .footer-content .content p:first-child {
     margin-top: 0
   }
+  .upper > .icon-lg {
+    height:70px;
+  }
+  .upper > .f-large {
+    position:relative; top:-27px; margin-left:10px;
+  }
+  .miny-statement-side.left{
+    margin-top:0;
+    width:33%;
+    margin-left:10px;
+  }
+  .miny-statement-side.left > li{
+    margin-top:10px;
+  }
+  .miny-statement-side.right {
+    margin-top: 0;
+    width:62%;
+  }
 }
 @media only screen and (max-width:890px) and (min-width:611px) {
-  #modal2 > div > p {
-    font-size:1.2rem;
+  #modal2> div> p {
+    font-size: 1.2rem;
   }
   .parallax img.toosmall {
     bottom: 0!important;
-}
+  }
   .extratag {
     width: 200px;
     height: 100px;
@@ -2501,7 +2588,7 @@ clear: both;
     left: 50%;
     background-image: url(/images/ogmandino.png);
     transform: translateX(-50%);
-}
+  }
   section.maxedin {
     height: 1700;
   }
@@ -2670,7 +2757,7 @@ clear: both;
     height: 580px
   }
   section.tiny {
-    height: 300px
+    height: 150px
   }
   section:first-of-type {
     margin-top: 130px
@@ -2728,8 +2815,8 @@ clear: both;
   .link:hover {
     top: -5px
   }
-  .leaders.flexcards{
-    margin-top:10px;
+  .leaders.flexcards {
+    margin-top: 10px;
   }
   .flexcards {
     display: -webkit-flex;
@@ -2759,12 +2846,11 @@ clear: both;
     background: #fff;
     margin-bottom: 32
   }
-
-  .flexcards.leaders > div:nth-child(1) > .leadpic {
+  .flexcards.leaders> div:nth-child(1)> .leadpic {
     background-size: 109% 101%!important;
   }
   .flexcards.leaders {
-    margin-top:10px;
+    margin-top: 10px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -2779,7 +2865,7 @@ clear: both;
     margin-bottom: 7px
   }
   .flexcards.leaders.mobile {
-    margin-top:35px;
+    margin-top: 35px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -2792,66 +2878,64 @@ clear: both;
     -webkit-align-items: center;
     text-align: center;
     margin-bottom: 7px;
-    position:fixed;
-    z-index:2010;
-    width:0;
-    height:0;
-    top:2%;
-    opacity:0;
-    margin-right:4px;
+    position: fixed;
+    z-index: 2010;
+    width: 0;
+    height: 0;
+    top: 2%;
+    opacity: 0;
+    margin-right: 4px;
   }
   .more {
-    opacity:0;
-    top:0!important;
+    opacity: 0;
+    top: 0!important;
     transition: none!important;
   }
-  .flexcards.leaders > div{
+  .flexcards.leaders> div {
     padding: 0;
     border-radius: 2px;
     cursor: pointer;
-    position:relative;
+    position: relative;
     top: 0;
     transition: all .2s;
-    margin-top:17px;
+    margin-top: 17px;
     margin-right: 8px;
     margin-left: 4px;
-    border-top:0;
+    border-top: 0;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     width: 326;
     height: 372px;
     white-space: normal;
     background: #fff;
     transition: all .2s;
-    margin-bottom:10px;
+    margin-bottom: 10px;
   }
-  .flexcards.leaders > div:hover{
+  .flexcards.leaders> div:hover {
     top: -8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 4px 13px 0 rgba(0, 0, 0, .2);
     transition: all .2s;
   }
-  .flexcards.leaders > div > .leadpic{
-    height:297px;
+  .flexcards.leaders> div> .leadpic {
+    height: 297px;
     background: red;
   }
   .f-smalltomicrotolarge {
-    font-size:1.4rem;
-    font-weight:500;
+    font-size: 1.4rem;
+    font-weight: 500;
   }
-
   .flexcards>div>.card-header {
     margin-top: 0
   }
-  .flexcards.leaders > div>.card-header {
+  .flexcards.leaders> div>.card-header {
     height: auto;
     margin-bottom: 0;
-    margin-top:3px;
+    margin-top: 3px;
   }
-  .flexcards.leaders > div>.card-header:last-child {
+  .flexcards.leaders> div>.card-header:last-child {
     height: auto;
     margin-bottom: 0;
-    margin-top:3px;
+    margin-top: 3px;
   }
-
   .flexcards>div>.card-subtext>li {
     margin-bottom: 5px
   }
@@ -3015,17 +3099,39 @@ clear: both;
   .parallax img {
     bottom: 0!important;
   }
-  #modal2 > div > p {
-    font-size:1.2rem;
+  #modal2> div> p {
+    font-size: 1.2rem;
+  }
+
+
+  .upper > .icon-lg {
+    height:70px;
+  }
+  .upper > .f-large {
+    position:relative; top:0px; margin-left:0px;
+    display:block;
+  }
+  .miny-statement-side.left{
+    width:100%;
+    margin-top:0;
+    margin-left:0;
+  }
+  .miny-statement-side.left > li{
+    margin-top:3px;
+  }
+  .miny-statement-side.right {
+    width:100%;
+    margin-top:13px;
+
   }
 }
 @media only screen and (max-width:611px) {
-  #modal2 > div > p {
-    font-size:1.2rem;
+  #modal2> div> p {
+    font-size: 1.2rem;
   }
   .parallax img.toosmall {
     bottom: 0!important;
-}
+  }
   .extratag {
     width: 200px;
     height: 100px;
@@ -3037,7 +3143,7 @@ clear: both;
     left: 50%;
     background-image: url(/images/ogmandino.png);
     transform: translateX(-50%);
-}
+  }
   section.maxedin {
     height: 1864;
   }
@@ -3208,7 +3314,7 @@ clear: both;
     height: 800px
   }
   section.tiny {
-    height: 300px
+    height: 150px
   }
   section:first-of-type {
     margin-top: 80px
@@ -3295,11 +3401,11 @@ clear: both;
     background: #fff;
     margin-bottom: 32
   }
-  .flexcards.leaders > div:nth-child(1) > .leadpic {
+  .flexcards.leaders> div:nth-child(1)> .leadpic {
     background-size: 109% 101%!important;
   }
   .flexcards.leaders {
-    margin-top:10px;
+    margin-top: 10px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -3314,11 +3420,11 @@ clear: both;
     margin-bottom: 7px
   }
   .modal.bottom-sheet {
-    min-height:30%!important;
-    max-height:30%!important;
+    min-height: 30%!important;
+    max-height: 30%!important;
   }
   .flexcards.leaders.mobile {
-    margin-top:35px;
+    margin-top: 35px;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -3331,26 +3437,25 @@ clear: both;
     -webkit-align-items: center;
     text-align: center;
     margin-bottom: 7px;
-    position:fixed;
-
-    top:10px;
-    z-index:2010;
-    width:0;
-    height:0;
-    opacity:0;
-    margin-right:4px;
+    position: fixed;
+    top: 10px;
+    z-index: 2010;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin-right: 4px;
   }
-  .flexcards.leaders.mobile > div{
+  .flexcards.leaders.mobile> div {
     padding: 0;
     border-radius: 2px;
     cursor: pointer;
-    position:relative;
+    position: relative;
     top: 0;
     transition: all .2s;
-    margin-top:17px;
+    margin-top: 17px;
     margin-right: 8px;
     margin-left: 4px;
-    border-top:0;
+    border-top: 0;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     width: 246;
     height: 300px;
@@ -3358,26 +3463,25 @@ clear: both;
     background: #fff;
     transition: all .2s;
   }
-
-    .flexcards.leaders.mobile > div > .leadpic{
-      height:219;
-    }
+  .flexcards.leaders.mobile> div> .leadpic {
+    height: 219;
+  }
   .more {
-    opacity:0;
-    top:0!important;
+    opacity: 0;
+    top: 0!important;
     transition: none!important;
   }
-  .flexcards.leaders > div{
+  .flexcards.leaders> div {
     padding: 0;
     border-radius: 2px;
     cursor: pointer;
-    position:relative;
+    position: relative;
     top: 0;
     transition: all .2s;
-    margin-top:17px;
+    margin-top: 17px;
     margin-right: 8px;
     margin-left: 4px;
-    border-top:0;
+    border-top: 0;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     width: 326;
     height: 372px;
@@ -3385,31 +3489,31 @@ clear: both;
     background: #fff;
     transition: all .2s;
   }
-  .flexcards.leaders > div:hover{
+  .flexcards.leaders> div:hover {
     top: -8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 4px 13px 0 rgba(0, 0, 0, .2);
     transition: all .2s;
   }
-  .flexcards.leaders > div > .leadpic{
-    height:297px;
+  .flexcards.leaders> div> .leadpic {
+    height: 297px;
     background: red;
   }
   .f-smalltomicrotolarge {
-    font-size:1.4rem;
-    font-weight:500;
+    font-size: 1.4rem;
+    font-weight: 500;
   }
   .flexcards>div>.card-header {
     margin-top: 0
   }
-  .flexcards.leaders > div>.card-header {
+  .flexcards.leaders> div>.card-header {
     height: auto;
     margin-bottom: 0;
-    margin-top:3px;
+    margin-top: 3px;
   }
-  .flexcards.leaders > div>.card-header:last-child {
+  .flexcards.leaders> div>.card-header:last-child {
     height: auto;
     margin-bottom: 0;
-    margin-top:3px;
+    margin-top: 3px;
   }
   .flexcards>div, .flexcards>div:last-child>.card-header {
     margin-bottom: 10px
@@ -3565,5 +3669,29 @@ clear: both;
   }
   .parallax img {
     bottom: 0!important;
+  }
+  .upper > .icon-lg {
+    height:70px;
+    margin:auto;
+    display:block;
+  }
+  .upper > .f-large {
+    position:relative; top:0px; margin-left:10px;
+    display:block;
+    text-align: center;
+  }
+  .miny-statement-side.left{
+    text-align: center;
+    width:100%;
+    margin-top:5px;
+    margin-left:10px;
+  }
+  .miny-statement-side.left > li{
+    margin-top:10px;
+  }
+  .miny-statement-side.right {
+    width:100%;
+    margin-top:23px;
+    text-align: center;
   }
 }

@@ -8,7 +8,9 @@
   <link rel="manifest" href="/favicon/manifest.json">
   <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#7b1fa2">
   <meta name="theme-color" content="#7b1fa2">
-  <link rel="stylesheet" href="css/styles.min.css">
+  <!--build:css css/styles.min.css-->
+  <link id="style" rel="stylesheet" type="text/css" href="css/styles.css" />
+  <!--endbuild-->
   <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:400,500,600" rel="stylesheet">
 
@@ -173,7 +175,7 @@ Last Edited on 2016-07-27</b></p>
     <a href="#!" class=" modal-action modal-close waves-effect waves-dark btn-flat">Ok</a>
   </div>
 </div>
-  <header>
+  <header style="    background:none;">
     <div class="wrapper">
       <div class="upper col-prime">
         <div class="extra inline f-micro">
@@ -202,17 +204,17 @@ Last Edited on 2016-07-27</b></p>
         </div>
         <div class="companylogo inline link" data-go="2" data-type="page">
           <div class="icon-md inline" style="background-image:url('images/logo.svg')"></div>
-          <p class="logo-title txtcenter inline f0b f-medium">Unveiled Leadership
+          <p class="logo-title txtcenter inline f0b f-medium txt-black">Unveiled Leadership
             <br>
             <span class="f1a f-micro">coaching | consulting</span>
           </p>
         </div>
 
-        <ul class="links inline f-smalltomedium">
+        <ul class="links inline f-smalltomedium txt-black">
           <li class="inline waves-dark" data-go="2" data-type="page">Home</li>
-          <li class="active inline waves-dark" data-go="3" data-type="page">About</li>
+          <li class="inline waves-dark" data-go="3" data-type="page">About</li>
           <li class="inline waves-dark" data-go="4" data-type="page">Our Leadership</li>
-          <li class="inline waves-dark" data-go="5" data-type="page">Services</li>
+          <li class="active inline waves-dark" data-go="5" data-type="page">Services</li>
           <li class="inline waves-dark" data-go="6" data-type="page">Clients</li>
           <li class="inline waves-dark" data-go="7" data-type="page">Contact</li>
         </ul>
@@ -221,40 +223,69 @@ Last Edited on 2016-07-27</b></p>
       <div class="linktabs">
         <ul class="links inline f-small">
           <li class="inline waves-dark"  data-go="2" data-type="page">Home</li>
-          <li class="active inline waves-dark" data-go="3" data-type="page">About</li>
+          <li class="inline waves-dark" data-go="3" data-type="page">About</li>
           <li class="inline waves-dark" data-go="4" data-type="page">Our Leadership</li>
-          <li class="inline waves-dark" data-go="5" data-type="page">Services</li>
+          <li class="active inline waves-dark" data-go="5" data-type="page">Services</li>
           <li class="inline waves-dark" data-go="6" data-type="page">Clients</li>
           <li class="inline waves-dark" data-go="7" data-type="page">Contact</li>
         </ul>
       </div>
     </div>
   </header>
-  <section class="sm">
-    <div class="parallax-container">
+  <section class="tiny">
 
-    <div class="parallax">
-      <img class="toosmall" src="/images/jpg/about.jpg"  style="">
-    </div>
-
-  </div>
-  <div class="para cover"> </div>
     <div class="wrapper para">
-
-
-      <div class="upperleft head header f-xxl f0b txt-white">Our Mission & Values</div>
+      <div class="center header f-xxl f0b txt-black" style="margin-top:5%;">Our Services</div>
     </div>
   </section>
-  <section class="medtolg col-blank">
+  <section class="sm col-blank">
+    <div class="footer-header" style="background:#7b1fa2"></div>
+
   <div class="wrapper">
-    <p class="f0a f-smalltomedium inline statement-side left">Unveiled Leadership Coaching supports clients in shifting their thought processes to reveal a higher, more powerful, expression of themselves, and then leveraging that awareness to make critical human connections with others. <br><br> Our influential approach and intuitive style resonates with our clients' desire for successful business outcomes and personal fulfillment.We guide clients in embarking on a journey toward critical outcomes: </p>
-      <ul class="listicons right">
-        <li><div class="inline icon-md" style="background-image:url(/images/icona0.svg)"> </div> <p class="inline f-medium">Courageous Reflection</p></li>
-        <li><div class="inline icon-md" style="background-image:url(/images/icona1.svg)"> </div> <p class="inline f-medium">Thriving Relationships</p></li>
-        <li><div class="inline icon-md" style="background-image:url(/images/icona2.svg)"> </div> <p class="inline f-medium">Authentic Leadership</p></li>
-        <li><div class="inline icon-md" style="background-image:url(/images/icona3.svg)"> </div> <p class="inline f-medium">Meaningful Transformation</p></li>
-        <li><div class="inline icon-md" style="background-image:url(/images/icona4.svg)"> </div> <p class="inline f-medium">Intentional Achievement</p></li>
-      </ul>
+    <div class="upper">
+      <div class="icon-lg inline" style="background-image: url(/images/icon0.svg);"></div>
+      <div class="f1c f-large inline">Excellence Coaching Services</div>
+    </div>
+    <ul class="f-smalltolarge f0b miny-statement-side left">
+      <li>Individual Life/Business Coaching</li>
+      <li>Executive Coaching</li>
+      <li>Group Coaching</li>
+      <li>Leadership Webinars</li>
+    </ul>
+    <div class="f-small f0a miny-statement-side right">Our coaching services guide clients through personal learning and courageous reflection. We partner with clients in their efforts to surpass perceived barriers that might prevent them from achieving desired outcomes. <br><br> We support clients in enhancing their leadership presence to increase their confidence, enhance their ability to connect and influence others, and build the resiliency necessary to thrive in rapidly changing workplace environments.</div>
+  </div>
+  </section>
+  <section class="sm col-blank">
+    <div class="footer-header" style="background:#477eff"></div>
+
+  <div class="wrapper">
+    <div class="upper">
+      <div class="icon-lg inline" style="background-image: url(/images/icon1.svg);"></div>
+      <div class="f1c f-large inline">Organizational Consulting</div>
+    </div>
+    <ul class="f-smalltolarge f0b miny-statement-side left">
+      <li>Leadership Assesment & Development</li>
+      <li>Group Dynamics & Collaboration</li>
+      <li>Intercultural Communications</li>
+      <li>Workshop Facilitation</li>
+    </ul>
+    <div class="f-small f0a miny-statement-side right">Our consulting services guide organizations in exploring critical interpersonel and group dynamics embedded in creative and high-performing teams that can affect innovation and collaboration.<br><br>We partner with organizations in creating solutions that help them broaden organizational and leadership capacity, achieve their goals, and positively impact their bottom line.</div>
+  </div>
+  </section>
+  <section class="sm col-blank">
+    <div class="footer-header" style="background:#13dc90"></div>
+
+  <div class="wrapper">
+    <div class="upper">
+      <div class="icon-lg inline" style="background-image: url(/images/icon2.svg);"></div>
+      <div class="f1c f-large inline">Human Capital Strategy & Talent Management</div>
+    </div>
+    <ul class="f-smalltolarge f0b miny-statement-side left">
+      <li>HR & Talent Strategy</li>
+      <li>Multi-Generational Workforce Management</li>
+      <li>Organizational Change and Culture</li>
+    </ul>
+    <div class="f-small f0a miny-statement-side right">Our experts support organizations in developing strategies to leverage talent, organizational effectiveness, and culture to drive critical business objectives.<br><br>We provide analysis and recommendations in the areas of talent management, organizational assessment, performance and career management, succession planning, organizational structure, workforce planning, and change management.</div>
   </div>
   </section>
 </div>
@@ -313,7 +344,11 @@ Last Edited on 2016-07-27</b></p>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/lib/materialize.min.js">
   </script>
-  <script src="js/main.min.js"></script>
+  <!--build:js js/main.min.js -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- endbuild -->
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
