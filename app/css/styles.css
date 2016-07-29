@@ -3,6 +3,14 @@ body {
   display: block;
   overflow-x: hidden
 }
+.formup {
+  height:100%;
+  width:50%;
+  position:absolute;
+  top:0;
+  right:0;
+  background:#477eff;
+}
 .pbox {
   vertical-align: top;
 }
