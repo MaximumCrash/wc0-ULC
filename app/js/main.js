@@ -123,7 +123,7 @@ $(".leadercard").on("click", function() {
   } else {
     open = false;
     $("#modal2").closeModal();
-    switchOverlay(open,indx);
+    switchOverlay(open, indx);
   }
 
 })
@@ -135,15 +135,15 @@ $(window).resize(function() {
     $("#modal2").closeModal();
     switchOverlay(open, null);
   } else {
-      if (open) {
-        open = false;
-        $("#modal2").closeModal();
-        switchOverlay(open, null);
-      }
+    if (open) {
+      open = false;
+      $("#modal2").closeModal();
+      switchOverlay(open, null);
     }
-  });
+  }
+});
 
-function switchOverlay(bo,indx) {
+function switchOverlay(bo, indx) {
   if (bo) {
     $(".flexcards.leaders.mobile").css({
       "top": "10"
@@ -242,8 +242,7 @@ function switchOverlay(bo,indx) {
           open = false;
         } // Callback for Modal close
     });
-  }
-  else {
+  } else {
     $(".flexcards.leaders.mobile").animate({
       "margin-top": "35px",
       "opacity": "0"
@@ -266,6 +265,30 @@ function switchOverlay(bo,indx) {
 }
 
 $(document).ready(function() {
+  function close_accordion_section() {
+    $('.accordion .accordion-section-title').removeClass('active');
+    $('.accordion .accordion-section-content').slideUp(500).removeClass('open');
+  }
+
+  $('.accordion-section-title').click(function(e) {
+    // Grab current anchor value
+    var currentAttrValue = $(this).attr('href');
+
+    if ($(e.target).is('.active')) {
+      $(this).html("See More Tesitmonials");
+      close_accordion_section();
+    } else {
+      $(this).html("Hide");
+      close_accordion_section();
+
+      // Add active class to section title
+      $(this).addClass('active');
+      // Open up the hidden content panel
+      $('.accordion ' + currentAttrValue).slideDown(300).addClass('open');
+    }
+
+    e.preventDefault();
+  });
   $('.slider').slider({
     full_width: true
   });
@@ -276,4 +299,46 @@ $(document).ready(function() {
     closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
   });
   $('.modal-trigger').leanModal();
+  $(".carousel").carousel();
+
+  $('.carouso').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    dots: true,
+    arrows: false,
+    infinite: true,
+    adaptiveHeight: true,
+    speed: 700,
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      }, {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      }, {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
 });

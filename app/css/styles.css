@@ -3,6 +3,22 @@ body {
   display: block;
   overflow-x: hidden
 }
+.pbox {
+  vertical-align: top;
+}
+.clientphoto {
+  width:125px; margin:auto;height:125px; background:#7b1fa2;
+}
+.carouso {
+  text-align: center;
+}
+section.stretch {
+  overflow: hidden;
+}
+section.stretch>.wrapper {
+  overflow: hidden;
+  height: auto;
+}
 .wrap {
   min-height: 100%;
   padding-bottom: 352px;
@@ -86,7 +102,7 @@ footer {
 .f-smalltomedium {
   font-size: 1.5rem;
 }
-.f-medium {
+.f-medium,.f-mediumtolarge {
   font-size: 1.5rem
 }
 .f-smalltolarge {
@@ -233,12 +249,116 @@ section.maxedout {
   margin-left: 30px;
   white-space: nowrap;
 }
-@media  handheld, screen and (min-width:1764px) {
+@media handheld, screen and (min-width:1764px) {
+  .caro > div > div > div > div.slick-slide.slick-current.slick-active > p.clientname.f-medium.f1a {
+    width: 77%!important;
+    margin:auto;
+  }
+  .slick-dots {
+    bottom: 0;
+  }
+  .f-smalltomicro {
+    font-size: 1.3rem;
+  }
+  body> div.wrap> section.micro> div> div {
+    margin-top: 4%;
+  }
+  /*----- Accordion -----*/
+  .accordion, .accordion * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .accordion {
+    overflow: hidden;
+    border-radius: 3px;
+    background: none;
+    margin-top: 20px;
+  }
+  /*----- Section Titles -----*/
+  .accordion-section-title {
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    border-bottom: 1px solid #1a1a1a;
+    background: #7b1fa2;
+    transition: all linear 0.15s;
+    /* Type */
+    font-size: 1.200em;
+    color: white;
+    text-align: center;
+  }
+  .accordion-section-title:hover {
+    background: #ac5cce;
+    /* Type */
+    text-decoration: none;
+  }
+  .accordion-section:last-child .accordion-section-title {
+    border-bottom: none;
+  }
+  /*----- Section Content -----*/
+  .accordion-section-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    display: none;
+    margin-left: 2%;
+    overflow-y: auto;
+    max-height: 520px;
+  }
+  .clientcard {
+    width: 30%;
+    text-align: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    float: left;
+  }
+  .clienticon {
+    height: 80px;
+    width: 80px;
+    background: #7b1fa2;
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  .clientname {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .clientinfo {
+    width: 100%;
+    margin-top: 0;
+  }
+  .principlewrap {
+    text-align: center;
+    margin-top: 8px;
+  }
+  .pbox {
+    width: 35%;
+    text-align: left;
+    margin-left: 25px;
+  }
+  .pbox> .icon-md {
+    height: 78px!important;
+    width: 89px!important;
+  }
+  .pbox> p {
+    margin-top: 0;
+    margin-bottom: 10px
+  }
+  .pbox> p:last-child {
+    font-weight: 300;
+  }
   #modal2> div> p {
     font-size: 1.3rem;
   }
   .header.head {
-    margin-top: 100px;
+    margin-top: 80px;
     color: white;
   }
   section.maxedin {
@@ -410,7 +530,7 @@ section.maxedout {
     height: 250px
   }
   section.micro {
-    height: 120px
+    height: 200px
   }
   .cover.para {
     width: 100%;
@@ -670,26 +790,129 @@ section.maxedout {
     white-space: nowrap;
     top: 25px;
   }
-  .upper > .icon-lg {
-    height:70px;
+  .upper> .icon-lg {
+    height: 70px;
   }
-  .upper > .f-large {
-    position:relative; top:-27px; margin-left:10px;
+  .upper> .f-large {
+    position: relative;
+    top: -27px;
+    margin-left: 10px;
   }
-  .miny-statement-side.left{
-    margin-top:0;
-    width:33%;
-    margin-left:10px;
+  .miny-statement-side.left {
+    margin-top: 0;
+    width: 33%;
+    margin-left: 10px;
   }
-  .miny-statement-side.left > li{
-    margin-top:10px;
+  .miny-statement-side.left> li {
+    margin-top: 10px;
   }
   .miny-statement-side.right {
     margin-top: 0;
-    width:62%;
+    width: 62%;
   }
 }
-@media  handheld, screen and (min-width:1200px) and (max-width:1763px) {
+@media handheld, screen and (min-width:1200px) and (max-width:1763px) {
+  .caro > div > div > div > div.slick-slide.slick-current.slick-active > p.clientname.f-medium.f1a {
+    width: 77%!important;
+    margin:auto;
+  }
+  body> div.wrap> section.micro> div> div {
+    margin-top: 1%
+  }
+  /*----- Accordion -----*/
+  .accordion, .accordion * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .accordion {
+    overflow: hidden;
+    border-radius: 3px;
+    background: none;
+    margin-top: 20px;
+  }
+  /*----- Section Titles -----*/
+  .accordion-section-title {
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    border-bottom: 1px solid #1a1a1a;
+    background: #7b1fa2;
+    transition: all linear 0.15s;
+    /* Type */
+    font-size: 1.200em;
+    color: white;
+    text-align: center;
+  }
+  .accordion-section-title:hover {
+    background: #ac5cce;
+    /* Type */
+    text-decoration: none;
+  }
+  .accordion-section:last-child .accordion-section-title {
+    border-bottom: none;
+  }
+  /*----- Section Content -----*/
+  .accordion-section-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    display: none;
+    margin-left: 2%;
+    overflow-y: auto;
+    max-height: 520px;
+  }
+  .clientcard {
+    width: 30%;
+    text-align: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    float: left;
+  }
+  .clienticon {
+    height: 80px;
+    width: 80px;
+    background: #7b1fa2;
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  .clientname {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .clientinfo {
+    width: 100%;
+    margin-top: 0;
+  }
+  .principlewrap {
+    text-align: center;
+    margin-top: 8px;
+  }
+  .pbox {
+    width: 35%;
+    text-align: left;
+    margin-left: 25px;
+  }
+  .pbox> .icon-md {
+    height: 78px!important;
+    width: 89px!important;
+  }
+  .pbox> p {
+    margin-top: 0;
+    margin-bottom: 10px
+  }
+  .pbox> p:last-child {
+    font-weight: 300;
+  }
+  .f-smalltomicro {
+    font-size: 1.1rem;
+  }
   .header.head {
     margin-top: 15px;
     color: white;
@@ -730,7 +953,7 @@ section.maxedout {
   header {
     width: 100%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-    background:white;
+    background: white;
   }
   a {
     text-decoration: none;
@@ -1153,26 +1376,129 @@ section.maxedout {
     white-space: nowrap;
     top: 25px;
   }
-  .upper > .icon-lg {
-    height:70px;
+  .upper> .icon-lg {
+    height: 70px;
   }
-  .upper > .f-large {
-    position:relative; top:-27px; margin-left:10px;
+  .upper> .f-large {
+    position: relative;
+    top: -27px;
+    margin-left: 10px;
   }
-  .miny-statement-side.left{
-    margin-top:0;
-    width:33%;
-    margin-left:10px;
+  .miny-statement-side.left {
+    margin-top: 0;
+    width: 33%;
+    margin-left: 10px;
   }
-  .miny-statement-side.left > li{
-    margin-top:10px;
+  .miny-statement-side.left> li {
+    margin-top: 10px;
   }
   .miny-statement-side.right {
     margin-top: 0;
-    width:62%;
+    width: 62%;
   }
 }
-@media  handheld, screen and (min-width:1097px) and (max-width:1199px) {
+@media handheld, screen and (min-width:1097px) and (max-width:1199px) {
+  .caro > div > div > div > div.slick-slide.slick-current.slick-active > p.clientname.f-medium.f1a {
+    width: 77%!important;
+    margin: auto;
+  }
+  .slick-dots {
+    bottom:0px;
+  }
+  /*----- Accordion -----*/
+  .accordion, .accordion * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .accordion {
+    overflow: hidden;
+    border-radius: 3px;
+    background: none;
+    margin-top: 20px;
+  }
+  /*----- Section Titles -----*/
+  .accordion-section-title {
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    border-bottom: 1px solid #1a1a1a;
+    background: #7b1fa2;
+    transition: all linear 0.15s;
+    /* Type */
+    font-size: 1.200em;
+    color: white;
+    text-align: center;
+  }
+  .accordion-section-title:hover {
+    background: #ac5cce;
+    /* Type */
+    text-decoration: none;
+  }
+  .accordion-section:last-child .accordion-section-title {
+    border-bottom: none;
+  }
+  /*----- Section Content -----*/
+  .accordion-section-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    display: none;
+    margin-left: 2%;
+    overflow-y: auto;
+    max-height: 520px;
+  }
+  .clientcard {
+    width: 30%;
+    text-align: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    float: left;
+  }
+  .clienticon {
+    height: 80px;
+    width: 80px;
+    background: #7b1fa2;
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  .clientname {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .clientinfo {
+    width: 100%;
+    margin-top: 0;
+  }
+  .principlewrap {
+    text-align: center;
+    margin-top: 8px;
+  }
+  .pbox {
+    width: 35%;
+    text-align: left;
+    margin-left: 25px;
+  }
+  .pbox> .icon-md {
+    height: 78px!important;
+    width: 89px!important;
+  }
+  .pbox> p {
+    margin-top: 0;
+    margin-bottom: 10px
+  }
+  .f-smalltomicro {
+    font-size: 1.1rem;
+  }
+  .pbox> p:last-child {
+    font-weight: 300;
+  }
   .header.head {
     margin-top: 15px;
     color: white;
@@ -1213,7 +1539,7 @@ section.maxedout {
   header {
     width: 100%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-    background:white;
+    background: white;
   }
   a {
     text-decoration: none;
@@ -1652,7 +1978,105 @@ section.maxedout {
     width: 62%;
   }
 }
-@media  handheld, screen and (min-width:993px) and (max-width:1097px) {
+@media handheld, screen and (min-width:993px) and (max-width:1097px) {
+  .caro > div > div > div > div.slick-slide.slick-current.slick-active > p.clientname.f-medium.f1a {
+    width: 77%!important;
+    margin:auto;
+  }
+  /*----- Accordion -----*/
+  .accordion, .accordion * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .accordion {
+    overflow: hidden;
+    border-radius: 3px;
+    background: none;
+    margin-top: 20px;
+  }
+  /*----- Section Titles -----*/
+  .accordion-section-title {
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    border-bottom: 1px solid #1a1a1a;
+    background: #7b1fa2;
+    transition: all linear 0.15s;
+    /* Type */
+    font-size: 1.200em;
+    color: white;
+    text-align: center;
+  }
+  .accordion-section-title:hover {
+    background: #ac5cce;
+    /* Type */
+    text-decoration: none;
+  }
+  .accordion-section:last-child .accordion-section-title {
+    border-bottom: none;
+  }
+  /*----- Section Content -----*/
+  .accordion-section-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    display: none;
+    margin-left: 2%;
+    overflow-y: auto;
+    max-height: 520px;
+  }
+  .clientcard {
+    width: 30%;
+    text-align: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    float: left;
+  }
+  .clienticon {
+    height: 80px;
+    width: 80px;
+    background: #7b1fa2;
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  .clientname {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .clientinfo {
+    width: 100%;
+    margin-top: 0;
+  }
+  .principlewrap {
+    text-align: center;
+    margin-top: 8px;
+  }
+  .pbox {
+    width: 35%;
+    text-align: left;
+    margin-left: 25px;
+  }
+  .pbox> .icon-md {
+    height: 78px!important;
+    width: 89px!important;
+  }
+  .pbox> p {
+    margin-top: 0;
+    margin-bottom: 10px
+  }
+  .f-smalltomicro {
+    font-size: 1.1rem;
+  }
+  .pbox> p:last-child {
+    font-weight: 300;
+  }
   #modal2> div> p {
     font-size: 1.2rem;
   }
@@ -1694,7 +2118,7 @@ section.maxedout {
   header {
     width: 100%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-    background:white;
+    background: white;
   }
   a {
     text-decoration: none;
@@ -2125,7 +2549,105 @@ section.maxedout {
     width: 62%;
   }
 }
-@media  handheld, screen and (min-width:890px) and (max-width:993px) {
+@media handheld, screen and (min-width:890px) and (max-width:993px) {
+  .caro > div > div > div > div.slick-slide.slick-current.slick-active > p.clientname.f-medium.f1a {
+    width: 77%!important;
+    margin:auto;
+  }
+  /*----- Accordion -----*/
+  .accordion, .accordion * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .accordion {
+    overflow: hidden;
+    border-radius: 3px;
+    background: none;
+    margin-top: 20px;
+  }
+  /*----- Section Titles -----*/
+  .accordion-section-title {
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    border-bottom: 1px solid #1a1a1a;
+    background: #7b1fa2;
+    transition: all linear 0.15s;
+    /* Type */
+    font-size: 1.200em;
+    color: white;
+    text-align: center;
+  }
+  .accordion-section-title:hover {
+    background: #ac5cce;
+    /* Type */
+    text-decoration: none;
+  }
+  .accordion-section:last-child .accordion-section-title {
+    border-bottom: none;
+  }
+  /*----- Section Content -----*/
+  .accordion-section-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    display: none;
+    margin-left: 2%;
+    overflow-y: auto;
+    max-height: 520px;
+  }
+  .clientcard {
+    width: 30%;
+    text-align: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    float: left;
+  }
+  .clienticon {
+    height: 80px;
+    width: 80px;
+    background: #7b1fa2;
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  .clientname {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .clientinfo {
+    width: 100%;
+    margin-top: 0;
+  }
+  .principlewrap {
+    text-align: center;
+    margin-top: 8px;
+  }
+  .pbox {
+    width: 35%;
+    text-align: left;
+    margin-left: 25px;
+  }
+  .pbox> .icon-md {
+    height: 78px!important;
+    width: 89px!important;
+  }
+  .pbox> p {
+    margin-top: 0;
+    margin-bottom: 0px
+  }
+  .f-smalltomicro {
+    font-size: 1rem;
+  }
+  .pbox> p:last-child {
+    font-weight: 300;
+  }
   #modal2> div> p {
     font-size: 1.2rem;
   }
@@ -2167,7 +2689,7 @@ section.maxedout {
   header {
     width: 100%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-    background:white;
+    background: white;
   }
   a {
     text-decoration: none;
@@ -2555,26 +3077,138 @@ section.maxedout {
   .footer-content .content p:first-child {
     margin-top: 0
   }
-  .upper > .icon-lg {
-    height:70px;
+  .upper> .icon-lg {
+    height: 70px;
   }
-  .upper > .f-large {
-    position:relative; top:-27px; margin-left:10px;
+  .upper> .f-large {
+    position: relative;
+    top: -27px;
+    margin-left: 10px;
   }
-  .miny-statement-side.left{
-    margin-top:0;
-    width:33%;
-    margin-left:10px;
+  .miny-statement-side.left {
+    margin-top: 0;
+    width: 33%;
+    margin-left: 10px;
   }
-  .miny-statement-side.left > li{
-    margin-top:10px;
+  .miny-statement-side.left> li {
+    margin-top: 10px;
   }
   .miny-statement-side.right {
     margin-top: 0;
-    width:62%;
+    width: 62%;
   }
 }
-@media  handheld, screen and (max-width:890px) and (min-width:611px) {
+@media handheld, screen and (max-width:890px) and (min-width:611px) {
+  .caro > div > div > div > div.slick-slide.slick-current.slick-active > p.clientname.f-medium.f1a {
+    width: 77%!important;
+    margin:auto;
+  }
+  section.sm.caro {
+    height:392px;
+  }
+  /*----- Accordion -----*/
+  .accordion, .accordion * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .accordion {
+    overflow: hidden;
+    border-radius: 3px;
+    background: none;
+    margin-top: 20px;
+  }
+  /*----- Section Titles -----*/
+  .accordion-section-title {
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    border-bottom: 1px solid #1a1a1a;
+    background: #7b1fa2;
+    transition: all linear 0.15s;
+    /* Type */
+    font-size: 1.200em;
+    color: white;
+    text-align: center;
+  }
+  .accordion-section-title:hover {
+    background: #ac5cce;
+    /* Type */
+    text-decoration: none;
+  }
+  .accordion-section:last-child .accordion-section-title {
+    border-bottom: none;
+  }
+
+  /*----- Section Content -----*/
+  .accordion-section-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    display: none;
+    margin-left: 2%;
+    overflow-y: auto;
+    max-height: 520px;
+  }
+  .clientcard {
+    width: 48%;
+    text-align: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    float: left;
+  }
+  .clienticon {
+    height: 80px;
+    width: 80px;
+    background: #7b1fa2;
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  .carouso >div>.clientname:last-child {
+    width: 77%!important;
+  }
+  .clientname {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .clientinfo {
+    width: 100%;
+    margin-top: 0;
+  }
+  .principlewrap {
+    text-align: center;
+    margin-top: 64px;
+  }
+  .pbox {
+    width: 70%;
+    text-align: center;
+    margin-left: 0px;
+        margin-bottom: 24px;
+  }
+  .pbox> .icon-md {
+    height: 140px!important;
+    width: 140px!important;
+    margin:auto;
+  }
+  .pbox> p {
+    margin-top: 0;
+    margin-bottom: 0px
+  }
+  .f-smalltomicro {
+    font-size: 1rem;
+  }
+  .f-mediumtolarge {
+    font-size: 2rem;
+  }
+  .pbox> p:last-child {
+    font-weight: 300;
+  }
   #modal2> div> p {
     font-size: 1.2rem;
   }
@@ -2626,7 +3260,7 @@ section.maxedout {
     top: 0;
     width: 100%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-    background:white;
+    background: white;
   }
   a {
     text-decoration: none;
@@ -2656,7 +3290,7 @@ section.maxedout {
     left: 0;
     margin-left: 14px;
     cursor: pointer;
-    display:none;
+    display: none;
   }
   header>.wrapper>.lower>.sandwhich>.bar {
     width: 100%;
@@ -3108,30 +3742,140 @@ section.maxedout {
   #modal2> div> p {
     font-size: 1.2rem;
   }
-
-
-  .upper > .icon-lg {
-    height:70px;
+  .upper> .icon-lg {
+    height: 70px;
   }
-  .upper > .f-large {
-    position:relative; top:0px; margin-left:0px;
-    display:block;
+  .upper> .f-large {
+    position: relative;
+    top: 0px;
+    margin-left: 0px;
+    display: block;
   }
-  .miny-statement-side.left{
-    width:100%;
-    margin-top:0;
-    margin-left:0;
+  .miny-statement-side.left {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
   }
-  .miny-statement-side.left > li{
-    margin-top:3px;
+  .miny-statement-side.left> li {
+    margin-top: 3px;
   }
   .miny-statement-side.right {
-    width:100%;
-    margin-top:13px;
-
+    width: 100%;
+    margin-top: 13px;
   }
 }
-@media  handheld, screen and (max-width:611px) {
+@media handheld, screen and (max-width:611px) {
+  .caro > div > div > div > div.slick-slide.slick-current.slick-active > p.clientname.f-medium.f1a {
+    width: 77%!important;
+    margin:auto;
+  }
+  section.sm.caro {
+    height:426px;
+  }
+  /*----- Accordion -----*/
+  .accordion, .accordion * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .accordion {
+    overflow: hidden;
+    border-radius: 3px;
+    background: none;
+    margin-top: 20px;
+  }
+  /*----- Section Titles -----*/
+  .accordion-section-title {
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    border-bottom: 1px solid #1a1a1a;
+    background: #7b1fa2;
+    transition: all linear 0.15s;
+    /* Type */
+    font-size: 1.200em;
+    color: white;
+    text-align: center;
+  }
+  .accordion-section-title:hover {
+    background: #ac5cce;
+    /* Type */
+    text-decoration: none;
+  }
+  .accordion-section:last-child .accordion-section-title {
+    border-bottom: none;
+  }
+
+  /*----- Section Content -----*/
+  .accordion-section-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    display: none;
+    margin-left: 2%;
+    overflow-y: auto;
+    max-height: 520px;
+  }
+  .clientcard {
+    width:100%;
+    text-align: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    float: left;
+  }
+  .clienticon {
+    height: 80px;
+    width: 80px;
+    background: #7b1fa2;
+    border-radius: 100%;
+    float: none;
+    margin: auto;
+    display: block!important;
+  }
+  .carouso >div>.clientname:last-child {
+    width: 77%!important;
+  }
+  .clientname {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .clientinfo {
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+  }
+  .principlewrap {
+    text-align: center;
+    margin-top: 18px;
+  }
+  .pbox {
+    width: 70%;
+    text-align: center;
+    margin-left: 0px;
+        margin-bottom: 4px;
+  }
+  .pbox> .icon-md {
+    height: 140px!important;
+    width: 140px!important;
+    margin:auto;
+  }
+  .pbox> p {
+    margin-top: 0;
+    margin-bottom: 0px
+  }
+  .f-smalltomicro {
+    font-size: 1rem;
+  }
+  .f-mediumtolarge {
+    font-size: 2rem;
+  }
+  .pbox> p:last-child {
+    font-weight: 300;
+  }
   #modal2> div> p {
     font-size: 1.2rem;
   }
@@ -3145,7 +3889,6 @@ section.maxedout {
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
-
     left: 50%;
     background-image: url(/images/ogmandino.png);
     transform: translateX(-50%);
@@ -3183,7 +3926,7 @@ section.maxedout {
     top: 0;
     width: 100%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-    background:white;
+    background: white;
   }
   a {
     text-decoration: none;
@@ -3211,7 +3954,7 @@ section.maxedout {
     height: 79px;
     left: 0;
     cursor: pointer;
-    float:left;
+    float: left;
   }
   header>.wrapper>.lower>.sandwhich>.bar {
     width: 100%;
@@ -3225,7 +3968,7 @@ section.maxedout {
     animation: GradAnim 6s ease infinite
   }
   header>.wrapper>.lower>.companylogo {
-    float:left;
+    float: left;
   }
   header>.wrapper>.lower>.companylogo>.icon-md {
     margin-top: 5px;
@@ -3242,8 +3985,7 @@ section.maxedout {
     margin-bottom: 0;
     top: -8px;
     cursor: pointer;
-        font-size: 1.3rem;
-
+    font-size: 1.3rem;
   }
   header>.wrapper>.linktabs, header>.wrapper>.lower>ul {
     display: none
@@ -3358,7 +4100,7 @@ section.maxedout {
     margin-top: 1%
   }
   .bottomright {
-    margin-top:0px!important
+    margin-top: 0px!important
   }
   .bottomright.button:hover {
     bottom: 37px!important
@@ -3659,14 +4401,14 @@ section.maxedout {
   }
   .listicons li div {
     height: 76px;
-    width:66px;
+    width: 66px;
   }
   .listicons> li> p {
     position: absolute;
     margin: 0;
     white-space: nowrap;
     top: 24px;
-    font-size:1.3rem;
+    font-size: 1.3rem;
   }
   section.medtolg {
     height: 983px;
@@ -3680,28 +4422,30 @@ section.maxedout {
   .parallax img {
     bottom: 0!important;
   }
-  .upper > .icon-lg {
-    height:70px;
-    margin:auto;
-    display:block;
+  .upper> .icon-lg {
+    height: 70px;
+    margin: auto;
+    display: block;
   }
-  .upper > .f-large {
-    position:relative; top:0px; margin-left:0px;
-    display:block;
+  .upper> .f-large {
+    position: relative;
+    top: 0px;
+    margin-left: 0px;
+    display: block;
     text-align: center;
   }
-  .miny-statement-side.left{
+  .miny-statement-side.left {
     text-align: center;
-    width:100%;
-    margin-top:5px;
-    margin-left:0px;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 0px;
   }
-  .miny-statement-side.left > li{
-    margin-top:10px;
+  .miny-statement-side.left> li {
+    margin-top: 10px;
   }
   .miny-statement-side.right {
-    width:100%;
-    margin-top:23px;
+    width: 100%;
+    margin-top: 23px;
     text-align: center;
   }
 }
