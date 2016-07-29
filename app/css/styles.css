@@ -729,7 +729,7 @@ section.maxedout {
   }
   header {
     width: 100%;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     background:white;
   }
   a {
@@ -1880,7 +1880,7 @@ section.maxedout {
   }
   .heading {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 0px;
     margin-bottom: 20px
   }
   .link {
@@ -2353,7 +2353,7 @@ section.maxedout {
   }
   .heading {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 0px;
     margin-bottom: 20px
   }
   .link {
@@ -2655,7 +2655,8 @@ section.maxedout {
     position: absolute;
     left: 0;
     margin-left: 14px;
-    cursor: pointer
+    cursor: pointer;
+    display:none;
   }
   header>.wrapper>.lower>.sandwhich>.bar {
     width: 100%;
@@ -3143,8 +3144,8 @@ section.maxedout {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    position: absolute;
-    bottom: 125px;
+    position: relative;
+
     left: 50%;
     background-image: url(/images/ogmandino.png);
     transform: translateX(-50%);
@@ -3208,9 +3209,9 @@ section.maxedout {
     width: 76px;
     padding: 16px;
     height: 79px;
-    position: absolute;
     left: 0;
-    cursor: pointer
+    cursor: pointer;
+    float:left;
   }
   header>.wrapper>.lower>.sandwhich>.bar {
     width: 100%;
@@ -3224,14 +3225,14 @@ section.maxedout {
     animation: GradAnim 6s ease infinite
   }
   header>.wrapper>.lower>.companylogo {
-    margin-left: 5%
+    float:left;
   }
   header>.wrapper>.lower>.companylogo>.icon-md {
     margin-top: 5px;
     background-position: 50%;
     background-size: contain;
     height: 68px;
-    width: 39px;
+    width: 27px;
     cursor: pointer
   }
   header>.wrapper>.lower>.companylogo>.logo-title {
@@ -3240,7 +3241,9 @@ section.maxedout {
     margin-top: 8px;
     margin-bottom: 0;
     top: -8px;
-    cursor: pointer
+    cursor: pointer;
+        font-size: 1.3rem;
+
   }
   header>.wrapper>.linktabs, header>.wrapper>.lower>ul {
     display: none
@@ -3317,10 +3320,10 @@ section.maxedout {
     height: 420px
   }
   section.sm {
-    height: 800px
+    height: 850px
   }
   section.tiny {
-    height: 150px
+    height: 180px
   }
   section:first-of-type {
     margin-top: 80px
@@ -3344,7 +3347,7 @@ section.maxedout {
     width: 84%;
     text-align: center;
     display: table;
-    margin-top: 64px
+    margin-top: 30px
   }
   .innerleft {
     text-align: center;
@@ -3355,7 +3358,7 @@ section.maxedout {
     margin-top: 1%
   }
   .bottomright {
-    margin-top: 100px!important
+    margin-top:0px!important
   }
   .bottomright.button:hover {
     bottom: 37px!important
@@ -3426,7 +3429,7 @@ section.maxedout {
     margin-bottom: 7px
   }
   .modal.bottom-sheet {
-    min-height: 30%!important;
+    min-height: 36%!important;
     max-height: 30%!important;
   }
   .flexcards.leaders.mobile {
@@ -3537,7 +3540,7 @@ section.maxedout {
     padding: 18px;
     text-align: center;
     cursor: pointer;
-    width: 320px;
+    width: 100%;
     top: -10px;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
@@ -3549,10 +3552,10 @@ section.maxedout {
   }
   .button {
     position: relative;
-    padding: 18px;
+    padding: 22px;
     text-align: center;
     cursor: pointer;
-    width: 264px;
+    width: 100%;
     top: 8;
     margin: auto;
     box-shadow: 0 1px 0 0 transparent, 0 1px 0 0 transparent;
@@ -3656,16 +3659,17 @@ section.maxedout {
   }
   .listicons li div {
     height: 76px;
-    width: 86px;
+    width:66px;
   }
   .listicons> li> p {
     position: absolute;
     margin: 0;
     white-space: nowrap;
-    top: 15px;
+    top: 24px;
+    font-size:1.3rem;
   }
   section.medtolg {
-    height: 910px;
+    height: 983px;
   }
   .parallax-container {
     height: 100%!important;
@@ -3682,7 +3686,7 @@ section.maxedout {
     display:block;
   }
   .upper > .f-large {
-    position:relative; top:0px; margin-left:10px;
+    position:relative; top:0px; margin-left:0px;
     display:block;
     text-align: center;
   }
@@ -3690,7 +3694,7 @@ section.maxedout {
     text-align: center;
     width:100%;
     margin-top:5px;
-    margin-left:10px;
+    margin-left:0px;
   }
   .miny-statement-side.left > li{
     margin-top:10px;
