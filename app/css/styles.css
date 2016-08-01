@@ -3850,6 +3850,7 @@ section.maxedout {
     width: 100%;
     margin-top: 0;
     margin-bottom: 5px;
+        font-size: 1.4rem;
   }
   .clientinfo {
     width: 100%;
@@ -3858,7 +3859,7 @@ section.maxedout {
   }
   .principlewrap {
     text-align: center;
-    margin-top: 18px;
+    margin-top: 0px;
   }
   .pbox {
     width: 70%;
@@ -3867,7 +3868,7 @@ section.maxedout {
         margin-bottom: 4px;
   }
   .pbox> .icon-md {
-    height: 140px!important;
+    height: 80px!important;
     width: 140px!important;
     margin:auto;
   }
@@ -4043,7 +4044,7 @@ section.maxedout {
     margin: auto
   }
   .f-Xxl {
-    font-size: 3.6rem
+    font-size: 3.3rem
   }
   .f-smalltomedium {
     font-size: 1.5rem
@@ -4064,7 +4065,7 @@ section.maxedout {
     height: 1615px
   }
   section.lg {
-    height: 1665px
+    height: 1698px
   }
   section.med, section.smtomed, section.medtolg {
     height: 420px
@@ -4408,8 +4409,8 @@ section.maxedout {
     margin-bottom: 0px;
   }
   .listicons li div {
-    height: 76px;
-    width: 66px;
+    height: 72px;
+    width: 59px;
   }
   .listicons> li> p {
     position: absolute;
