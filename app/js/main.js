@@ -1,9 +1,35 @@
 var u, l;
 var open = false;
-
 $.getJSON("js/data.json", function(result) {
   u = result;
 });
+
+
+
+$('#contactform').submit(function(e) {
+
+    e.preventDefault(); // don't submit multiple times
+    this.submit(); // use the native submit method of the form element
+
+});
+
+function validateform(form) {
+  /*var x = document.forms["contactform"]["name"].value;
+  if (x == null || x == "") {
+      alert("Name must be filled out");
+      return false;
+  }
+  var x = document.forms["contactform"]["email"].value;
+  if (x == null || x == "") {
+      alert("Name must be filled out");
+      return false;
+  }*/
+
+}
+
+$(window).unload(function () {
+  localStorage.setItem("s", JSON.stringify(s));
+})
 
 $(".link").on("click", function() {
   l = parseInt($(this).attr('data-go'));
@@ -265,6 +291,7 @@ function switchOverlay(bo, indx) {
 }
 
 $(document).ready(function() {
+  console.log( );
   function close_accordion_section() {
     $('.accordion .accordion-section-title').removeClass('active');
     $('.accordion .accordion-section-content').slideUp(500).removeClass('open');
@@ -275,7 +302,13 @@ $(document).ready(function() {
     var currentAttrValue = $(this).attr('href');
 
     if ($(e.target).is('.active')) {
-      $(this).html("See More Tesitmonials");
+      if (window.location.href == "http://localhost:3000/contact.html") {
+        $(this).html("Submit A Request");
+      }
+      else {
+        $(this).html("See More Tesitmonials");
+      }
+
       close_accordion_section();
     } else {
       $(this).html("Hide");

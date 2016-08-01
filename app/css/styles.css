@@ -3,13 +3,18 @@ body {
   display: block;
   overflow-x: hidden
 }
-.formup {
-  height:100%;
-  width:50%;
-  position:absolute;
-  top:0;
-  right:0;
-  background:#477eff;
+
+.col-blueblank {
+  border:none;
+  background-color: white;
+  color:#477eff;
+}
+.col-blueblank:hover {
+  background-color: #7b1fa2;
+  color:white;
+}
+.mobileshow {
+  display: none;
 }
 .pbox {
   vertical-align: top;
@@ -63,7 +68,7 @@ footer {
   color: rgba(0, 0, 0, .8)
 }
 .txt-white {
-  color: #fff
+  color: #fff!important;
 }
 .txt-black {
   color: #110519
@@ -818,8 +823,46 @@ section.maxedout {
     margin-top: 0;
     width: 62%;
   }
+  .formup {
+    height:100%;
+    width:50%;
+    position:absolute;
+    top:0;
+    right:0;
+    background:#477eff;
+    padding: 15px;
+    padding-top: 5%;
+  }
+  input.button {
+    position: absolute;
+    bottom: -381px;
+    padding: 18px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .contactlist {
+    padding-top: 1%;
+  }
 }
 @media handheld, screen and (min-width:1200px) and (max-width:1763px) {
+
+  .formup {
+    height:100%;
+    width:50%;
+    position:absolute;
+    top:0;
+    right:0;
+    background:#477eff;
+    padding: 15px;
+    padding-top: 10px;
+  }
+  input.button {
+    position: absolute;
+    bottom: -381px;
+    padding: 18px;
+    height: 50px;
+    cursor: pointer;
+  }
   .caro > div > div > div > div.slick-slide.slick-current.slick-active > p.clientname.f-medium.f1a {
     width: 77%!important;
     margin:auto;
@@ -1406,6 +1449,23 @@ section.maxedout {
   }
 }
 @media handheld, screen and (min-width:1097px) and (max-width:1199px) {
+  .formup {
+    height:100%;
+    width:50%;
+    position:absolute;
+    top:0;
+    right:0;
+    background:#477eff;
+    padding: 15px;
+    padding-top: 10px;
+  }
+  input.button {
+    position: absolute;
+    bottom: -285px;
+    padding: 18px;
+    height: 50px;
+    cursor: pointer;
+  }
   .caro > div > div > div > div.slick-slide.slick-current.slick-active > p.clientname.f-medium.f1a {
     width: 77%!important;
     margin: auto;
@@ -1987,6 +2047,23 @@ section.maxedout {
   }
 }
 @media handheld, screen and (min-width:993px) and (max-width:1097px) {
+  .formup {
+    height:100%;
+    width:50%;
+    position:absolute;
+    top:0;
+    right:0;
+    background:#477eff;
+    padding: 15px;
+    padding-top: 10px;
+  }
+  input.button {
+    position: absolute;
+    bottom: -285px;
+    padding: 18px;
+    height: 50px;
+    cursor: pointer;
+  }
   .caro > div > div > div > div.slick-slide.slick-current.slick-active > p.clientname.f-medium.f1a {
     width: 77%!important;
     margin:auto;
@@ -2558,6 +2635,23 @@ section.maxedout {
   }
 }
 @media handheld, screen and (min-width:890px) and (max-width:993px) {
+  .formup {
+    height:100%;
+    width:50%;
+    position:absolute;
+    top:0;
+    right:0;
+    background:#477eff;
+    padding: 15px;
+    padding-top: 10px;
+  }
+  input.button {
+    position: absolute;
+    bottom: -285px;
+    padding: 18px;
+    height: 50px;
+    cursor: pointer;
+  }
   .caro > div > div > div > div.slick-slide.slick-current.slick-active > p.clientname.f-medium.f1a {
     width: 77%!important;
     margin:auto;
@@ -2865,7 +2959,7 @@ section.maxedout {
     float: right
   }
   .innerleft {
-    padding-left: 6%
+    padding-left: 1%
   }
   .upperleft {
     margin-top: 1%;
@@ -3698,6 +3792,30 @@ section.maxedout {
   .upperleft.head {
     margin-top: 6%;
   }
+  .parallax-container.half {
+    height:100%;
+    width:100%!important;
+  }
+  .para.cover.half {
+
+    width: 100%!important;
+  }
+  #contactform {
+    display: none;
+  }
+  .formup {
+    width:100%;
+    margin-top:6%;
+  }
+  .contactlist:nth-child(2) {
+    margin-left:4%!important;
+  }
+  .contactlist:last-child{
+    margin-right:0%!important;
+  }
+  .formup .button {
+    margin-bottom: 5%;
+  }
   .statement-side.left {
     margin-top: 5px;
     margin-left: 10px;
@@ -3771,8 +3889,41 @@ section.maxedout {
     width: 100%;
     margin-top: 13px;
   }
+  .mobileshow {
+    display: block;
+  }
 }
 @media handheld, screen and (max-width:611px) {
+  .parallax-container.half {
+    height:100%;
+    width:100%!important;
+  }
+  .para.cover.half {
+
+    width: 100%!important;
+  }
+  #contactform {
+    display: none;
+  }
+  .formup {
+    width:100%;
+    margin-top:6%;
+  }
+  .contactlist {
+    display: block!important;
+    float:none;
+    width:100%;
+    margin-top:15px;
+  }
+  .contactlist:nth-child(2) {
+    margin-left:0%!important;
+  }
+  .contactlist:last-child{
+    margin-right:0%!important;
+  }
+  .formup .button {
+    margin-bottom: 5%;
+  }
   .caro > div > div > div > div.slick-slide.slick-current.slick-active > p.clientname.f-medium.f1a {
     width: 77%!important;
     margin:auto;
@@ -4259,7 +4410,7 @@ section.maxedout {
     background: red;
   }
   .f-smalltomicrotolarge {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     font-weight: 500;
   }
   .flexcards>div>.card-header {
@@ -4456,5 +4607,8 @@ section.maxedout {
     width: 100%;
     margin-top: 23px;
     text-align: center;
+  }
+  .mobileshow {
+    display: block;
   }
 }
