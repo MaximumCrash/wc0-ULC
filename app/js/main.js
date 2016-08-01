@@ -4,28 +4,10 @@ $.getJSON("js/data.json", function(result) {
   u = result;
 });
 
-
-
 $('#contactform').submit(function(e) {
-
     e.preventDefault(); // don't submit multiple times
     this.submit(); // use the native submit method of the form element
-
 });
-
-function validateform(form) {
-  /*var x = document.forms["contactform"]["name"].value;
-  if (x == null || x == "") {
-      alert("Name must be filled out");
-      return false;
-  }
-  var x = document.forms["contactform"]["email"].value;
-  if (x == null || x == "") {
-      alert("Name must be filled out");
-      return false;
-  }*/
-
-}
 
 $(window).unload(function () {
   localStorage.setItem("s", JSON.stringify(s));
@@ -266,6 +248,7 @@ function switchOverlay(bo, indx) {
       ready: function() {}, // Callback for Modal open
       complete: function() {
           open = false;
+          switchOverlay(open, indx);
         } // Callback for Modal close
     });
   } else {
