@@ -3,6 +3,9 @@ body {
   display: block;
   overflow-x: hidden
 }
+.butt gon {
+  border-radius:500px;
+}
 .col-blueblank {
   border: none;
   background-color: white;
@@ -269,6 +272,62 @@ section.maxedout {
   white-space: nowrap;
 }
 @media handheld, screen and (min-width:1764px) {
+  .slides li:nth-child(1) .caption{
+    top:21%!important;
+    left:15%!important;
+    width:70%!important;
+  }
+  .slides li:nth-child(2) .caption{
+    top:28%!important;
+    left:6%!important;
+    width:70%!important;
+  }
+  .slides li:nth-child(3) .caption{
+    top:56%!important;
+    left: 13%!important;
+    width:75%!important;
+  }
+  .slides li:nth-child(4) .caption{
+    top:54%!important;
+    left:6%!important;
+    width:66%!important;
+  }
+
+  .slides li:nth-child(1) .caption h3{
+    margin-bottom: 0px!important;
+    line-height:130%!important;
+    font-size:1.8rem!important;
+  }
+  .slides li:nth-child(2) .caption h3{
+    margin-bottom: 25px!important;
+    line-height:130%!important;
+    font-size:1.8rem!important;
+  }
+  .slides li:nth-child(3) .caption h3{
+    margin-bottom: 25px!important;
+    line-height:130%!important;
+    font-size:1.8rem!important;
+  }
+  .slides li:nth-child(4) .caption h3{
+    margin-bottom: 25px!important;
+    line-height:130%!important;
+    font-size:1.8rem!important;
+  }
+
+
+  .slides li:nth-child(1) .caption h5{
+    font-size:2.2rem!important;
+  }
+  .slides li:nth-child(2) .caption h5{
+    font-size:2.2rem!important;
+  }
+  .slides li:nth-child(3) .caption h5{
+    font-size:2.2rem!important;
+  }
+  .slides li:nth-child(4) .caption h5{
+    font-size:2.2rem!important;
+  }
+
   .caro> div> div> div> div.slick-slide.slick-current.slick-active> p.clientname.f-medium.f1a {
     width: 77%!important;
     margin: auto;
@@ -379,6 +438,9 @@ section.maxedout {
   .header.head {
     margin-top: 80px;
     color: white;
+  }
+  section.med.toomuch .header.head {
+        margin-top: 164;
   }
   section.maxedin {
     height: 100%;
@@ -538,6 +600,9 @@ section.maxedout {
   }
   section.med, section.medtolg {
     height: 500px
+  }
+  section.med.toomuch {
+    height:600px;
   }
   section.smtomed {
     height: 98.5%;
@@ -837,20 +902,56 @@ section.maxedout {
     right: 0;
     background: #477eff;
     padding: 15px;
-    padding-top: 5%;
+    padding-top: 9%;
   }
   input.button {
     position: absolute;
-    bottom: -381px;
+    bottom: -500px;
     padding: 18px;
     height: 50px;
     cursor: pointer;
   }
   .contactlist {
-    padding-top: 1%;
+    padding-top: 0%;
   }
 }
 @media handheld, screen and (min-width:1200px) and (max-width:1763px) {
+  .slides li:nth-child(1) .caption{
+    left:16%!important;
+    width:69%!important;
+  }
+  .slides li:nth-child(2) .caption{
+    left:7%!important;
+    width:55%!important;
+  }
+  .slides li:nth-child(3) .caption{
+    top:32%!important;
+    left: 13%!important;
+    width:75%!important;
+  }
+  .slides li:nth-child(4) .caption{
+    top:52%!important;
+    left:6%!important;
+    width:60%!important;
+  }
+
+  .slides li:nth-child(1) .caption h3{
+    margin-bottom: 0px!important;
+    line-height:130%!important;
+  }
+  .slides li:nth-child(2) .caption h3{
+    margin-bottom: 25px!important;
+    line-height:130%!important;
+  }
+  .slides li:nth-child(3) .caption h3{
+    margin-bottom: 25px!important;
+    line-height:130%!important;
+  }
+  .slides li:nth-child(4) .caption h3{
+    margin-bottom: 25px!important;
+    line-height:130%!important;
+  }
+
   .formup {
     height: 100%;
     width: 50%;
