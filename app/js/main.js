@@ -1,6 +1,6 @@
 var u, l;
 var open = false;
-$.getJSON("js/data.json", function(result) {
+$.getJSON("../js/data.json", function(result) {
   u = result;
 });
 
@@ -8,10 +8,6 @@ $('#contactform').submit(function(e) {
     e.preventDefault(); // don't submit multiple times
     this.submit(); // use the native submit method of the form element
 });
-
-$(window).unload(function () {
-  localStorage.setItem("s", JSON.stringify(s));
-})
 
 $(".link").on("click", function() {
   l = parseInt($(this).attr('data-go'));

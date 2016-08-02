@@ -730,7 +730,7 @@ section.maxedout {
   }
   .flexcards.leaders> div> .leadpic {
     height: 320px;
-    background: red;
+    background: grey;
   }
   .f-smalltolarge {
     font-size: 1.5rem
@@ -1367,7 +1367,7 @@ section.maxedout {
   }
   .flexcards.leaders> div> .leadpic {
     height: 237px;
-    background: red;
+    background: grey;
   }
   .flexcards>div {
     margin-right: 16px;
@@ -2000,7 +2000,7 @@ section.maxedout {
   }
   .flexcards.leaders> div> .leadpic {
     height: 237px;
-    background: red;
+    background: grey;
   }
   .flexcards.leaders> div>.card-header {
     height: auto;
@@ -2585,7 +2585,7 @@ section.maxedout {
   }
   .flexcards.leaders> div> .leadpic {
     height: 237px;
-    background: red;
+    background: grey;
   }
   .flexcards.leaders> div>.card-header {
     height: auto;
@@ -3154,7 +3154,7 @@ section.maxedout {
   }
   .flexcards.leaders> div> .leadpic {
     height: 197px;
-    background: red;
+    background: grey;
   }
   .f-smalltomicrotolarge {
     font-size: 1rem;
@@ -3765,7 +3765,7 @@ section.maxedout {
   }
   .flexcards.leaders> div> .leadpic {
     height: 297px;
-    background: red;
+    background: grey;
   }
   .f-smalltomicrotolarge {
     font-size: 1.4rem;
@@ -4514,7 +4514,7 @@ section.maxedout {
   }
   .flexcards.leaders> div> .leadpic {
     height: 297px;
-    background: red;
+    background: grey;
   }
   .f-smalltomicrotolarge {
     font-size: 1.35rem;
