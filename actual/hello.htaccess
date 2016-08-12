@@ -1,6 +1,9 @@
 # Enable GZIP
 <ifmodule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+<FilesMatch "\.(html|php|txt|xml|js|css|json|svg)$">
+SetOutputFilter DEFLATE
+</FilesMatch>
 BrowserMatch ^Mozilla/4 gzip-only-text/html
 BrowserMatch ^Mozilla/4\.0[678] no-gzip
 BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
