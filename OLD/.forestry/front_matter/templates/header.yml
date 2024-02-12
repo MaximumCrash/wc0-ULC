@@ -1,0 +1,67 @@
+---
+label: Header
+hide_body: true
+fields:
+- name: company_name
+  type: text
+  config:
+    required: false
+  label: Company Name
+  default: Unveiled Leadership
+- name: company_name_subtitle
+  type: text
+  config:
+    required: false
+  label: Company Name Subtitle
+  default: coaching | consulting
+- name: company_logo
+  type: file
+  config:
+    maxSize: 250
+  label: Company Logo
+  default: "/uploads/logo.svg"
+- name: top_contact
+  type: include
+  config: {}
+  template: top-header-quick-contact
+  label: Top Contact
+  description: 'Quick Contact top section above header information. '
+- name: pathPrefix
+  type: text
+  config:
+    required: false
+  label: Path Prefix
+  default: "/site-header.json"
+  hidden: true
+- name: nav_bar_links
+  type: field_group_list
+  fields:
+  - name: type
+    type: select
+    default: Internal
+    config:
+      required: false
+      options:
+      - Internal
+      - External
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Type
+  - name: nav_link_text
+    type: text
+    config:
+      required: false
+    label: Nav Link Text
+  - name: url
+    type: text
+    config:
+      required: false
+    label: Url
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Nav Bar Links

@@ -1,0 +1,105 @@
+.content-container.row .col.has-profiles .profile-content-container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 18px;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+
+    img {
+        display: inline-block;
+        width: 38%;
+        max-width: 330px;
+        vertical-align: top;
+        margin-right: 10px;
+        object-fit: contain;
+        align-self: start;
+        border-radius: 10px;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .content {
+
+        h3 {
+            font-size: 2.5rem; 
+            margin-bottom: 8px; 
+            padding-bottom: 0; 
+            padding-top: 0; 
+        }
+
+        p {
+            font-size: 16px; 
+            line-height: 26px; 
+        }
+    }
+}
+
+.content-container.row .col.has-profiles .profile-content-container.has-image {
+    .content {
+        display: inline-block;
+        width: calc(62% - 10px);
+        text-align: left;
+        padding-left: 16px;
+        background: white;
+        padding: 18px;
+        border-radius: 10px;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+}
+
+.profile-content-container:not(.has-image) {
+    text-align: left;
+    background: white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
+}
+
+@media screen and (max-width: 900px) {
+    .content-container.row .col.has-profiles .profile-content-container.has-image {
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+            width: 100%; 
+            max-width: 305px; 
+            margin: auto; 
+            margin-bottom: 10px;
+        }
+
+        .content {
+            width: calc(100% + 10%);
+            text-align: center;
+            left: -5%; 
+            position: relative; 
+
+            h3 {
+                margin-bottom: 0.5em; 
+                margin-top: 0.15em; 
+            }
+
+            p {
+                text-align: left; 
+                padding-left: 5%; 
+                padding-right: 5%; 
+            }
+        }
+    }
+
+    .content-container.row .col.has-profiles .profile-content-container {
+        .content {
+            width: 100%;
+            text-align: center;
+
+            h3 {
+                margin-bottom: 0.5em; 
+                margin-top: 0.15em; 
+            }
+
+            p {
+                text-align: left; 
+                padding-left: 5%; 
+                padding-right: 5%; 
+            }
+        }
+    }
+}

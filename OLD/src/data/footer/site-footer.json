@@ -1,0 +1,33 @@
+{
+  "show_company_logo": true,
+  "show_address": true,
+  "show_phone_number": true,
+  "show_email": true,
+  "useful_links": [
+    {
+      "link_text": "About Us",
+      "link_url": "/about",
+      "type": "Internal"
+    },
+    {
+      "link_text": "Our Leadership",
+      "link_url": "/team",
+      "type": "Internal"
+    },
+    {
+      "link_text": "Services & Outcomes",
+      "link_url": "/services",
+      "type": "Internal"
+    },
+    {
+      "link_text": "Clients",
+      "link_url": "/clients",
+      "type": "Internal"
+    },
+    {
+      "link_text": "Speaking & Appearance Request",
+      "link_url": "/contact",
+      "type": "Internal"
+    }
+  ]
+}

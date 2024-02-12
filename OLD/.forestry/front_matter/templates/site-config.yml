@@ -1,0 +1,83 @@
+---
+label: Site Config
+hide_body: false
+fields:
+- name: pathPrefix
+  label: Pathprefix
+  type: text
+  hidden: true
+  default: "/site-config.json"
+- name: theme_color
+  type: color
+  label: Theme Color
+  config:
+    required: false
+    color_format: Hex
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: keywords
+  type: text
+  config:
+    required: false
+  label: Keywords
+  description: Must be comma separated!
+- name: description
+  label: Description
+  type: textarea
+  hidden: false
+  default: Unveiling Leadership is a consulting service that helps individuals and
+    organizations towards their goals of success by unveiling the skills and practices
+    of authentic leadership.
+  description: 'SEO - Description of the website that shows up in search results. '
+- name: footer
+  type: text
+  config:
+    required: false
+  label: Footer
+  description: Footer copyright on every page
+  default: Copyright © 2019 All Rights Reserved by Unveiled Leadership LLC
+- name: social_image
+  type: file
+  config:
+    maxSize: 250
+  label: Social Image
+  description: Must be 673px x 414px
+- name: seo_twitter
+  type: text
+  config:
+    required: false
+  label: SEO Twitter
+- name: credits
+  type: field_group
+  config: {}
+  fields:
+  - name: credit_label
+    type: text
+    config:
+      required: false
+    label: Credit Label
+    hidden: true
+    default: Site by Maximum Crash
+  - name: credit_link
+    type: text
+    config:
+      required: false
+    label: Credit Link
+    default: htttps://rejontaylor.com
+    hidden: true
+  label: Credits
+  hidden: true
+- name: privacy_policy
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Privacy Policy
+pages:
+- site-config.json

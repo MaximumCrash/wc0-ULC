@@ -1,0 +1,40 @@
+---
+label: Page
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: page_description
+  type: text
+  config:
+    required: false
+  label: Page Description
+- name: page_layout
+  type: blocks
+  label: Page Layout
+  template_types:
+  - blockel_hero_carousel
+  - content-container
+  - blockel_parallax_container
+  - blockel_testimonial_carousel
+  - blockel_profile_content_container
+  config:
+    min: 
+    max: 
+- name: template
+  type: text
+  config:
+    required: false
+  label: Template
+  default: page_layout
+  hidden: true
+pages:
+- src/pages/team.md
+- src/pages/services.md
+- src/pages/index.md
+- src/pages/about.md
+- src/pages/contact.md
+- src/pages/clients.md

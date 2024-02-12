@@ -1,0 +1,191 @@
+---
+label: BlockEL_Content_Container
+hide_body: true
+fields:
+- name: container_type
+  type: select
+  default: []
+  config:
+    required: true
+    options:
+    - 1 Column
+    - 2 Column
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Container Type
+- name: title
+  type: include
+  config: {}
+  template: blockel_title
+  label: Title
+  showOnly:
+    value: 1 Column
+- name: title_icon
+  type: text
+  config:
+    required: false
+  label: Title Icon
+  showOnly:
+    field: container_type
+    value: 2 Column
+  default: 'null'
+  description: 'Material Icon name, see this https://material.io/resources/icons/?style=baseline
+    for a list of all icons. '
+- name: title_alignment
+  type: select
+  default: center-align
+  config:
+    required: false
+    options:
+    - left-align
+    - center-align
+    - right-align
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Title Alignment
+- name: body_copy
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Body Copy
+- name: body_copy_alignment
+  type: select
+  default: center-align
+  config:
+    required: false
+    options:
+    - left-align
+    - center-align
+    - right-align
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Body Copy Alignment
+- name: background_color
+  type: select
+  default: White
+  config:
+    required: false
+    options:
+    - Black
+    - White
+    - Image
+    - Rainbow
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Container Background Color
+- name: show_color_tab
+  type: boolean
+  label: Has Colored Tab
+- name: tab_color
+  type: color
+  label: Tab Color
+  config:
+    required: false
+    color_format: Hex
+  showOnly:
+    field: show_color_tab
+    value: true
+- name: has_cards
+  type: boolean
+  label: Has Cards
+- name: cards
+  type: field_group_list
+  fields:
+  - name: card
+    type: include
+    config: {}
+    template: blockel_card
+    label: Card
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Cards
+  showOnly:
+    field: has_cards
+    value: true
+- name: has_list
+  type: boolean
+  label: Has List
+  showOnly:
+    field: container_type
+    value: 2 Column
+- name: list
+  type: include
+  config: {}
+  template: blockel_list
+  label: List
+  showOnly:
+    field: has_list
+    value: true
+- name: has_button
+  type: boolean
+  label: Has Button
+- name: button
+  type: field_group
+  config: {}
+  fields:
+  - name: button_text
+    type: text
+    config:
+      required: false
+    label: Button Text
+  - name: full_width
+    type: boolean
+    label: Full width
+  - name: alignment
+    type: select
+    default: Center Align
+    config:
+      required: false
+      options:
+      - Center Align
+      - Left Align
+      - Right Align
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Alignment
+  - name: button_link
+    type: text
+    config:
+      required: false
+    label: Button Link
+  - name: link_internal
+    type: boolean
+    label: Link Internal
+  label: Button
+  showOnly:
+    field: has_button
+    value: true
+- name: profiles
+  type: field_group_list
+  fields:
+  - name: profile
+    type: include
+    config: {}
+    template: blockel_profile_content_container
+    label: profile
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Profiles

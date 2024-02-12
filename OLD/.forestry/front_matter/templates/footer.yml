@@ -1,0 +1,52 @@
+---
+label: Footer
+hide_body: true
+fields:
+- name: show_company_logo
+  type: boolean
+  label: Show Company Logo
+  default: true
+- name: show_address
+  type: boolean
+  label: Show Address
+  default: true
+- name: show_phone_number
+  type: boolean
+  label: Show Phone Number
+  default: true
+- name: show_email
+  type: boolean
+  label: Show Email
+  default: true
+- name: useful_links
+  type: field_group_list
+  fields:
+  - name: link_text
+    type: text
+    config:
+      required: false
+    label: Link Text
+  - name: link_url
+    type: text
+    config:
+      required: false
+    label: Link Url
+  - name: type
+    type: select
+    default: Internal
+    config:
+      required: false
+      options:
+      - Internal
+      - External
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Type
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Useful Links

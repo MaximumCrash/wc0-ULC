@@ -1,0 +1,43 @@
+---
+label: 'BlockEL_Hero_Carousel '
+hide_body: true
+fields:
+- name: slides
+  type: field_group_list
+  fields:
+  - name: slide_image
+    type: file
+    config:
+      maxSize: 250
+    label: Slide Image
+  - name: caption
+    type: text
+    config:
+      required: false
+    label: Caption
+  - name: caption_subtext
+    type: text
+    config:
+      required: false
+    label: Caption Subtext
+  - name: alignment
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - Left-Align
+      - Center-Align
+      - Right-Align
+      - Center-Top-Align
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Alignment
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Slides

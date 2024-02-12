@@ -1,0 +1,52 @@
+@import "./main.scss";
+.specialTitle.rainbow-title-container {
+    overflow: overlay;
+        display: table;
+        background: linear-gradient(235deg,#7b1fa2,#477eff,#13dc90);
+        background-size: 300% 300%;
+        animation: GradAnim 6s ease infinite;
+        margin: auto;
+        margin-top: 2%; 
+
+        .copy-container {
+            mix-blend-mode: lighten;
+            background: #fff;
+            width: 100%;
+        }
+}
+
+.specialTitle.rainbow-title-container.right-align {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.specialTitle.rainbow-title-container.center-align {
+    margin: auto; 
+    margin-top: 2%; 
+}  
+
+.specialTitle.rainbow-title-container.left-align {
+    margin-right: auto; 
+    margin-left: 0; 
+}
+
+.title-component {
+    i.material-icons {
+        margin-right: 8px;
+    vertical-align: middle;
+    font-size: 4.5rem;
+    }
+}
+
+.parallax-container .content .text-content h1.title-component.top-center {
+    font-size: 2.7rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 855px) { 
+    .title-component i.material-icons {
+        display: block; 
+    }
+}

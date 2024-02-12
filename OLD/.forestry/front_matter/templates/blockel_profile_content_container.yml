@@ -1,0 +1,23 @@
+---
+label: BlockEL_Profile_Content_Container
+hide_body: true
+fields:
+- name: profile_image
+  type: file
+  config:
+    maxSize: 250
+  label: Profile Image
+- name: profile_name
+  type: text
+  config:
+    required: false
+  label: Profile Name
+- name: profile_body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Profile Body

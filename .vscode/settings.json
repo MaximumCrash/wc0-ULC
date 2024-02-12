@@ -1,0 +1,117 @@
+{
+	// CSS
+
+	// Disable built-in validator, we use stylelint
+	"css.validate": false,
+
+	// CSS
+	"[css]" : {
+		"editor.codeActionsOnSave": {
+			"source.fixAll.stylelint": "explicit"
+		},
+	},
+
+	// CSS Vars (from phoenisx.cssvar)
+	"cssvar.files": [
+		"./src/util/global.mcss",
+	],
+
+	// Editor
+	"editor.comments.insertSpace": true,
+	"editor.renderWhitespace": "all",
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+
+	// ESLint
+	"eslint.nodePath": "../node.cmd",
+	"eslint.probe": [
+		"javascript",
+		"html",
+		"markdown",
+		"svelte"
+	],
+
+	"eslint.validate": [
+		"javascript",
+		"svelte"
+	],
+
+	// Explorer
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		".*rc.js": ".${capture}ignore",
+		"vite.config.js": ".env.*",
+		"package.json": "*.cmd"
+	},
+
+	// Files
+	"files.associations": {
+		"*.mcss": "css"
+	},
+
+	"files.trimTrailingWhitespace": true,
+
+	// HTML
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+
+	// Javascript
+	"[javascript]": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "explicit"
+		},
+	},
+
+	"javascript.format.semicolons": "insert",
+	"javascript.preferences.importModuleSpecifierEnding": "js",
+	"javascript.preferences.quoteStyle": "double",
+	"javascript.referencesCodeLens.enabled": true,
+	"javascript.suggest.completeFunctionCalls": true,
+
+	// Stylelint
+	"stylelint.enable": true,
+	"stylelint.reportNeedlessDisables": true,
+	"stylelint.reportInvalidScopeDisables": true,
+
+	// Svelte
+	"[javascript][svelte]": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "explicit"
+		}
+	},
+
+	"svelte.plugin.svelte.compilerWarnings": {
+		"a11y-missing-attribute": "ignore",
+		"a11y-click-events-have-key-events": "ignore",
+		"a11y-no-static-element-interactions" : "ignore"
+	},
+
+	// SVG Previewing
+	"svgPreview.style": {
+		"html": {
+			"background-position": "0 0, 13px 13px",
+			"background-size": "26px 26px",
+			"background-image": "linear-gradient(45deg, #141414 25%, transparent 25%, transparent 75%, #141414 75%, #141414), linear-gradient(45deg, #141414 25%, transparent 25%, transparent 75%, #141414 75%, #141414)"
+		}
+	},
+
+	// XState
+	// Disable warnings about features that prevent using the xstate visual editor,
+	// mostly because they pop up every single time we use meta
+	"xstate.showVisualEditorWarnings": false,
+
+	// Default treating some special files & directories as read-only in vscode
+	// https://code.visualstudio.com/updates/v1_79#_readonly-mode
+	"files.readonlyInclude": {
+		"**/node_modules/**" : true,
+		"**/__snapshots__/**" : true,
+		"patches/**" : true,
+		"dist/**" : true,
+		"package-lock.json" : true,
+	},
+
+	// allow for opening reviews in swarm
+	"perforce.swarmHost": "https://swarm.undeadlabs.net",
+	"eslint.experimental.useFlatConfig": true
+}

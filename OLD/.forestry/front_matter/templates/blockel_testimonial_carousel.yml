@@ -1,0 +1,42 @@
+---
+label: BlockEL_Carousel
+hide_body: true
+display_field: title
+fields:
+- name: title
+  type: include
+  config: {}
+  template: blockel_title
+  label: Title
+- name: carousel_slides
+  type: field_group_list
+  fields:
+  - name: image
+    type: file
+    config:
+      maxSize: 250
+    label: image
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: subtitle
+    type: text
+    config:
+      required: false
+    label: Subtitle
+  - name: body_copy
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Body Copy
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Slides

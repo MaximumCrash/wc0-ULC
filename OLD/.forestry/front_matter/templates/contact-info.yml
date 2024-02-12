@@ -1,0 +1,104 @@
+---
+label: Contact Info
+hide_body: true
+fields:
+- name: contact_email
+  type: field_group
+  config: {}
+  fields:
+  - name: field
+    type: text
+    config:
+      required: true
+    label: email
+    description: Contact email address
+  - name: material_icon
+    type: text
+    config:
+      required: false
+    label: Material Icon
+    default: email
+    description: 'Icon used for contact info. See this page for a list of all icons:
+      https://materializecss.com/icons.html'
+  label: Email
+- name: contact_phone_number
+  type: field_group
+  config: {}
+  fields:
+  - name: field
+    type: text
+    config:
+      required: false
+    label: Phone Number
+    description: Phone Number
+    default: 774.314.8904
+  - name: material_icon
+    type: text
+    config:
+      required: false
+    label: Material Icon
+    default: local_phone
+    description: 'Icon used for contact info. See this page for a list of all icons:
+      https://materializecss.com/icons.html'
+  label: Phone Number
+  description: Phone number contact information
+- name: contact_location
+  type: field_group
+  config: {}
+  fields:
+  - name: address_line1
+    type: text
+    config:
+      required: false
+    label: Address
+    default: 290 Turnpike Road, Suite 150-344
+  - name: address_line2
+    type: text
+    config:
+      required: false
+    label: City, State, ZipCode
+    default: Westborough, MA 01581
+  - name: office_hours_days
+    type: text
+    config:
+      required: false
+    label: Office Hours (Days)
+    default: Monday-Friday
+  - name: office_hours_time
+    type: text
+    config:
+      required: false
+    label: Office Hours (Times)
+    default: 9 AM - 5 PM
+  label: Location
+- name: pathPrefix
+  type: text
+  config:
+    required: false
+  label: Pathprefix
+  default: "/contact-info.json"
+  hidden: true
+- name: social
+  type: field_group
+  config: {}
+  fields:
+  - name: facebook
+    type: text
+    config:
+      required: false
+    label: Facebook
+    description: Url link to facebook social page
+  - name: linkedin
+    type: text
+    config:
+      required: false
+    label: LinkedIn
+    description: Url connection to LinkedIn page
+  - name: twitter
+    type: text
+    config:
+      required: false
+    label: twitter
+    description: Url Link to Twitter page
+  label: Social Media
+  description: Social Media Links (ie. Facebook, Twitter, LinkedIn, ect.)

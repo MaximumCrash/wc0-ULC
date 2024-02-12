@@ -1,0 +1,163 @@
+---
+label: BlockEL_Parallax_Container
+hide_body: true
+fields:
+- name: parallax_type
+  type: select
+  default: ''
+  config:
+    required: true
+    options:
+    - No Column
+    - 2 Column
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Parallax Type
+  description: No Columns or 2 Columns
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Background Image
+- name: content
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: body_copy
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html
+    label: Body Copy
+  - name: alignment
+    type: select
+    default: Top Left
+    config:
+      required: false
+      options:
+      - Top Left
+      - Top Right
+      - Top Center
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Alignment
+  label: Content
+  description: Title and Body Copy
+- name: button
+  type: field_group
+  config: {}
+  fields:
+  - name: button_text
+    type: text
+    config:
+      required: false
+    label: Button Text
+  - name: full_width
+    type: boolean
+    label: Full Width
+  - name: alignment
+    type: select
+    default: Bottom Right
+    config:
+      required: false
+      options:
+      - Bottom Right
+      - Center
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Alignment
+    showOnly:
+      field: full_width
+  - name: button_link
+    type: text
+    config:
+      required: false
+    label: Button Link
+  - name: link_internal
+    type: boolean
+    label: Link Internal
+  label: Button
+  showOnly:
+    field: parallax_type
+    value: No Column
+- name: logo
+  type: field_group
+  config: {}
+  fields:
+  - name: image
+    type: file
+    config:
+      maxSize: 250
+    label: image
+  - name: alignment
+    type: select
+    default: Bottom Left
+    config:
+      required: false
+      options:
+      - Bottom Center
+      - Bottom Left
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Alignment
+  label: Logo/Image
+- name: has_cards
+  type: boolean
+  label: Has Cards
+  showOnly:
+    field: parallax_type
+    value: No Column
+- name: cards
+  type: field_group_list
+  fields:
+  - name: card
+    type: include
+    config: {}
+    template: blockel_card
+    label: Card
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Cards
+  showOnly:
+    field: has_cards
+    value: true
+- name: right_column_color
+  type: color
+  label: Right Column Color
+  config:
+    required: false
+    color_format: Hex
+  default: "#00A0FF"
+  showOnly:
+    field: parallax_type
+    value: 2 Column
+- name: right_column_form
+  type: include
+  config: {}
+  template: blockel_parallax_container_form
+  label: Right Column Form
+  showOnly:
+    field: parallax_type
+    value: 2 Column

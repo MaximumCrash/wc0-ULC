@@ -1,0 +1,26 @@
+.navbar-menu {
+    padding-top: 0 !important; 
+}
+
+.navbar-brand {
+    font-family: 'Poppins';
+    font-weight: bold; 
+    font-size: 1.1rem;
+}
+
+.navbar-item {
+    width: 80%; 
+}
+
+.navbar-item img {
+    max-height: 3rem !important;
+    margin-right: 3%;
+    margin-left: 1%;
+}
+
+
+@media screen and (min-width: 746px) {
+    nav.navbar {
+        display: none; 
+    }
+}

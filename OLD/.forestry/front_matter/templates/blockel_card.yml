@@ -1,0 +1,94 @@
+---
+label: BlockEL_Card
+hide_body: true
+display_field: title
+fields:
+- name: card_type
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Detail Card
+    - Profile Card
+    - Grid Card
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Card Type
+- name: profile_image
+  type: file
+  config:
+    maxSize: 250
+  label: Profile Image
+  showOnly:
+    value: Profile Card
+    field: card_type
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title / Name
+  description: ie. (Excellence Coaching Services, Michelle Jones Johnson, etc.)
+- name: profile_subtitle
+  type: text
+  config:
+    required: false
+  label: Profile Subtitile
+  description: ie. (CEO, Engineer, Consultant, ect.)
+  showOnly:
+    field: card_type
+    value: Profile Card
+- name: icon
+  type: text
+  config:
+    required: false
+  label: 'Icon '
+  description: 'Material Icon name, see this https://material.io/resources/icons/?style=baseline
+    for a list of all icons. '
+  default: 'null'
+- name: tab_color
+  type: color
+  label: Tab Color
+  config:
+    required: false
+    color_format: Hex
+  showOnly:
+    value: Detail Card
+  default: "#FFFFFF"
+- name: card_background_color
+  type: color
+  label: Background Color
+  config:
+    required: false
+    color_format: Hex
+  showOnly:
+    value: Detail Card
+  default: "#FFFFFF"
+- name: detail_list
+  type: field_group_list
+  fields:
+  - name: detail
+    type: include
+    config: {}
+    template: block_list
+    label: detail
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Detail List
+  showOnly:
+    field: card_type
+    value: Detail Card
+- name: body_copy
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Body Copy

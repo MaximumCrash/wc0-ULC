@@ -1,0 +1,23 @@
+{
+  "path_prefix": "/contact-info.json",
+  "contact_email": {
+    "material_icon": "email",
+    "field": "hello@unveiledleadership.com"
+  },
+  "contact_phone_number": {
+    "field": "774.314.8904",
+    "material_icon": "local_phone"
+  },
+  "contact_location": {
+    "address_line1": "290 Turnpike Road, Suite 150-344",
+    "address_line2": "Westborough, MA 01581",
+    "office_hours_days": "Monday-Friday",
+    "office_hours_time": "9 AM - 5 PM"
+  },
+  "pathPrefix": "/contact-info.json",
+  "social": {
+    "facebook": "https://www.facebook.com/unveiledleadershipcoaching/",
+    "linkedin": "https://www.linkedin.com/in/michelle-j-a492008",
+    "twitter": "https://twitter.com/LeadershipBliss"
+  }
+}

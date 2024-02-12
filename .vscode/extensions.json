@@ -1,0 +1,9 @@
+{
+	"recommendations": [
+		"phoenisx.cssvar",
+		"svelte.svelte-vscode",
+		"stylelint.vscode-stylelint",
+		"dbaeumer.vscode-eslint",
+		"SimonSiefke.svg-preview"
+	]
+}

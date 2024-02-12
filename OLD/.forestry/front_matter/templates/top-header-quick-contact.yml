@@ -1,0 +1,29 @@
+---
+label: Top Header - Quick Contact
+hide_body: true
+fields:
+- name: tagline
+  type: text
+  config:
+    required: false
+  label: "(Top Header Contact) Tagline"
+  default: Contact an Expert today.
+- name: show_email
+  type: boolean
+  label: "(Top Header Contact) Show Email"
+  default: true
+- name: show_phone_number
+  type: boolean
+  label: "(Top Header Contact) Show Phone Number"
+  default: true
+- name: show_facebook
+  type: boolean
+  label: "(Top Header Contact) Show Facebook"
+  default: true
+- name: show_twitter
+  type: boolean
+  label: "(Top Header Contact) Show Twitter"
+  default: true
+- name: show_linkedin
+  type: boolean
+  label: "(Top Header Contact) Show LinkedIn"

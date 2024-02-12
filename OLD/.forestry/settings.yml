@@ -1,0 +1,45 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: "/src/admin"
+webhook_url: 
+sections:
+- type: heading
+  label: Content
+- type: directory
+  path: src/pages
+  label: Pages
+  create: documents
+  match: "*.md"
+  new_doc_ext: md
+  templates:
+  - page
+- type: heading
+  label: Config
+- type: document
+  path: src/data/header/site-header.json
+  label: Header
+- type: document
+  path: src/data/footer/site-footer.json
+  label: Footer
+- type: document
+  path: src/data/contact/contact-info.json
+  label: Contact Info
+- type: document
+  path: site-config.json
+  label: Site Config
+upload_dir: static/uploads
+public_path: "/uploads"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_env:
+  - PATH_PREFIX=/
+  - GATSBY_WEBPACK_PUBLICPATH=/
+  preview_output_directory: public
+  install_dependencies_command: npm install
+  preview_docker_image: node:10
+  mount_path: "/srv"
+  working_dir: "/src"
+  instant_preview_command: npm run forestry:preview

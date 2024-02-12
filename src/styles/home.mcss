@@ -1,0 +1,48 @@
+.home {
+	display : flex;
+	flex-direction: row;
+	height : 100vh;
+	width : 100vw;
+	align-items: center;
+	justify-content: center;
+}
+
+.heroImage {
+	position: relative;
+	height: 600px;
+}
+
+.heroImage::before {
+	content :"";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	margin : 0 auto;
+	filter : blur(40px);
+	transform: scaleX(1) scaleY(0.864);
+	background: #7289DA;
+	background-size: 400%;
+}
+
+.content {
+	width: 28%;
+	background : red;
+	height: 30%;
+	margin-right: 3%;
+	position: relative;
+
+}
+
+.cta {
+	position:absolute;
+	left: 50%;
+	bottom : 0;
+	transform: translateX(-50%);
+	width: 51%;
+	height: 3rem;
+	background: red;
+}

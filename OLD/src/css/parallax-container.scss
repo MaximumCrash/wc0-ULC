@@ -1,0 +1,158 @@
+.parallax-container {
+    min-height: 420px;
+    width: 100%;
+    display: flex;
+    height: 100%;
+
+    
+    
+    .parallax {
+        position: absolute;
+        overflow: hidden;
+        min-height: 365px;
+        height: 100%;
+        z-index: 0; 
+
+        img {
+            object-fit: cover; 
+        }
+    }
+
+    .cover {
+        width: 100%;
+        background: #000;
+        opacity: .4;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .content {
+        position: relative;
+        z-index: 2; 
+        top:0; 
+        width: 100%;
+        padding: 10px 25px;
+
+        .text-content {
+            h1 {
+                top: 10px;
+                margin-bottom: 0.1em;
+                font-size: 3.15rem;
+                margin-top: 1%;
+                margin-left: 1%;
+                text-transform: none;
+            }
+
+            p {
+                margin-left: 6%;
+                color: white;
+                font-size: 1.3rem;
+                font-family: 'Poppins', Arial, Helvetica, sans-serif;
+                width: 55%;
+            }
+        }
+
+        img {
+            width: 170px;
+            position: absolute;
+            bottom: 15px;
+            left: 35px;
+        }
+
+        a.btn-large {
+            height: 54px;
+            right: 35px;
+            bottom: 0px;
+            position: absolute;
+        }
+    }
+
+    .White {
+        color: white; 
+    }
+}
+
+.parallax-container.heading {
+    height: 365px;
+}
+
+.two-column-parallax-container {
+    display: flex; 
+
+    > div {
+        flex: 1 1;
+
+        form {
+            padding: 10px; 
+            padding-left: 20px; 
+            padding-right: 20px; 
+
+            .submit-button {
+                margin-top: .35rem;
+            }
+
+            .captcha.row {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 855px){
+    .two-column-parallax-container {
+        display: block; 
+    }
+
+    .two-column-parallax-container > div {
+        flex: 1; 
+    }
+
+    .two-column-parallax-container > div form {
+        p {
+            text-align: center;
+            margin-bottom: 1rem; 
+        }
+
+
+    }
+
+    .parallax-container {
+        min-height: 300px;
+        height: 100%; 
+
+        .content {
+            padding: 10px 10px;
+            a.btn-large {
+                right: unset; 
+                left: 50%; 
+                transform: translateX(-50%);
+                margin-top: 3rem; 
+                margin-bottom: 1rem; 
+                bottom: unset; 
+                position: relative; 
+            }
+            .text-content {
+                text-align: center; 
+
+                h1 {
+                    margin-left: 0; 
+                    font-size: 3rem;
+                }
+
+                p {
+                    margin-left: 0; 
+                    width: 90%; 
+                    margin: auto; 
+                    margin-top: 5%; 
+                }
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+}

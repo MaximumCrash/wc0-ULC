@@ -1,0 +1,41 @@
+---
+label: blockEL_Title
+hide_body: true
+fields:
+- name: title_text
+  type: text
+  config:
+    required: false
+  label: Title text
+- name: color
+  type: select
+  default: Black
+  config:
+    required: false
+    options:
+    - Black
+    - White
+    - Rainbow
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Title Color
+- name: title_size
+  type: select
+  default: h3
+  config:
+    required: false
+    options:
+    - h1
+    - h2
+    - h3
+    - h4
+    - h5
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Title Size

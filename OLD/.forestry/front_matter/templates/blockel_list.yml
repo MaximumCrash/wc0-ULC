@@ -1,0 +1,17 @@
+---
+label: blockEL_List
+hide_body: true
+fields:
+- name: list_elements
+  type: field_group_list
+  fields:
+  - name: el
+    type: include
+    config: {}
+    template: block_list
+    label: El
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: List Elements

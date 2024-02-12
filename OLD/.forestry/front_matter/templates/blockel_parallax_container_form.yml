@@ -1,0 +1,18 @@
+---
+label: BlockEL_Contact_Form
+hide_body: true
+fields:
+- name: show_name
+  type: boolean
+  label: Ask for Name
+- name: show_email
+  type: boolean
+  label: Ask For Email
+- name: show_message
+  type: boolean
+  label: Ask For Message
+- name: submit_button_text
+  type: text
+  config:
+    required: false
+  label: Submit Button text

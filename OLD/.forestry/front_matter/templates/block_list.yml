@@ -1,0 +1,22 @@
+---
+label: blockEL_List_Element
+hide_body: true
+display_field: text
+fields:
+- name: text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Text
+- name: material_icon
+  type: text
+  config:
+    required: false
+  label: Material Icon
+  description: 'Material Icon name, see this https://material.io/resources/icons/?style=baseline
+    for a list of all icons. '
+  default: 'null'
