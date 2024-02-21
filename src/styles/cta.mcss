@@ -1,0 +1,10 @@
+.cta {
+	background : linear-gradient(to right, #49baa9 0%,#0e6c6c 33%,#121e5d 67%,#c335d8 100%);
+	background-size: 400%;
+	transition: all .1s;
+	text-align: center;
+}
+
+.ctacontainer {
+	background : rgba(26, 14, 51, 0.72);
+}

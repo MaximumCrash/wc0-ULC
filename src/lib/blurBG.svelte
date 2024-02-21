@@ -3,4 +3,4 @@
 	import css from "$styles/blurBG.mcss";
 </script>
 
-<img class={css.blur} src={blurSVG} />
+<img class={css.blur} src={blurSVG} alt="blurry blob background"/>

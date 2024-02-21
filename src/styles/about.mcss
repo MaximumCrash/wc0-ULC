@@ -1,0 +1,22 @@
+.about {
+	display : flex;
+	flex-direction: row;
+	height : 100vh;
+	width : 100vw;
+	align-items: flex-start;
+	justify-content: center;
+	margin-top: 6rem;
+}
+
+.content {
+	width: 40%;
+	padding: 1.5rem;
+	background: #0b0a0f1c;
+	font-size: 1.5rem;
+	backdrop-filter: blur(60px);
+	border-radius: 30px;
+	border: 7px solid #9182a41c;
+	overflow: hidden;
+	font-family: "Poppins";
+	text-align: center;
+}

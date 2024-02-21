@@ -5,13 +5,19 @@
 }
 
 .image {
+	width: 10%;
+}
 
+.copy {
+	text-align: left;
+	margin-left: 0.75rem;
 }
 
 .name {
-
+	font-size: 1.65rem;
+	font-weight: bold;
 }
 
 .tagline {
-
+	font-size : 1rem;
 }
